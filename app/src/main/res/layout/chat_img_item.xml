@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_size_10"
+    android:background="@color/white">
+
+    <cn.xiaocool.wxtteacher.ui.SquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.xiaocool.wxtteacher.ui.RoundImageView
+            android:id="@+id/iv_user_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/chat_add"
+            android:scaleType="centerCrop"></cn.xiaocool.wxtteacher.ui.RoundImageView>
+
+        <ImageView
+            android:id="@+id/delete_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_wei"
+            android:visibility="gone" />
+
+    </cn.xiaocool.wxtteacher.ui.SquareLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:textAlignment="center"
+        android:textColor="@color/zsq_text_gray_color"
+        android:text="name"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>
+
+

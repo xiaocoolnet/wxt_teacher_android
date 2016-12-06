@@ -418,11 +418,11 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f020049;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f02004a;
 		public static final int abc_textfield_search_material = 0x7f02004b;
-		public static final int slt_as_ios7_cancel_bt = 0x7f02029c;
-		public static final int slt_as_ios7_other_bt_bottom = 0x7f02029d;
-		public static final int slt_as_ios7_other_bt_middle = 0x7f02029e;
-		public static final int slt_as_ios7_other_bt_single = 0x7f02029f;
-		public static final int slt_as_ios7_other_bt_top = 0x7f0202a0;
+		public static final int slt_as_ios7_cancel_bt = 0x7f02029e;
+		public static final int slt_as_ios7_other_bt_bottom = 0x7f02029f;
+		public static final int slt_as_ios7_other_bt_middle = 0x7f0202a0;
+		public static final int slt_as_ios7_other_bt_single = 0x7f0202a1;
+		public static final int slt_as_ios7_other_bt_top = 0x7f0202a2;
 	}
 	public static final class id {
 		public static final int action_bar = 0x7f0e007b;
@@ -450,7 +450,7 @@ public final class R {
 		public static final int customPanel = 0x7f0e0070;
 		public static final int decor_content_parent = 0x7f0e0079;
 		public static final int default_activity_button = 0x7f0e0061;
-		public static final int dialog = 0x7f0e024c;
+		public static final int dialog = 0x7f0e0258;
 		public static final int disableHome = 0x7f0e0015;
 		public static final int edit_query = 0x7f0e007d;
 		public static final int end = 0x7f0e002b;
@@ -534,10 +534,10 @@ public final class R {
 		public static final int abc_search_dropdown_item_icons_2line = 0x7f040016;
 		public static final int abc_search_view = 0x7f040017;
 		public static final int abc_select_dialog_material = 0x7f040018;
-		public static final int select_dialog_item_material = 0x7f04018c;
-		public static final int select_dialog_multichoice_material = 0x7f04018d;
-		public static final int select_dialog_singlechoice_material = 0x7f04018e;
-		public static final int support_simple_spinner_dropdown_item = 0x7f0401b6;
+		public static final int select_dialog_item_material = 0x7f04018f;
+		public static final int select_dialog_multichoice_material = 0x7f040190;
+		public static final int select_dialog_singlechoice_material = 0x7f040191;
+		public static final int support_simple_spinner_dropdown_item = 0x7f0401b9;
 	}
 	public static final class mipmap {
 		public static final int actionsheet_bg_ios6 = 0x7f030000;

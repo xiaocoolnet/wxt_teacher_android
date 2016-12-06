@@ -1,0 +1,662 @@
+[
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/bg_transparent.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/bg_transparent.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_point.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_point.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_press_speak_btn_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_press_speak_btn_pressed.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_04.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_04.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/search_clear_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/search_clear_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatto_bg_focused.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatto_bg_focused.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_crop.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_crop.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/camera_switch_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/camera_switch_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_report.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_report.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_image_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_image_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatto_voice_playing.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatto_voice_playing.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_speaker_on.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_speaker_on.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/show_head_toast_bg.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/show_head_toast_bg.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_file_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_file_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/asy.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/asy.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/search_bar_edit_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/search_bar_edit_pressed.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_location_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_location_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/msg_state_fail_resend_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/msg_state_fail_resend_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_05.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_05.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_image_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_image_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_secretary.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_secretary.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/back_add_attention.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/back_add_attention.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/mm_listitem_grey_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/mm_listitem_grey_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/groups_icon.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/groups_icon.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/default_image.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/default_image.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_praise_blue.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_praise_blue.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/audit_scope_spinner_ground_on.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/audit_scope_spinner_ground_on.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/voice_unread.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/voice_unread.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_report1.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_report1.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/empty_photo.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/empty_photo.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatfrom_voice_playing.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatfrom_voice_playing.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_call_self.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_call_self.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_point_pre.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_point_pre.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ee_99.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/ee_99.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/app_panel_video_icon.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/app_panel_video_icon.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatfrom_bg_focused.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatfrom_bg_focused.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/actionbar_camera_icon.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/actionbar_camera_icon.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_praise_red.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_praise_red.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/subscription.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/subscription.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_red.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_red.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatfrom_voice_playing_f2.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatfrom_voice_playing_f2.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/video_recorder_start_btn.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/video_recorder_start_btn.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/asv.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/asv.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_item_file.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_item_file.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/location_msg.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/location_msg.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_10.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_10.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/mm_listitem_disable.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/mm_listitem_disable.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatfrom_voice_playing_f3.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatfrom_voice_playing_f3.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/article_img.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/article_img.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/btn_blue.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/btn_blue.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_pwd.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_pwd.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/mm_listitem_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/mm_listitem_pressed.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_voice_call_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_voice_call_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/video_recorder_stop_btn.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/video_recorder_stop_btn.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatting_biaoqing_btn_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatting_biaoqing_btn_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/building_ring_add_img.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/building_ring_add_img.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/right_whit.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/right_whit.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/article_img1.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/article_img1.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatto_bg_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatto_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_takepic_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_takepic_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatto_voice_playing_f3.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatto_voice_playing_f3.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/sreach_subject_like.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/sreach_subject_like.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_shanchu_unfocused.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_shanchu_unfocused.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_back.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_back.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/back_black.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/back_black.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_mask_to.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_mask_to.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_09.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_09.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_call_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_call_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_speaker_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_speaker_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_black.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/src_black.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/input_bar_bg_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/input_bar_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_06.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_06.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/play.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/play.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_face_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_face_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_03.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_03.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_mute_on.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_mute_on.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/back_add_friend.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/back_add_friend.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/group_icon.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/group_icon.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_comment_back.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_comment_back.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/new_friends_icon.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/new_friends_icon.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_clear.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_clear.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_nm.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_nm.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/type_select_btn_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/type_select_btn_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/type_select_btn_nor.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/type_select_btn_nor.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatting_setmode_keyboard_btn_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatting_setmode_keyboard_btn_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/expand.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/expand.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/mm_title_remove.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/mm_title_remove.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/video_play_btn_small_nor.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/video_play_btn_small_nor.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_12.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_12.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/building_ring_release.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/building_ring_release.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/roominfo_add_btn_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/roominfo_add_btn_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_edit_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_edit_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_voice_call_self.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_voice_call_self.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/search_bar_edit_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/search_bar_edit_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/video_download_btn_nor.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/video_download_btn_nor.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/add_white.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/add_white.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_13.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_13.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/areacode.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/areacode.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/signin_local_gallry.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/signin_local_gallry.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/roominfo_add_btn_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/roominfo_add_btn_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/apply.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/apply.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/input_bar_bg_active.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/input_bar_bg_active.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_queding_focused.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_queding_focused.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_mute_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_mute_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_queding_unfocused.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_queding_unfocused.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/back_whrit.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/back_whrit.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_send_btn_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_send_btn_pressed.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_done.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_done.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/gf_ic_preview.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/gf_ic_preview.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/add_bink_back.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/add_bink_back.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_location_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_location_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/msg_state_fail_resend.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/msg_state_fail_resend.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_send_btn_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_send_btn_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/mm_listitem_simple.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/mm_listitem_simple.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/add_img.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/add_img.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatto_voice_playing_f2.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatto_voice_playing_f2.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_quxiao_focused.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_quxiao_focused.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_woman.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_woman.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/search_subject.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/search_subject.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/app_pref_bg.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/app_pref_bg.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_expert.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_expert.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/search_clear_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/search_clear_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_takepic_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_takepic_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_07.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_07.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/video.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/video.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatting_biaoqing_btn_enable.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatting_biaoqing_btn_enable.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/unread_dot.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/unread_dot.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/audit_scope_spinner_ground.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/audit_scope_spinner_ground.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_call_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_call_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_voice_call_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_voice_call_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_01.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_01.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_press_speak_btn_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_press_speak_btn_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_quxiao_unfocused.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_quxiao_unfocused.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_face_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_face_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/add_bink_submit.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/add_bink_submit.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/slidetab_bg_press.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/slidetab_bg_press.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_head.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_head.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_shanchu_focused.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_shanchu_focused.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_marka.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_marka.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_08.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_08.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_02.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_02.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_voice_call_receive.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_voice_call_receive.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_shu.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_shu.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_file_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_file_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/icon_share_blue.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/icon_share_blue.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/camera_switch_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/camera_switch_pressed.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_11.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_11.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/record_animate_14.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/record_animate_14.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/back_cancel_attention.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/back_cancel_attention.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/add_public_group.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/add_public_group.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatto_voice_playing_f1.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatto_voice_playing_f1.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_rotate.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_rotate.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_on.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_on.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/address_img_dian.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/address_img_dian.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatting_setmode_voice_btn_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatting_setmode_voice_btn_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatting_setmode_voice_btn_pressed.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatting_setmode_voice_btn_pressed.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chat_video_call_receive.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chat_video_call_receive.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatfrom_bg_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatfrom_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_camera.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_camera.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_report_on.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_report_on.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatting_setmode_keyboard_btn_normal.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatting_setmode_keyboard_btn_normal.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/chatfrom_voice_playing_f1.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/chatfrom_voice_playing_f1.png"
+    }
+]

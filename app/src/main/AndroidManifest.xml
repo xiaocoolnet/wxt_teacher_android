@@ -141,7 +141,6 @@
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
-
     <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
@@ -154,7 +153,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.FullActivity"></activity>
+        <activity android:name=".main.FullActivity" />
         <activity android:name=".main.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -169,7 +168,7 @@
         <activity android:name=".main.ResetPasswordActivity" />
         <activity
             android:name=".main.MainActivity"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
         <activity android:name=".main.AnnouContentActivity" />
         <activity android:name=".main.SpaceClickAnnouActivity" />
         <activity android:name=".main.CircleImagesActivity" />
@@ -231,7 +230,6 @@
             android:name=".main.TeacherSingleReviewActivity"
             android:windowSoftInputMode="stateHidden|stateUnchanged" />
         <activity android:name=".main.NewsGroupReciveDetailActivity" />
-
         <activity android:name=".main.WriteAnnouncementActivity" />
         <activity android:name=".main.SpaceClassAttendanceActivity" />
         <activity android:name=".main.TeacherReviewDetailActivity" />
@@ -253,7 +251,8 @@
         <activity android:name=".main.TeacherInfoWebDetailActivity" />
         <activity android:name=".main.ApplySchoolActivity" />
         <activity android:name=".main.ChildStarActivity" />
-        <activity android:name=".main.AddressActivity" />>
+        <activity android:name=".main.AddressActivity" />
+        >
         <activity android:name=".main.TeacherCommunicationActivity" />
         <activity android:name=".main.AddNewsGroupActivity" />
         <activity android:name=".main.SettingActivity" />
@@ -269,24 +268,23 @@
         <activity android:name=".main.ResetSecretActivity" />
         <activity android:name=".main.ShareAppActivity" />
         <activity android:name=".main.NoticeReciveDetailActivity" />
-        <activity android:name=".main.SuggestListActivity"/>
-        <activity android:name=".camera.DeviceInfoListActivity"/>
-        <activity android:name=".camera.ez_camera.EZRealPlayActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".main.SuggestListActivity" />
+        <activity android:name=".camera.DeviceInfoListActivity" />
         <activity
-            android:name = ".camera.lc_camera.MediaPlayActivity"
+            android:name=".camera.ez_camera.EZRealPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camera.lc_camera.MediaPlayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:screenOrientation="portrait" />
 
         <!-- Rich push 核心功能 since 2.0.6 -->
         <activity
             android:name="cn.jpush.android.ui.PopWinActivity"
             android:exported="false"
-            android:theme="@style/MyDialogStyle"></activity>
+            android:theme="@style/MyDialogStyle" />
 
         <!-- Required SDK核心功能 -->
         <activity
@@ -305,7 +303,7 @@
         <service
             android:name="cn.jpush.android.service.DownloadService"
             android:enabled="true"
-            android:exported="false"></service>
+            android:exported="false" />
         <service android:name=".service.update.UpdateService" />
 
         <!-- Required SDK 核心功能 -->
@@ -395,6 +393,8 @@
             android:name="JPUSH_APPKEY"
             android:value="65ebc0b00c2635f68ec2ec52" />
         <!-- </>值来自开发者平台取得的AppKey -->
+        <activity android:name=".main.ChatInfoActivity" />
+        <activity android:name=".main.ChatpChooseActivity"></activity>
     </application>
 
 </manifest>

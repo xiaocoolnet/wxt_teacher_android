@@ -111,10 +111,12 @@ public class DeviceInfoListActivity extends BaseActivity {
         @Override
         protected void onPostExecute(List<EZDeviceInfo> mDeviceInfos) {
             super.onPostExecute(mDeviceInfos);
-            deviceInfos.clear();
-            deviceInfos.addAll(mDeviceInfos);
-            myCameraInfos.addAll(changeToMyCamerInfo(mDeviceInfos.get(0)));
-            myCameraAdapter.notifyDataSetChanged();
+            if (mDeviceInfos!=null){
+                deviceInfos.clear();
+                deviceInfos.addAll(mDeviceInfos);
+                myCameraInfos.addAll(changeToMyCamerInfo(mDeviceInfos.get(0)));
+                myCameraAdapter.notifyDataSetChanged();
+            }
         }
     }
 

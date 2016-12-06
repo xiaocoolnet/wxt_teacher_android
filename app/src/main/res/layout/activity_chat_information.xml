@@ -44,8 +44,36 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/zsq_bg_color"
+                android:text="家长"
+                android:textColor="@color/zsq_text_gray_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
             <cn.xiaocool.wxtteacher.ui.NoScrollGridView
-                android:id="@+id/gv_childrenList"
+                android:id="@+id/gv_pList"
+                android:background="@color/whilte"
+                android:layout_width="match_parent"
+                android:listSelector="@color/view_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:numColumns="5"
+                android:layout_height="match_parent">
+
+            </cn.xiaocool.wxtteacher.ui.NoScrollGridView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/zsq_bg_color"
+                android:text="老师"
+                android:textColor="@color/zsq_text_gray_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <cn.xiaocool.wxtteacher.ui.NoScrollGridView
+                android:id="@+id/gv_tList"
+                android:background="@color/whilte"
                 android:layout_width="match_parent"
                 android:listSelector="@color/view_color"
                 android:layout_marginTop="10dp"
@@ -135,13 +163,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="match_parent"
-                    android:text="我在本群昵称"
-                    android:textSize="18sp"
-                    android:layout_marginLeft="10dp"
-                    android:gravity="center_vertical"/>
+
                 <TextView
                     android:id="@+id/name_text"
                     android:layout_width="wrap_content"
@@ -152,6 +174,17 @@
                     android:textColor="@color/zsq_text_gray_color"
                     android:text="李春波"
                     android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="我在本群昵称"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView2" />
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"

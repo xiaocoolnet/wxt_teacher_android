@@ -134,6 +134,9 @@ public class TeacherCommunicationActivity extends BaseActivity {
         findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(context,ChatInfoActivity.class);
+                intent.putExtra("chatid",getIntent().getStringExtra("chatid"));
+                startActivity(intent);
 
             }
         });

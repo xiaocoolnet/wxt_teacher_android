@@ -254,7 +254,7 @@
         <activity android:name="cn.xiaocool.wxtteacher.main.ApplySchoolActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.ChildStarActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.AddressActivity" />
->
+        >
         <activity android:name="cn.xiaocool.wxtteacher.main.TeacherCommunicationActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.AddNewsGroupActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.SettingActivity" />
@@ -280,8 +280,7 @@
             android:name="cn.xiaocool.wxtteacher.camera.lc_camera.MediaPlayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
 
         <!-- Rich push 核心功能 since 2.0.6 -->
         <activity
@@ -396,6 +395,8 @@
             android:name="JPUSH_APPKEY"
             android:value="65ebc0b00c2635f68ec2ec52" />
         <!-- </>值来自开发者平台取得的AppKey -->
+        <activity android:name="cn.xiaocool.wxtteacher.main.ChatInfoActivity" />
+        <activity android:name="cn.xiaocool.wxtteacher.main.ChatpChooseActivity" />
         <activity android:name="com.xys.libzxing.zxing.activity.CaptureActivity" />
         <activity
             android:name="cn.finalteam.galleryfinal.PhotoSelectActivity"

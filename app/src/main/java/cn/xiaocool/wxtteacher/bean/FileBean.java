@@ -1,6 +1,8 @@
 package cn.xiaocool.wxtteacher.bean;
 
 
+import java.util.List;
+
 import cn.xiaocool.wxtteacher.bean.bean.TreeNodeId;
 import cn.xiaocool.wxtteacher.bean.bean.TreeNodeLabel;
 import cn.xiaocool.wxtteacher.bean.bean.TreeNodePid;
@@ -16,7 +18,8 @@ public class FileBean
 	private long length;
 	private String avatar;
 	private String telephone;
-
+	private Boolean checked;
+	private List<String> childIDs;
 	public FileBean(int _id, int parentId, String name,String avatar,String telephone)
 	{
 		super();
@@ -25,8 +28,19 @@ public class FileBean
 		this.name = name;
 		this.avatar = avatar;
 		this.telephone = telephone;
+		this.checked = false;
 	}
 
+	public FileBean(int _id, int parentId, String name,String avatar,String telephone,boolean isChecked)
+	{
+		super();
+		this._id = _id;
+		this.parentId = parentId;
+		this.name = name;
+		this.avatar = avatar;
+		this.telephone = telephone;
+		this.checked = isChecked;
+	}
 	public int get_id() {
 		return _id;
 	}
@@ -65,5 +79,23 @@ public class FileBean
 
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
+	}
+
+
+	public List<String> getChildIDs() {
+		return childIDs;
+	}
+
+	public void setChildIDs(List<String> childIDs) {
+		this.childIDs = childIDs;
+	}
+
+
+	public Boolean getChecked() {
+		return checked;
+	}
+
+	public void setChecked(Boolean checked) {
+		this.checked = checked;
 	}
 }

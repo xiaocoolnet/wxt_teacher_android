@@ -1,0 +1,518 @@
+-injars /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/xiaocool/Library/Android/sdk/build-tools/23.0.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class cn.xiaocool.wxtteacher.view.WxtApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class cn.xiaocool.wxtteacher.main.FullActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SplashActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.LoginActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ForgetPasswordActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SetPasswordActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.RegisterActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ResetPasswordActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.MainActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AnnouContentActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickAnnouActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.CircleImagesActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.GenerateQrCodeActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.MeHelpBackActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickClassActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceBabyAlbumActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickConfimActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickLeaveActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickRecipesActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickClassEventActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickClassSpecificEventActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickRecipesItemActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpeaceSchoolWebActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.WebClickRearingChildActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.WebClickRearingChildSpecificActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.WebClickIntroduceActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickTeacherRemarkONActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickTeacherReviewActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickAttendanceActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickCoursewareActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.WebClickEditActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.MySendMessageToTeacherActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.FunctionWeekendPlanActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.NewsGroupActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddChildrenActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ReceiveParentWarnActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AnnouncementActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickHomeworkActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ChooseCollectActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddHomeworkActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.MyClassListActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.release.MultiImageSelectorActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddBacklogActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddBacklogChooseTeacherActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.BacklogActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.BabyAlbumAddActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.MyCollectClassListActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AnnouncementCommentActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.HomeworkCommentActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ParentWarnCommentActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ChooseParentsActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SystemNewsDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SystemNewsActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AnnouncementDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.BacklogDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.HomeworkDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.BacklogNextDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AlbumDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddAlbumActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.RecipeImgDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AttendanceHistoryActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AttendancePrivilegeActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.TeacherSingleReviewActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.NewsGroupReciveDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.WriteAnnouncementActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClassAttendanceActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.TeacherReviewDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClickGrowActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddClassEventActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ReadAndNoreadActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.NewsGroupDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ClassEventsDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddConfimActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.CoursewareDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddCoursewareActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.TrendsDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddWeekPlanActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddClassCourseActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddTrendActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SpaceClikInfomationActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ClikInfomationPrivilegeActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.TeacherStyleActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.TeacherInfoWebDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ApplySchoolActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ChildStarActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddressActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.TeacherCommunicationActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AddNewsGroupActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SettingActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SuggestBackActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.AboutUsActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.FunctionWeekendPlanDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.UpdatePhoneActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ClassEventReadAndNreadActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.IntroduceClassActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.PeopleCountActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ChooseSubjectActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ManyClassActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ResetSecretActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ShareAppActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.NoticeReciveDetailActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.SuggestListActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.camera.DeviceInfoListActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.camera.ez_camera.EZRealPlayActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.camera.lc_camera.MediaPlayActivity {
+    <init>();
+}
+
+-keep class cn.jpush.android.ui.PopWinActivity {
+    <init>();
+}
+
+-keep class cn.jpush.android.ui.PushActivity {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.DownloadService {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.service.update.UpdateService {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.PushService {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.DaemonService {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.PushReceiver {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.AlarmReceiver {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.service.PushReceiver {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ChatInfoActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.ChatpChooseActivity {
+    <init>();
+}
+
+-keep class com.xys.libzxing.zxing.activity.CaptureActivity {
+    <init>();
+}
+
+-keep class cn.finalteam.galleryfinal.PhotoSelectActivity {
+    <init>();
+}
+
+-keep class cn.finalteam.galleryfinal.PhotoEditActivity {
+    <init>();
+}
+
+-keep class cn.finalteam.galleryfinal.PhotoPreviewActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

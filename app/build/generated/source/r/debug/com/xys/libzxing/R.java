@@ -8,9 +8,9 @@ package com.xys.libzxing;
 
 public final class R {
 	public static final class drawable {
-		public static final int qr_code_bg = 0x7f02026f;
-		public static final int scan_line = 0x7f020288;
-		public static final int shadow = 0x7f020293;
+		public static final int qr_code_bg = 0x7f020271;
+		public static final int scan_line = 0x7f02028a;
+		public static final int shadow = 0x7f020295;
 	}
 	public static final class id {
 		public static final int capture_container = 0x7f0e012e;
