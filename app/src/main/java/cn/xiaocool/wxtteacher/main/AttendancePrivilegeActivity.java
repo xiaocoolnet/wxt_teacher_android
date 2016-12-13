@@ -7,15 +7,15 @@ import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class AttendancePrivilegeActivity extends Activity implements View.OnClickListener{
+public class AttendancePrivilegeActivity extends BaseActivity implements View.OnClickListener{
     private Context context;
     private RelativeLayout rl_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_attendance_privilege);
         context = this;
         initView();

@@ -12,13 +12,14 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.SchoolIntrduceAdapter;
 
 /**
  * Created by wzh on 2016/1/29.
  */
-public class WebClickIntroduceActivity extends Activity implements View.OnClickListener {
+public class WebClickIntroduceActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout up_jiantou;
     private ListView wci_list;
@@ -27,7 +28,6 @@ public class WebClickIntroduceActivity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.web_open_introduce);
         mContext = this;
         initView();

@@ -4,10 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
 
-public class FullActivity extends Activity {
+public class FullActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

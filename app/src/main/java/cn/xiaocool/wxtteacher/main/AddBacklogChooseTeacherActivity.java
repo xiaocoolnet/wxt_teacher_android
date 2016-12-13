@@ -23,6 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.MyExpandableListViewAdapter;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
@@ -30,7 +31,7 @@ import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.net.request.constant.NetBaseConstant;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 
-public class AddBacklogChooseTeacherActivity extends Activity {
+public class AddBacklogChooseTeacherActivity extends BaseActivity {
 
     private RelativeLayout up_jiantou;
     private Context context;
@@ -113,7 +114,6 @@ public class AddBacklogChooseTeacherActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_add_backlog_choose_teacher);
         context = this;
         //打开或者创建数据库, 这里是创建数据库

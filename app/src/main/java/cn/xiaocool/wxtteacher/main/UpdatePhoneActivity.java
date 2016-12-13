@@ -15,13 +15,14 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.net.HttpTool;
 import cn.xiaocool.wxtteacher.net.UserRequest;
 import cn.xiaocool.wxtteacher.view.MyProgressDialog;
 import cn.xiaocool.wxtteacher.view.WxtApplication;
 
-public class UpdatePhoneActivity extends Activity implements View.OnClickListener{
+public class UpdatePhoneActivity extends BaseActivity implements View.OnClickListener{
 
     private int second = 30;
     private Button btn_next;
@@ -88,7 +89,6 @@ public class UpdatePhoneActivity extends Activity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_register);
         init();
     }

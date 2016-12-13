@@ -10,6 +10,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.fragment.CollectFinishedFragment;
 import cn.xiaocool.wxtteacher.fragment.CollectPendingFragment;
@@ -19,7 +20,7 @@ import cn.xiaocool.wxtteacher.utils.SPUtils;
 /**
  * Created by wzh on 2016/1/29.
  */
-public class SpaceClickConfimActivity extends Activity implements View.OnClickListener {
+public class SpaceClickConfimActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout up_jiantou;
     private RelativeLayout[] mTabs;
@@ -55,7 +56,6 @@ public class SpaceClickConfimActivity extends Activity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_confirm_click);
         initView();
 

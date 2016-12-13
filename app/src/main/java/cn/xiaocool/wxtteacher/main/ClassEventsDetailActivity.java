@@ -30,6 +30,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ImgGridAdapter;
 import cn.xiaocool.wxtteacher.bean.Classevents;
@@ -42,9 +43,10 @@ import cn.xiaocool.wxtteacher.net.request.constant.NetBaseConstant;
 import cn.xiaocool.wxtteacher.ui.NoScrollGridView;
 import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 import cn.xiaocool.wxtteacher.ui.RoundImageView;
+import cn.xiaocool.wxtteacher.utils.BaseTools;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class ClassEventsDetailActivity extends Activity {
+public class ClassEventsDetailActivity extends BaseActivity {
     private TextView homework_title, homework_content, teacher_name, homework_time, homework_item_praise_names, alread_text,
             start_text, finish_text, contact_people, contact_phone, start_attend_text, finish_attend_text,item_title;
     private ImageView homework_praise, homework_img, homework_discuss;
@@ -169,7 +171,6 @@ public class ClassEventsDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_homework_detail);
         context = this;
         init();

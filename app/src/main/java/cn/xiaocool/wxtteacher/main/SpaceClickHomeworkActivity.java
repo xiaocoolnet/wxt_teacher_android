@@ -22,6 +22,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.HomeworkListAdapter;
 import cn.xiaocool.wxtteacher.bean.Comments;
@@ -40,7 +41,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by Administrator on 2016/5/9.
  */
-public class SpaceClickHomeworkActivity extends Activity implements View.OnClickListener{
+public class SpaceClickHomeworkActivity extends BaseActivity implements View.OnClickListener{
     private PullToRefreshListView lv_homework;
     private String data = null;
     private LinearLayout commentView;
@@ -212,7 +213,6 @@ public class SpaceClickHomeworkActivity extends Activity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_click_homework);
         ProgressViewUtil.show(this);
         initView();

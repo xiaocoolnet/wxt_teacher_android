@@ -18,6 +18,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cn.jpush.android.api.JPushInterface;
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ViewPagerAdapter;
 import cn.xiaocool.wxtteacher.bean.AppInfo;
@@ -25,7 +26,7 @@ import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.utils.IntentUtils;
 import cn.xiaocool.wxtteacher.view.WxtApplication;
 
-public class SplashActivity extends Activity implements View.OnClickListener,ViewPager.OnPageChangeListener {
+public class SplashActivity extends BaseActivity implements View.OnClickListener,ViewPager.OnPageChangeListener {
     private   int UID ;
     private Context mContext;
     private TextView tv_login;
@@ -45,7 +46,6 @@ public class SplashActivity extends Activity implements View.OnClickListener,Vie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         final View view = View.inflate(this, R.layout.activity_splash, null);
         setContentView(view);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

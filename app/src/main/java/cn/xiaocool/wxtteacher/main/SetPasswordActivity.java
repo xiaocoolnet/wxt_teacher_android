@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.net.HttpTool;
 import cn.xiaocool.wxtteacher.view.WxtApplication;
@@ -18,7 +19,7 @@ import cn.xiaocool.wxtteacher.view.WxtApplication;
 /**
  * Created by wzh on 2016/1/25.
  */
-public class SetPasswordActivity extends Activity implements View.OnClickListener {
+public class SetPasswordActivity extends BaseActivity implements View.OnClickListener {
     private EditText edit_password1;
     private EditText edit_password2;
     private Button btn_finish;
@@ -40,7 +41,6 @@ public class SetPasswordActivity extends Activity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_set_password);
         init();
     }

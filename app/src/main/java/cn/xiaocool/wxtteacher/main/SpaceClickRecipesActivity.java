@@ -24,6 +24,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.RecipesAdapter;
 import cn.xiaocool.wxtteacher.bean.RecipeInfo;
@@ -36,7 +37,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/3/27.
  */
-public class SpaceClickRecipesActivity extends Activity implements View.OnClickListener {
+public class SpaceClickRecipesActivity extends BaseActivity implements View.OnClickListener {
     private RelativeLayout up_jiantou, btn_add;
     private ListView recipesView;
     private RecipesAdapter recipesAdapter;
@@ -157,7 +158,6 @@ public class SpaceClickRecipesActivity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_recipes_click);
         context = this;
         ProgressViewUtil.show(this);

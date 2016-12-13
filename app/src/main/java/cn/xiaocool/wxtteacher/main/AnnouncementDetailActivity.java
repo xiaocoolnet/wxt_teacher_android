@@ -35,6 +35,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.HomeworkRemarkAdapter;
 import cn.xiaocool.wxtteacher.bean.Announcement;
@@ -47,7 +48,7 @@ import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class AnnouncementDetailActivity extends Activity {
+public class AnnouncementDetailActivity extends BaseActivity {
 
     private TextView homework_title,homework_content,teacher_name,homework_time,homework_item_praise_names,alread_text;
     private ImageView homework_praise,homework_img,homework_discuss;
@@ -181,7 +182,6 @@ public class AnnouncementDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_announcement_detail);
         context = this;
         initData();

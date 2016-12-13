@@ -20,6 +20,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.CoursewareTypeListAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassCourseWare;
@@ -35,7 +36,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/1/29.
  */
-public class SpaceClickCoursewareActivity extends Activity implements View.OnClickListener {
+public class SpaceClickCoursewareActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout up_jiantou;
     private ListView listView;
@@ -80,7 +81,6 @@ public class SpaceClickCoursewareActivity extends Activity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_baby_courseware);
         mContext = this;
         ProgressViewUtil.show(mContext);

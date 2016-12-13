@@ -21,9 +21,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Date;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class BabyAlbumAddActivity extends Activity implements View.OnClickListener{
+public class BabyAlbumAddActivity extends BaseActivity implements View.OnClickListener{
 
     private static final int PHOTO_REQUEST_CAMERA = 1;// 拍照
     private static final int PHOTO_REQUEST_CUT = 3;// 相册
@@ -39,7 +40,6 @@ public class BabyAlbumAddActivity extends Activity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_baby_album_add);
         initView();
     }

@@ -17,6 +17,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.StudentListAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassList;
@@ -26,7 +27,7 @@ import cn.xiaocool.wxtteacher.net.NewsRequest;
 /**
  * Created by Administrator on 2016/5/10.
  */
-public class ChooseCollectActivity extends Activity implements View.OnClickListener {
+public class ChooseCollectActivity extends BaseActivity implements View.OnClickListener {
     private ImageView btn_exit;
     private GridView gv_childrenList;
 
@@ -74,7 +75,6 @@ public class ChooseCollectActivity extends Activity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_choose_class);
         initView();
     }

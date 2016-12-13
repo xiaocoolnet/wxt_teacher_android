@@ -31,13 +31,6 @@ public class PushReceiver extends BroadcastReceiver {
     private static final String JPUSHBACKLOG = "JPUSHBACKLOG";
     private static final String JPUSHDAIJIE = "JPUSHDAIJIE";
     private static final String JPUSHLEAVE = "JPUSHLEAVE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
-//    private static final String JPUSHMESSAGE = "JPUSHMESSAGE";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -48,12 +41,14 @@ public class PushReceiver extends BroadcastReceiver {
         String str = "";
         String recid = "";
         String usertype = "";
+        String chattype = "";
         try {
             JSONObject jsonObject = new JSONObject(type);
             str = jsonObject.getString("type");
             if (str.equals("newMessage")){
                 recid = jsonObject.getString("txt");
-
+                chattype = jsonObject.getString("key").equals("qchat") ? "1":"0";
+                usertype = jsonObject.getString("usertype");
             }
         } catch (JSONException e) {
             Log.i(TAG, "JSONException" + type);
@@ -154,6 +149,7 @@ public class PushReceiver extends BroadcastReceiver {
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP );
                     i.putExtra("reciver_id",recid);
                     i.putExtra("usertype",usertype);
+                    i.putExtra("type",chattype);
                     context.startActivity(i);
                 }else {
                     Intent i = new Intent(context, MainActivity.class);

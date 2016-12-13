@@ -33,6 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.SelectClassAdapter;
 import cn.xiaocool.wxtteacher.adapter.TeacherReviewAdat;
@@ -45,7 +46,7 @@ import cn.xiaocool.wxtteacher.utils.TimeToolUtils;
 /**
  * Created by wzh on 2016/1/29.
  */
-public class SpaceClickTeacherReviewActivity extends Activity implements View.OnClickListener {
+public class SpaceClickTeacherReviewActivity extends BaseActivity implements View.OnClickListener {
 
     private UserInfo user = new UserInfo();
     private RelativeLayout up_jiantou;
@@ -86,7 +87,6 @@ public class SpaceClickTeacherReviewActivity extends Activity implements View.On
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_teacher_review);
         ProgressViewUtil.show(this);
         mContext = this;

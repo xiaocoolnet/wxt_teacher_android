@@ -13,13 +13,14 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.net.request.constant.WebHome;
 
 /**
  * Created by Administrator on 2016/3/21.
  */
-public class SpaceClickClassSpecificEventActivity extends Activity {
+public class SpaceClickClassSpecificEventActivity extends BaseActivity {
     private TextView title;
     private ImageView classactivityImageView;
     private TextView content;
@@ -29,7 +30,6 @@ public class SpaceClickClassSpecificEventActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_class_specificevent);
         initView();
         Intent intent = getIntent();

@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.HomeworkRemarkAdapter;
 import cn.xiaocool.wxtteacher.bean.Comments;
@@ -22,7 +23,7 @@ import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 
-public class HomeworkCommentActivity extends Activity {
+public class HomeworkCommentActivity extends BaseActivity {
 
     private ImageView quit;
     ListView homework_remarkList;
@@ -71,7 +72,6 @@ public class HomeworkCommentActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_click_announcement_comment);
         initView();
     }

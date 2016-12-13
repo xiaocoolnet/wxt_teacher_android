@@ -11,12 +11,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.xys.libzxing.zxing.encoding.EncodingUtils;
+
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
 /**
  * Created by Administrator on 2016/3/23.
  */
-public class GenerateQrCodeActivity extends Activity{
+public class GenerateQrCodeActivity extends BaseActivity{
 
     private EditText qrStrEditText;
     private ImageView qrImgImageView;

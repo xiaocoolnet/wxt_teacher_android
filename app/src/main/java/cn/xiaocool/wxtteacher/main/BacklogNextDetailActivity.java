@@ -14,13 +14,14 @@ import android.widget.TextView;
 
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.bean.Backlog;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class BacklogNextDetailActivity extends Activity implements View.OnClickListener{
+public class BacklogNextDetailActivity extends BaseActivity implements View.OnClickListener{
     private Backlog.BacklogData backlogData;
     private Context context;
     private TextView tv_username,tv_content,tv_previous_user,tv_previous_advice,btn_finish,btn_send,zhuanpai_name_text;
@@ -50,7 +51,6 @@ public class BacklogNextDetailActivity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_backlog_next_detail);
         context = this;
         initData();

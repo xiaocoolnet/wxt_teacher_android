@@ -1,18 +1,24 @@
 package cn.xiaocool.wxtteacher;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 
-import cn.xiaocool.wxtteacher.app.ExitApplication;
+import com.bugtags.library.Bugtags;
 
-public class BaseActivity extends FragmentActivity implements ReceiverInterface {
+
+import cn.xiaocool.wxtteacher.view.WxtApplication;
+
+public class BaseActivity extends AppCompatActivity implements ReceiverInterface {
     private IntentFilter myIntentFilter;
     GestureDetector mGestureDetector;
     private boolean mNeedBackGesture = false;
@@ -20,7 +26,7 @@ public class BaseActivity extends FragmentActivity implements ReceiverInterface 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        getSupportActionBar().hide();
         initGestureDetector();
     }
 
@@ -31,19 +37,20 @@ public class BaseActivity extends FragmentActivity implements ReceiverInterface 
     @Override
     protected void onResume() {
         super.onResume();
-
+        Bugtags.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Bugtags.onPause(this);
     }
 
     @Override
     protected void onDestroy() {
         // TODO Auto-generated method stub
 //        destroyRadio();
-        ExitApplication.getInstance().removeActivity(this);
+        WxtApplication.getInstance().removeActivity(this);
         super.onDestroy();
     }
 
@@ -76,6 +83,7 @@ public class BaseActivity extends FragmentActivity implements ReceiverInterface 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         // TODO Auto-generated method stub
+        Bugtags.onDispatchTouchEvent(this, ev);
         if (mNeedBackGesture) {
             return mGestureDetector.onTouchEvent(ev) || super.dispatchTouchEvent(ev);
         }

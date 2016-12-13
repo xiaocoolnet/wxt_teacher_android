@@ -44,7 +44,7 @@ public class TeacherCommunicationActivity extends BaseActivity {
     private Context context;
     private UserInfo user;
     private List<CommunicateModel> communicateModelList;
-    private String receive_uid,usertype;
+    private String receive_uid,usertype,type;
     private int tag = 0;
     private Receiver receiver;
     private Handler handler = new Handler(){
@@ -66,11 +66,11 @@ public class TeacherCommunicationActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_teacher_communication);
         context = this;
         user = new UserInfo(context);
         communicateModelList = new ArrayList<>();
+        type = getIntent().getStringExtra("type");
         initView();
         receiver = new Receiver();
         IntentFilter filter = new IntentFilter("com.USER_ACTION");
@@ -87,7 +87,7 @@ public class TeacherCommunicationActivity extends BaseActivity {
     private void initData() {
         receive_uid = getIntent().getStringExtra("reciver_id");
         top_title.setText(getIntent().getStringExtra("chat_name"));
-        String url = "http://wxt.xiaocool.net/index.php?g=apps&m=message&a=xcGetChatData&send_uid="+user.getUserId()+"&receive_uid="+receive_uid;
+        String url = "http://wxt.xiaocool.net/index.php?g=apps&m=message&a=xcGetChatData&send_uid="+user.getUserId()+"&receive_uid="+receive_uid+"&type="+type;
         VolleyUtil.VolleyGetRequest(context, url, new VolleyUtil.VolleyJsonCallback() {
             @Override
             public void onSuccess(String result) {
@@ -136,10 +136,14 @@ public class TeacherCommunicationActivity extends BaseActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(context,ChatInfoActivity.class);
                 intent.putExtra("chatid",getIntent().getStringExtra("chatid"));
+                intent.putExtra("chat_name",getIntent().getStringExtra("chat_name"));
                 startActivity(intent);
 
             }
         });
+        if (type.equals("0")){
+            findViewById(R.id.btn_add).setVisibility(View.GONE);
+        }
         commnicate_lv = (ListView) findViewById(R.id.commnicate_lv);
         swip_layout = (SwipeRefreshLayout) findViewById(R.id.swip_layout);
         ed_comment = (EditText) findViewById(R.id.ed_comment);
@@ -192,27 +196,11 @@ public class TeacherCommunicationActivity extends BaseActivity {
 
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("send_type","1"));
-        params.add(new BasicNameValuePair("usertype",usertype));
+        params.add(new BasicNameValuePair("usertype",type!=null&&type.equals("1") ? "2" : usertype));
         params.add(new BasicNameValuePair("send_uid", user.getUserId()));
         params.add(new BasicNameValuePair("receive_uid",receive_uid));
         params.add(new BasicNameValuePair("content", ed_comment.getText().toString()));
         new NewsRequest(context,handler).send_chat(params,111);
-//        VolleyUtil.VolleyPostRequest(context, url, new VolleyUtil.VolleyJsonCallback() {
-//            @Override
-//            public void onSuccess(String result) {
-//                if (JsonParser.JSONparser(context,result)){
-//                    initData();
-//                    ToastUtils.ToastShort(context,"发送成功");
-//                }else {
-//                    ToastUtils.ToastShort(context,"发送");
-//                }
-//            }
-//
-//            @Override
-//            public void onError() {
-//                ToastUtils.ToastShort(context,"失败");
-//            }
-//        },params);
     }
 
     /**

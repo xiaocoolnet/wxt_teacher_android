@@ -18,6 +18,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ClassListAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassList;
@@ -27,7 +28,7 @@ import cn.xiaocool.wxtteacher.net.NewsRequest;
 /**
  * Created by Administrator on 2016/5/11.
  */
-public class MyCollectClassListActivity extends Activity implements View.OnClickListener{
+public class MyCollectClassListActivity extends BaseActivity implements View.OnClickListener{
     private ImageView btn_exit;
     private ListView class_list;
     private String classID,className;
@@ -75,7 +76,6 @@ public class MyCollectClassListActivity extends Activity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_class_list);
         initView();
     }

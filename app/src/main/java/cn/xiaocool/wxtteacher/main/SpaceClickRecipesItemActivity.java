@@ -12,19 +12,19 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
 
 /**
  * Created by wzh on 2016/3/28.
  */
-public class SpaceClickRecipesItemActivity extends Activity {
+public class SpaceClickRecipesItemActivity extends BaseActivity {
     private ImageView img;
     private TextView tvTitle,tvInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_click_recipes_item);
         //初始化视图
         img = (ImageView) findViewById(R.id.recipes_content_img);

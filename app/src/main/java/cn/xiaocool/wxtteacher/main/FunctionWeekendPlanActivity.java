@@ -26,6 +26,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.WeekendPlanAdapter;
 import cn.xiaocool.wxtteacher.bean.WeekendPlan;
@@ -38,7 +39,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by 潘 on 2016/4/10.
  */
-public class FunctionWeekendPlanActivity extends Activity implements View.OnClickListener {
+public class FunctionWeekendPlanActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout up_jiantou,add_jiantou;
     private Context mContext;
@@ -139,7 +140,6 @@ public class FunctionWeekendPlanActivity extends Activity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.function_weekendplan);
         mContext=this;
         ProgressViewUtil.show(mContext);

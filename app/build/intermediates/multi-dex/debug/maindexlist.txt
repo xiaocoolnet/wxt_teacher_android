@@ -14,6 +14,7 @@ com/videogo/openapi/EZOpenSDK.class
 cn/jpush/android/service/a.class
 cn/xiaocool/wxtteacher/main/ReadAndNoreadActivity$1.class
 cn/xiaocool/wxtteacher/adapter/EListAdapter.class
+cn/xiaocool/wxtteacher/main/CreateTGroupActivity$2.class
 cn/xiaocool/wxtteacher/view/PicassoPauseOnScrollListener.class
 org/apache/http/impl/conn/IdleConnectionHandler.class
 cn/xiaocool/wxtteacher/main/SpaceClickAttendanceActivity.class
@@ -35,10 +36,12 @@ com/videogo/openapi/EZConstants$EZRealPlayConstants.class
 cn/xiaocool/wxtteacher/main/RecipeImgDetailActivity$4.class
 com/videogo/openapi/EZConstants$EZMessageStatus.class
 cn/xiaocool/wxtteacher/adapter/RecipesAdapter.class
+com/bugtags/library/obfuscated/db$a.class
 cn/xiaocool/wxtteacher/main/ChatInfoActivity$3.class
 cn/xiaocool/wxtteacher/main/ClassEventsDetailActivity$5.class
 android/support/v7/widget/RecyclerView$ItemAnimator.class
 org/apache/http/client/RequestDirector.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$2.class
 android/support/v4/app/ActionBarDrawerToggle.class
 cn/xiaocool/wxtteacher/main/AlbumDetailActivity$6.class
 com/tencent/mm/sdk/modelmsg/WXMediaMessage$IMediaObject.class
@@ -66,6 +69,7 @@ com/videogo/openapi/EZConstants$EZPlatformType.class
 org/apache/http/conn/params/ConnPerRouteBean.class
 cn/xiaocool/wxtteacher/bean/TeacherInfo.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable.class
+com/bugtags/library/obfuscated/cu$a.class
 cn/xiaocool/wxtteacher/main/SpaceClassAttendanceActivity$4.class
 org/apache/http/NoHttpResponseException.class
 pub/devrel/easypermissions/EasyPermissions.class
@@ -96,6 +100,7 @@ android/support/v7/app/AppCompatCallback.class
 cn/xiaocool/wxtteacher/main/ClikInfomationPrivilegeActivity$1.class
 cn/xiaocool/wxtteacher/main/ResetPasswordActivity$2.class
 android/support/v7/widget/RecyclerView$Recycler.class
+com/bugtags/library/obfuscated/dv.class
 cn/xiaocool/wxtteacher/main/AddHomeworkActivity$1.class
 cn/xiaocool/wxtteacher/main/ApplySchoolActivity.class
 com/nostra13/universalimageloader/core/DisplayImageOptions.class
@@ -115,6 +120,7 @@ org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class
 cn/xiaocool/wxtteacher/utils/SPUtils.class
 android/support/v4/app/ActivityCompat$OnRequestPermissionsResultCallback.class
 com/android/volley/Response$Listener.class
+io/bugtags/agent/instrumentation/Instrumented.class
 org/apache/http/impl/auth/BasicSchemeFactory.class
 cn/xiaocool/wxtteacher/adapter/ChatInfoGridAdapter.class
 cn/xiaocool/wxtteacher/main/AddWeekPlanActivity$1.class
@@ -191,6 +197,7 @@ android/support/v7/widget/DefaultItemAnimator.class
 cn/xiaocool/wxtteacher/main/ApplySchoolActivity$1.class
 com/videogo/openapi/EzvizAPI$93.class
 cn/jpush/android/api/TagAliasCallback.class
+cn/xiaocool/wxtteacher/main/ChangeChatNameActivity$1.class
 org/apache/http/HttpVersion.class
 cn/xiaocool/wxtteacher/main/AddWeekPlanActivity$6.class
 com/videogo/openapi/bean/EZTransferMessageInfo.class
@@ -209,6 +216,7 @@ cn/xiaocool/wxtteacher/main/HomeworkCommentActivity.class
 cn/xiaocool/wxtteacher/main/ApplySchoolActivity$3.class
 org/apache/http/entity/StringEntity.class
 org/apache/http/ConnectionReuseStrategy.class
+com/bugtags/library/obfuscated/db.class
 cn/xiaocool/wxtteacher/ui/SharePopupWindow.class
 org/apache/http/impl/DefaultConnectionReuseStrategy.class
 com/tencent/mm/sdk/openapi/WXAPIFactory.class
@@ -313,6 +321,7 @@ android/support/v7/app/ActionBar$NavigationMode.class
 org/apache/http/impl/cookie/DateUtils.class
 android/support/v4/app/BaseFragmentActivityHoneycomb.class
 cn/xiaocool/wxtteacher/utils/ScreenUtils.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$5.class
 cn/xiaocool/wxtteacher/main/WebClickIntroduceActivity$1.class
 org/apache/http/impl/conn/tsccm/RouteSpecificPool.class
 cn/xiaocool/wxtteacher/main/AlbumDetailActivity$3.class
@@ -323,6 +332,7 @@ com/videogo/openapi/bean/EZAddDeviceBySerialInfo$Params.class
 org/apache/http/client/HttpRequestRetryHandler.class
 com/parse/signpost/OAuthProvider.class
 cn/xiaocool/wxtteacher/main/MainActivity.class
+com/bugtags/library/obfuscated/ed.class
 cn/xiaocool/wxtteacher/main/RegisterActivity$3.class
 cn/xiaocool/wxtteacher/main/SettingActivity$1.class
 org/apache/http/client/HttpClient.class
@@ -369,6 +379,7 @@ org/apache/http/util/EncodingUtils.class
 org/apache/http/impl/cookie/RFC2965PortAttributeHandler.class
 cn/jpush/android/api/c.class
 org/apache/http/client/protocol/ClientContext.class
+com/bugtags/library/obfuscated/ba.class
 cn/xiaocool/wxtteacher/main/SuggestBackActivity$3.class
 cn/xiaocool/wxtteacher/main/HomeworkDetailActivity$1.class
 org/apache/http/protocol/ResponseServer.class
@@ -397,6 +408,7 @@ org/apache/commons/codec/net/URLCodec.class
 com/videogo/openapi/EzvizAPI$23.class
 android/support/v4/content/PermissionChecker.class
 cn/xiaocool/wxtteacher/main/AddClassEventActivity$1.class
+io/bugtags/agent/instrumentation/TraceConstructor.class
 cn/xiaocool/wxtteacher/main/TeacherInfoWebDetailActivity$2.class
 android/support/v4/media/MediaBrowserCompat.class
 com/videogo/openapi/EzvizAPI$59.class
@@ -499,6 +511,7 @@ com/daimajia/slider/library/SliderLayout.class
 android/support/design/widget/TabLayout$OnTabSelectedListener.class
 cn/xiaocool/wxtteacher/main/SpaceClickHomeworkActivity.class
 android/support/v4/widget/MaterialProgressDrawable.class
+com/bugtags/library/obfuscated/de.class
 com/videogo/openapi/EZConstants$EZAlarmType.class
 org/apache/http/conn/ConnectionPoolTimeoutException.class
 android/support/v7/widget/ChildHelper$Callback.class
@@ -516,6 +529,7 @@ cn/xiaocool/wxtteacher/main/AddCoursewareActivity$3.class
 cn/xiaocool/wxtteacher/main/AddHomeworkActivity$3.class
 com/videogo/openapi/EZConstants$EZTalkbackCapability.class
 cn/xiaocool/wxtteacher/main/ChildStarActivity$1.class
+io/bugtags/ui/R$layout.class
 org/apache/http/protocol/RequestTargetHost.class
 android/support/design/widget/TabLayout$TabLayoutOnPageChangeListener.class
 org/apache/http/cookie/ClientCookie.class
@@ -524,10 +538,12 @@ cn/xiaocool/wxtteacher/main/TeacherInfoWebDetailActivity$1.class
 android/support/v4/widget/MaterialProgressDrawable$ProgressDrawableSize.class
 android/support/v4/view/WindowInsetsCompat.class
 org/apache/http/auth/params/AuthParamBean.class
+com/bugtags/library/BugtagsActivity.class
 cn/xiaocool/wxtteacher/main/SpaceClickClassEventActivity$4.class
 android/support/annotation/InterpolatorRes.class
 android/support/design/R$anim.class
 cn/xiaocool/wxtteacher/main/AddTrendActivity$4.class
+com/bugtags/library/obfuscated/dt.class
 org/apache/http/TokenIterator.class
 android/support/design/widget/AppBarLayout$Behavior$1.class
 org/apache/http/impl/client/DefaultRedirectHandler.class
@@ -582,7 +598,9 @@ android/support/design/widget/CoordinatorLayoutInsetsHelperLollipop.class
 cn/xiaocool/wxtteacher/main/TeacherCommunicationActivity$1.class
 android/support/design/widget/BottomSheetBehavior.class
 org/apache/http/entity/EntityTemplate.class
+com/bugtags/library/obfuscated/ec.class
 org/apache/commons/logging/impl/SimpleLog.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$4.class
 cn/jpush/android/service/ServiceInterface.class
 cn/xiaocool/wxtteacher/main/AddClassCourseActivity.class
 org/apache/http/cookie/CookieIdentityComparator.class
@@ -634,6 +652,7 @@ com/android/volley/Response.class
 com/parse/ParseRequest.class
 cn/xiaocool/wxtteacher/main/BabyAlbumAddActivity$1.class
 cn/jpush/android/b/a/b.class
+com/bugtags/library/obfuscated/dx.class
 cn/xiaocool/wxtteacher/main/ChooseSubjectActivity$SubjectAdapter.class
 cn/xiaocool/wxtteacher/main/SpaceClickTeacherRemarkONActivity$1.class
 com/squareup/picasso/RequestCreator.class
@@ -800,6 +819,7 @@ org/apache/http/impl/conn/tsccm/BasicPoolEntryRef.class
 android/support/v7/app/AppCompatDelegateImplV23.class
 org/apache/http/FormattedHeader.class
 org/apache/http/impl/cookie/BasicExpiresHandler.class
+io/bugtags/agent/instrumentation/ReplaceCallSite.class
 cn/xiaocool/wxtteacher/main/ChatInfoActivity$6.class
 cn/xiaocool/wxtteacher/camera/lc_camera/ChannelInfo.class
 org/apache/http/impl/client/AbstractAuthenticationHandler.class
@@ -814,12 +834,14 @@ org/apache/http/impl/conn/DefaultResponseParser.class
 org/apache/http/client/ResponseHandler.class
 cn/xiaocool/wxtteacher/main/SpaceClickLeaveActivity$3.class
 org/apache/http/entity/BufferedHttpEntity.class
+cn/xiaocool/wxtteacher/main/ChatInfoActivity$7.class
 android/support/v4/media/MediaBrowserCompat$1.class
 cn/jpush/android/ui/b.class
 cn/xiaocool/wxtteacher/main/SpaceClickClassEventActivity$2.class
 cn/xiaocool/wxtteacher/ui/list/PullToRefreshBase.class
 cn/jpush/android/util/i.class
 org/apache/http/impl/cookie/RFC2109VersionHandler.class
+com/bugtags/library/obfuscated/ed$1.class
 cn/xiaocool/wxtteacher/main/MeHelpBackActivity$2.class
 cn/xiaocool/wxtteacher/main/TeacherReviewDetailActivity$4.class
 cn/xiaocool/wxtteacher/main/CoursewareDetailActivity$2.class
@@ -882,6 +904,7 @@ android/support/design/widget/BottomSheetBehavior$1.class
 com/videogo/util/LogUtil.class
 android/support/v4/app/BackStackRecord$TransitionState.class
 org/apache/http/params/HttpAbstractParamBean.class
+io/bugtags/agent/instrumentation/WrapReturn.class
 org/apache/http/impl/SocketHttpServerConnection.class
 cn/finalteam/galleryfinal/PhotoEditActivity$2.class
 cn/finalteam/galleryfinal/widget/crop/CropUtil.class
@@ -910,6 +933,7 @@ com/videogo/openapi/EzvizAPI$14.class
 org/apache/http/HttpResponse.class
 cn/xiaocool/wxtteacher/main/TeacherSingleReviewActivity.class
 org/apache/http/conn/OperatedClientConnection.class
+com/bugtags/library/obfuscated/dn.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener.class
 android/support/v4/media/session/MediaSessionCompat$OnActiveChangeListener.class
 cn/xiaocool/wxtteacher/main/ChooseCollectActivity$1.class
@@ -1043,6 +1067,7 @@ cn/xiaocool/wxtteacher/main/ClassEventReadAndNreadActivity.class
 com/nostra13/universalimageloader/cache/disc/BaseDiscCache.class
 cn/xiaocool/wxtteacher/main/ChooseSubjectActivity$1.class
 cn/xiaocool/wxtteacher/main/NewsGroupDetailActivity$5.class
+com/bugtags/library/obfuscated/ed$2.class
 com/videogo/widget/SecurityEditText$1.class
 cn/jpush/android/data/i.class
 com/videogo/openapi/model/req/SecureValidateReq$Params.class
@@ -1056,6 +1081,7 @@ cn/xiaocool/wxtteacher/fragment/announce/NoticeReciveFragment.class
 org/apache/http/conn/routing/RouteInfo.class
 cn/xiaocool/wxtteacher/adapter/TeacherAttendanceAdapter.class
 android/support/annotation/Keep.class
+com/bugtags/library/obfuscated/dh.class
 cn/finalteam/toolsfinal/adapter/ViewHolderAdapter.class
 android/support/v4/media/MediaMetadataCompat$RatingKey.class
 cn/xiaocool/wxtteacher/main/SuggestListActivity$1.class
@@ -1077,6 +1103,7 @@ cn/xiaocool/wxtteacher/main/FunctionWeekendPlanActivity$3.class
 com/videogo/openapi/bean/EZAreaInfo.class
 android/support/v4/widget/ScrollerCompat.class
 cn/finalteam/galleryfinal/PhotoBaseActivity$1.class
+cn/xiaocool/wxtteacher/main/ChangeChatNameActivity$2.class
 cn/jpush/android/service/o.class
 org/apache/http/conn/params/ConnRoutePNames.class
 cn/finalteam/galleryfinal/R.class
@@ -1108,6 +1135,7 @@ com/tencent/stat/StatConfig.class
 cn/xiaocool/wxtteacher/main/ClassEventsDetailActivity$4.class
 android/support/v4/view/ViewCompatJellybeanMr2.class
 cn/xiaocool/wxtteacher/main/RecipeImgDetailActivity$5.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$1.class
 org/apache/http/impl/conn/DefaultClientConnectionOperator.class
 cn/xiaocool/wxtteacher/bean/LikeBean.class
 org/apache/http/conn/EofSensorWatcher.class
@@ -1125,6 +1153,7 @@ cn/xiaocool/wxtteacher/bean/FileBean.class
 org/apache/http/impl/io/AbstractMessageParser.class
 com/tencent/jsutil/IntentMap.class
 org/apache/http/HttpResponseInterceptor.class
+io/bugtags/ui/R.class
 com/videogo/openapi/bean/EZSDKConfiguration$StreamLimitInfoEntity.class
 org/apache/http/impl/NoConnectionReuseStrategy.class
 android/support/v4/media/session/MediaSessionCompat$Token.class
@@ -1136,6 +1165,7 @@ android/support/v7/widget/RecyclerView$LayoutManager.class
 cn/xiaocool/wxtteacher/main/ChatInfoActivity$2.class
 cn/xiaocool/wxtteacher/adapter/SuggestListAdapter.class
 cn/xiaocool/wxtteacher/bean/AppInfo.class
+com/bugtags/library/obfuscated/dc.class
 cn/xiaocool/wxtteacher/bean/Backlog.class
 cn/jpush/android/b/a/a.class
 cn/xiaocool/wxtteacher/main/AddWeekPlanActivity$5.class
@@ -1175,6 +1205,7 @@ org/apache/http/util/ExceptionUtils.class
 com/videogo/openapi/EzvizAPI$43.class
 cn/xiaocool/wxtteacher/main/AlbumDetailActivity$5.class
 android/support/v4/app/FragmentController.class
+com/bugtags/library/Bugtags.class
 cn/xiaocool/wxtteacher/bean/bean/TreeListViewAdapter$OnTreeNodeClickListener.class
 com/parse/ParseUser.class
 cn/xiaocool/wxtteacher/main/ClikInfomationPrivilegeActivity.class
@@ -1196,6 +1227,7 @@ android/support/v4/media/VolumeProviderCompat.class
 android/support/annotation/AnimRes.class
 com/videogo/openapi/EzvizAPI$25.class
 org/apache/http/client/protocol/ResponseProcessCookies.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$3.class
 android/support/v4/view/ViewPropertyAnimatorCompat.class
 cn/xiaocool/wxtteacher/main/RecipeImgDetailActivity$3.class
 org/apache/http/conn/params/ConnRouteParamBean.class
@@ -1323,6 +1355,8 @@ org/apache/http/impl/io/AbstractSessionInputBuffer.class
 cn/xiaocool/wxtteacher/camera/ez_camera/EZRealPlayActivity$4.class
 cn/xiaocool/wxtteacher/main/WebClickEditActivity$4.class
 org/apache/http/message/BasicLineParser.class
+com/bugtags/library/obfuscated/ee.class
+cn/xiaocool/wxtteacher/main/ChangeChatNameActivity.class
 com/videogo/openapi/bean/req/BaseCameraInfo.class
 cn/xiaocool/wxtteacher/BaseActivity$1.class
 android/support/annotation/StyleRes.class
@@ -1343,6 +1377,7 @@ com/tencent/mm/sdk/openapi/IWXAPI.class
 android/support/v4/view/ViewConfigurationCompat.class
 cn/xiaocool/wxtteacher/main/SpaceClickClassActivity.class
 com/xys/libzxing/R$id.class
+com/bugtags/library/BugtagsReceiver.class
 android/support/design/widget/CoordinatorLayout$ViewElevationComparator.class
 cn/xiaocool/wxtteacher/main/SpaceClickAnnouActivity.class
 cn/xiaocool/wxtteacher/main/AddChildrenActivity.class
@@ -1372,6 +1407,7 @@ android/support/v4/app/BackStackState.class
 android/support/v4/media/session/MediaSessionCompat$SessionFlags.class
 com/videogo/util/RotateViewUtil$DisplayEndView.class
 cn/jpush/android/service/PushReceiver.class
+com/bugtags/library/obfuscated/az.class
 cn/xiaocool/wxtteacher/camera/lc_camera/Business.class
 android/support/v4/app/NotificationCompat$Builder.class
 cn/xiaocool/wxtteacher/main/SuggestListActivity.class
@@ -1381,14 +1417,18 @@ android/support/v7/widget/RecyclerView$ChildDrawingOrderCallback.class
 com/videogo/alarm/NoticeInfo.class
 org/apache/http/message/AbstractHttpMessage.class
 org/apache/http/entity/ByteArrayEntity.class
+cn/xiaocool/wxtteacher/main/CreateTGroupActivity.class
 android/support/design/widget/BottomSheetBehavior$State.class
+com/bugtags/library/BugtagsService.class
 com/videogo/openapi/bean/resp/CloudFile.class
 cn/xiaocool/wxtteacher/main/WriteAnnouncementActivity$1.class
 org/apache/http/impl/cookie/BasicClientCookie2.class
 org/apache/http/impl/conn/tsccm/BasicPoolEntry.class
 cn/xiaocool/wxtteacher/bean/bean/TreeNodeLabel.class
 cn/xiaocool/wxtteacher/main/TeacherInfoWebDetailActivity$5.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImpl.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$1$2.class
 cn/xiaocool/wxtteacher/adapter/ClassEventsAdapter.class
 cn/xiaocool/wxtteacher/main/ShareAppActivity$1.class
 android/net/http/SslError.class
@@ -1402,6 +1442,7 @@ android/support/v4/app/FragmentManagerImpl$FragmentTag.class
 cn/xiaocool/wxtteacher/bean/LeaveModel.class
 com/videogo/openapi/EzvizAPI$73.class
 cn/xiaocool/wxtteacher/main/SettingActivity$7.class
+cn/xiaocool/wxtteacher/main/CreatePGroupActivity$1$1.class
 android/support/v4/app/FragmentManager$OnBackStackChangedListener.class
 cn/xiaocool/wxtteacher/main/WebClickEditActivity$5.class
 org/apache/http/message/BasicLineFormatter.class
@@ -1582,12 +1623,14 @@ android/support/v7/widget/Toolbar.class
 org/apache/http/message/BasicNameValuePair.class
 org/apache/http/impl/conn/LoggingSessionInputBuffer.class
 cn/xiaocool/wxtteacher/camera/DeviceInfoListActivity$1.class
+com/bugtags/library/obfuscated/ee$a.class
 org/apache/http/impl/cookie/BasicPathHandler.class
 android/support/design/widget/Snackbar$Duration.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
 org/apache/http/impl/io/ChunkedInputStream.class
 cn/jpush/android/data/JPushLocalNotification.class
 cn/xiaocool/wxtteacher/main/BacklogNextDetailActivity.class
+com/bugtags/library/obfuscated/bh.class
 cn/xiaocool/wxtteacher/main/FunctionWeekendPlanActivity$2.class
 cn/xiaocool/wxtteacher/main/AddressActivity.class
 cn/xiaocool/wxtteacher/bean/Classevents$ClassEventData$IsApplyList.class
@@ -1598,6 +1641,7 @@ org/apache/http/util/EntityUtils.class
 org/apache/commons/logging/Log.class
 android/support/design/widget/Snackbar$3.class
 android/support/design/widget/ValueAnimatorCompat$AnimatorUpdateListener.class
+cn/xiaocool/wxtteacher/main/ChangeChatNameActivity$3.class
 android/support/design/widget/Snackbar$SnackbarLayout$OnLayoutChangeListener.class
 cn/xiaocool/wxtteacher/main/SpaceClickClassActivity$5.class
 com/videogo/openapi/EzvizAPI$4.class
@@ -1737,9 +1781,11 @@ com/videogo/openapi/EzvizAPI$99.class
 android/support/design/widget/Snackbar$6.class
 org/apache/http/entity/mime/content/StringBody.class
 android/support/v4/util/SimpleArrayMap.class
+cn/xiaocool/wxtteacher/main/CreateTGroupActivity$3.class
 cn/xiaocool/wxtteacher/bean/ParentWarn$ParentWarnData$LikeBean.class
 android/support/v7/widget/LinearLayoutCompat$LayoutParams.class
 cn/finalteam/galleryfinal/widget/zoonview/PhotoView.class
+io/bugtags/ui/R$id.class
 com/videogo/openapi/EZPlayer.class
 org/apache/http/message/LineFormatter.class
 android/support/v4/view/NestedScrollingChildHelper.class
@@ -1763,6 +1809,7 @@ cn/jpush/android/service/l.class
 com/xys/libzxing/zxing/utils/BeepManager.class
 com/videogo/openapi/bean/EZDetectorInfo.class
 cn/finalteam/galleryfinal/PauseOnScrollListener.class
+cn/xiaocool/wxtteacher/main/CreateTGroupActivity$1.class
 com/google/gson/annotations/Until.class
 cn/finalteam/galleryfinal/R$layout.class
 com/videogo/util/LocalInfo.class
@@ -1818,6 +1865,7 @@ com/nostra13/universalimageloader/utils/MemoryCacheUtils.class
 cn/xiaocool/wxtteacher/main/ResetSecretActivity$3.class
 org/apache/commons/codec/binary/Base64.class
 com/videogo/util/DESHelper.class
+com/bugtags/library/obfuscated/e.class
 android/support/design/widget/CoordinatorLayout$1.class
 com/squareup/picasso/Picasso.class
 cn/xiaocool/wxtteacher/main/AddConfimActivity$3.class
@@ -1881,6 +1929,7 @@ com/videogo/openapi/EzvizAPI$67.class
 cn/finalteam/galleryfinal/ThemeConfig.class
 android/support/design/widget/Snackbar$SnackbarLayout$OnAttachStateChangeListener.class
 org/apache/http/client/protocol/RequestAddCookies.class
+io/bugtags/ui/view/tag/TagCloudView$a.class
 cn/xiaocool/wxtteacher/bean/bean/TreeNodeAvatar.class
 cn/jpush/android/data/c.class
 org/apache/http/UnsupportedHttpVersionException.class

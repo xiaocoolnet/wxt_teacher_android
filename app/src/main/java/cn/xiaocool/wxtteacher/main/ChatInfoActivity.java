@@ -8,6 +8,7 @@ import android.util.JsonReader;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -18,6 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ChatInfoGridAdapter;
 import cn.xiaocool.wxtteacher.bean.ChatInfoBean;
@@ -27,14 +29,15 @@ import cn.xiaocool.wxtteacher.utils.JsonParser;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 import cn.xiaocool.wxtteacher.utils.VolleyUtil;
 
-public class ChatInfoActivity extends AppCompatActivity {
+public class ChatInfoActivity extends BaseActivity {
 
     private Context context;
     private List<ChatInfoBean> pList,tList;
     private List<String> nowPlist;
     private ChatInfoGridAdapter pAdapter,tAdapter;
     private NoScrollGridView pGridView,tGridView;
-    private String inviderid;
+    private TextView group_name_text;
+    private String inviderid,chat_name,chatid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,12 +46,13 @@ public class ChatInfoActivity extends AppCompatActivity {
         context = this;
         pList = new ArrayList<>();
         tList = new ArrayList<>();
+        chat_name = getIntent().getStringExtra("chat_name");
         initView();
         initData();
     }
 
     private void initData() {
-        String chatid = getIntent().getStringExtra("chatid");
+        chatid = getIntent().getStringExtra("chatid");
         String url = "http://wxt.xiaocool.net/index.php?g=apps&m=message&a=xcGetChatLinkManList&userid="+new UserInfo(this).getUserId()+"&chatid="+chatid;
         Log.e("initData: ", url);
         VolleyUtil.VolleyGetRequest(this, url, new VolleyUtil.VolleyJsonCallback() {
@@ -105,6 +109,16 @@ public class ChatInfoActivity extends AppCompatActivity {
                 finish();
             }
         });
+        findViewById(R.id.chat_name_layout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,ChangeChatNameActivity.class);
+                intent.putExtra("chat_name",chat_name);
+                intent.putExtra("chatid",chatid);
+                startActivityForResult(intent,200);
+            }
+        });
+        group_name_text = (TextView) findViewById(R.id.group_name_text);
         pGridView = (NoScrollGridView) findViewById(R.id.gv_pList);
         tGridView = (NoScrollGridView) findViewById(R.id.gv_tList);
         pAdapter = new ChatInfoGridAdapter(pList,context);
@@ -131,6 +145,9 @@ public class ChatInfoActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        group_name_text.setText(chat_name);
     }
 
     @Override
@@ -154,19 +171,24 @@ public class ChatInfoActivity extends AppCompatActivity {
 
                         }
 
-                        for (int i = 0; i < ids.size(); i++) {
-                            for (int j = 0; j < nowPlist.size(); j++) {
-                                if (nowPlist.get(j).equals(ids.get(i))){
-                                    ids.remove(ids.get(i));
+                        for (int i = 0; i < nowPlist.size(); i++) {
+                            for (int j = 0; j < ids.size(); j++) {
+                                if (nowPlist.get(i).equals(ids.get(j))){
+                                    ids.remove(ids.get(j));
+                                    break;
                                 }
                             }
                         }
                         inviderid =null;
+                        String str = null;
                         for (int i = 0; i < ids.size(); i++) {
                             inviderid = inviderid + "," + ids.get(i);
+                            str = str + "," + "1";
                         }
+
                         inviderid = inviderid.substring(5, inviderid.length());
-                        invidePersons("0");
+                        str = str.substring(5, str.length());
+                        invidePersons(str);
                     }
 
                     break;
@@ -186,21 +208,31 @@ public class ChatInfoActivity extends AppCompatActivity {
                             }
 
                         }
-                        for (int i = 0; i < ids.size(); i++) {
-                            for (int j = 0; j < nowPlist.size(); j++) {
-                                if (nowPlist.get(j).equals(ids.get(i))){
-                                    ids.remove(ids.get(i));
+                        for (int i = 0; i < nowPlist.size(); i++) {
+                            for (int j = 0; j < ids.size(); j++) {
+                                if (nowPlist.get(i).equals(ids.get(j))){
+                                    ids.remove(ids.get(j));
+                                    break;
                                 }
                             }
                         }
                         inviderid =null;
+                        String str = null;
                         for (int i = 0; i < ids.size(); i++) {
                             inviderid = inviderid + "," + ids.get(i);
+                            str = str + "," + "0";
                         }
                         inviderid = inviderid.substring(5, inviderid.length());
-                        invidePersons("1");
+                        str = str.substring(5, str.length());
+                        invidePersons(str);
                     }
 
+                    break;
+
+                case 200:
+                    if (data!=null){
+                        group_name_text.setText(data.getStringExtra("chat_name"));
+                    }
                     break;
             }
         }

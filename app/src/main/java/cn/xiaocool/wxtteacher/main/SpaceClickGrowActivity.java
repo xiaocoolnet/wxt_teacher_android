@@ -10,18 +10,18 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.GrownListAdapter;
 import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 
-public class SpaceClickGrowActivity extends Activity {
+public class SpaceClickGrowActivity extends BaseActivity {
 
     private NoScrollListView class_left_list;
     private ListView class_right_list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_space_click_grow);
 
         initView();

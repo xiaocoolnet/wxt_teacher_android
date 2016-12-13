@@ -16,6 +16,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.fragment.announce.NoticeReciveFragment;
 import cn.xiaocool.wxtteacher.fragment.announce.NoticeSendFragment;
@@ -26,7 +27,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/3/17.
  */
-public class SpaceClickAnnouActivity extends Activity implements View.OnClickListener {
+public class SpaceClickAnnouActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout[] mTabs;
     private Fragment[] fragments;
@@ -62,7 +63,6 @@ public class SpaceClickAnnouActivity extends Activity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_click_announcement);
         clearJpushNum();
         initView();

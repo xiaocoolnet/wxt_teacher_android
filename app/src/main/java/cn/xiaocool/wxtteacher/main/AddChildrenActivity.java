@@ -18,6 +18,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ClassChildrenListAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassChildren;
@@ -27,7 +28,7 @@ import cn.xiaocool.wxtteacher.net.request.constant.SpaceRequest;
 /**
  * Created by Administrator on 2016/4/26.
  */
-public class AddChildrenActivity extends Activity{
+public class AddChildrenActivity extends BaseActivity{
     private ImageView quit;
     private ListView children_list;
     private EditText et_message;
@@ -67,7 +68,6 @@ public class AddChildrenActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_add_children);
         initView();
 

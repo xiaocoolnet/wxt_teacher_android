@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_btn_blue_rect_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_btn_blue_rect_pressed.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_line_horizontal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_line_horizontal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_btn_white_rect_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_btn_white_rect_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_line_vertical.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_line_vertical.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_bg_dialog.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_bg_dialog.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_btn_blue_rect_normal.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_btn_blue_rect_normal.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_bg_guide.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_bg_guide.9.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/btg_btn_white_rect_pressed.9.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable-nodpi-v4/btg_btn_white_rect_pressed.9.png"
+    }
+]

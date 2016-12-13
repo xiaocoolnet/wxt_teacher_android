@@ -478,6 +478,18 @@
     <init>();
 }
 
+-keep class cn.xiaocool.wxtteacher.main.ChangeChatNameActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.CreatePGroupActivity {
+    <init>();
+}
+
+-keep class cn.xiaocool.wxtteacher.main.CreateTGroupActivity {
+    <init>();
+}
+
 -keep class com.xys.libzxing.zxing.activity.CaptureActivity {
     <init>();
 }
@@ -491,6 +503,18 @@
 }
 
 -keep class cn.finalteam.galleryfinal.PhotoPreviewActivity {
+    <init>();
+}
+
+-keep class com.bugtags.library.BugtagsActivity {
+    <init>();
+}
+
+-keep class com.bugtags.library.BugtagsService {
+    <init>();
+}
+
+-keep class com.bugtags.library.BugtagsReceiver {
     <init>();
 }
 

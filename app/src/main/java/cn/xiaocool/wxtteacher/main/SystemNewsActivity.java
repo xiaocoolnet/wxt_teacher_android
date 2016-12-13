@@ -13,13 +13,14 @@ import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.SystemNewsAdapter;
 import cn.xiaocool.wxtteacher.bean.SystemNews;
 import cn.xiaocool.wxtteacher.ui.list.PullToRefreshBase;
 import cn.xiaocool.wxtteacher.ui.list.PullToRefreshListView;
 
-public class SystemNewsActivity extends Activity implements View.OnClickListener{
+public class SystemNewsActivity extends BaseActivity implements View.OnClickListener{
     private PullToRefreshListView lv_homework;
     private ListView lv;
     private ArrayList<SystemNews.SystemData> SystemNewsDataList;
@@ -28,7 +29,6 @@ public class SystemNewsActivity extends Activity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_system_news);
         context = this;
         initView();

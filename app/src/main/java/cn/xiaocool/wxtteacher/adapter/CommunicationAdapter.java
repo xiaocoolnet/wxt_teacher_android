@@ -66,8 +66,8 @@ public class CommunicationAdapter extends BaseAdapter {
         }else {
             holder.left_layout.setVisibility(View.VISIBLE);
             holder.right_layout.setVisibility(View.GONE);
-            ImgLoadUtil.display(NetBaseConstant.NET_CIRCLEPIC_HOST + communicateModel.getReceive_face(), holder.chat_avatar_left);
-            holder.send_name.setText(communicateModel.getReceive_nickname());
+            ImgLoadUtil.display(NetBaseConstant.NET_CIRCLEPIC_HOST + communicateModel.getSend_face(), holder.chat_avatar_left);
+            holder.send_name.setText(communicateModel.getSend_nickname());
             holder.chat_text_left.setText(communicateModel.getContent());
         }
         holder.item_time_text.setText(TimeToolUtils.fromateTimeShowByRule(Long.parseLong(communicateModel.getCreate_time())*1000));

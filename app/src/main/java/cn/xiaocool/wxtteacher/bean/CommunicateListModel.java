@@ -5,26 +5,35 @@ package cn.xiaocool.wxtteacher.bean;
  */
 public class CommunicateListModel {
 
+
     /**
-     * id : 83
-     * uid : 597
-     * chat_uid : 605
-     * last_content : grgrtre
+     * id : 7
+     * uid : 605
+     * chat_uid : 3294
+     * title :
+     * last_content : Sadasd
      * status : 2
-     * last_chat_id : 20
-     * create_time : 1天前
-     * my_face : newsgroup9281472003298107.jpg
-     * my_nickname : Gfh
-     * other_face : newsgroup6171473498324434.jpg
-     * other_nickname : 再见十八岁
+     * last_chat_id : 11
+     * send_type : 0
+     * receive_type : 0
+     * type : 0
+     * create_time : 5天前
+     * my_face : newsgroup6171473498324434.jpg
+     * my_nickname : CB cv can
+     * other_face : 20161207142948681.png
+     * other_nickname : 高德江
      */
 
     private String id;
     private String uid;
     private String chat_uid;
+    private String title;
     private String last_content;
     private int status;
     private String last_chat_id;
+    private String send_type;
+    private String receive_type;
+    private String type;
     private String create_time;
     private String my_face;
     private String my_nickname;
@@ -55,6 +64,14 @@ public class CommunicateListModel {
         this.chat_uid = chat_uid;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getLast_content() {
         return last_content;
     }
@@ -77,6 +94,30 @@ public class CommunicateListModel {
 
     public void setLast_chat_id(String last_chat_id) {
         this.last_chat_id = last_chat_id;
+    }
+
+    public String getSend_type() {
+        return send_type;
+    }
+
+    public void setSend_type(String send_type) {
+        this.send_type = send_type;
+    }
+
+    public String getReceive_type() {
+        return receive_type;
+    }
+
+    public void setReceive_type(String receive_type) {
+        this.receive_type = receive_type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getCreate_time() {

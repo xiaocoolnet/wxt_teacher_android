@@ -15,13 +15,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.bean.WeekendPlan;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class FunctionWeekendPlanDetailActivity extends Activity {
+public class FunctionWeekendPlanDetailActivity extends BaseActivity {
 
 
     private TextView week_plan_detail_text,title_bar_name;
@@ -90,7 +91,6 @@ public class FunctionWeekendPlanDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_function_weekend_plan_detail);
         mContext =this;
         weekendPlanData = new WeekendPlan();

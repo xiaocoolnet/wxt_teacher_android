@@ -23,6 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ParentWarnListAdapter;
 import cn.xiaocool.wxtteacher.bean.Comments;
@@ -39,7 +40,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by Administrator on 2016/5/7.
  */
-public class ReceiveParentWarnActivity extends Activity {
+public class ReceiveParentWarnActivity extends BaseActivity {
     private ImageView quit;
     private PullToRefreshListView parent_warnList;
     private ListView warnList;
@@ -179,7 +180,6 @@ public class ReceiveParentWarnActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.warn_receive);
         ProgressViewUtil.show(this);
         clearJpushNum();

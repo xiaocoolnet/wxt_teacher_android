@@ -11,6 +11,10 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        ndk {
+            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+            abiFilters 'armeabi'// 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
     }
     buildTypes {
         release {
@@ -23,27 +27,32 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
 }
 
+//应用 Bugtags 插件
+apply plugin: 'com.bugtags.library.plugin'
+//Bugtags 插件配置
+bugtags {
+    //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+    appKey "16f8c13bc12a7f176d06b23547282a26"  //这里是你的 appKey
+    appSecret "e1603c677b1563a186756eaf46aef14f"    //这里是你的 appSecret，管理员在设置页可以查看
+    mappingUploadEnabled true
 
+    //网络跟踪功能配置(企业版)
+    trackingNetworkEnabled false
+}
 //apply plugin: 'com.neenbedankt.android-apt'//增加这一句
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
     compile project(':libzxing')
     //    compile project(':easeui')
     compile 'com.android.support:multidex:'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:support-v4:23.4.0'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.daimajia.slider:library:1.1.5@aar'
-    compile 'com.7heaven.widgets:segmentcontrol:1.14'
-    compile 'cn.finalteam:galleryfinal:1.4.6'
-    compile 'com.baoyz.actionsheet:library:1.1.4'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.kaopiz:kprogresshud:1.0.5'
-    compile 'com.google.code.gson:gson:2.7'
     compile files('libs/android-async-http-master.jar')
     compile files('libs/bolts-android-1.2.0.jar')
     compile files('libs/httpmime-4.1.2.jar')
@@ -58,11 +67,25 @@ dependencies {
     compile files('libs/Parse-1.9.4.jar')
     compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
     compile files('libs/volley.jar')
+    compile files('libs/badgeview.jar')
+    compile files('libs/EZOpenSDK.jar')
+    compile files('libs/lechangeSDK.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.7heaven.widgets:segmentcontrol:1.14'
+    compile 'cn.finalteam:galleryfinal:1.4.6'
+    compile 'com.baoyz.actionsheet:library:1.1.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    compile 'com.google.code.gson:gson:2.7'
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.squareup.okio:okio:1.5.0'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
-    compile files('libs/badgeview.jar')
     compile 'com.lguipeng.bubbleview:library:1.0.0'
-    compile files('libs/EZOpenSDK.jar')
-    compile files('libs/lechangeSDK.jar')
+    testCompile 'junit:junit:4.12'
+    compile 'com.bugtags.library:bugtags-lib:latest.integration'
+    compile 'com.android.support:multidex:'
 }

@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.SpaceClickLeaveAdapter;
 import cn.xiaocool.wxtteacher.bean.LeaveModel;
@@ -34,7 +35,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/1/29.
  */
-public class SpaceClickLeaveActivity extends Activity{
+public class SpaceClickLeaveActivity extends BaseActivity{
 
     private RelativeLayout up_jiantou,leave_commit;
     private ListView parent_warnList;
@@ -163,7 +164,6 @@ public class SpaceClickLeaveActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.web_open_leave);
         mContext = this;
         ProgressViewUtil.show(this);

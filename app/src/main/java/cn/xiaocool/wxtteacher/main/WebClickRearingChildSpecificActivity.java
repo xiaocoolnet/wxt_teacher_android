@@ -14,13 +14,14 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
 
 /**
  * Created by Administrator on 2016/3/22.
  */
-public class WebClickRearingChildSpecificActivity extends Activity{
+public class WebClickRearingChildSpecificActivity extends BaseActivity{
     private TextView title;
     private ImageView rearingChildImageView;
     private TextView content;
@@ -30,7 +31,6 @@ public class WebClickRearingChildSpecificActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_class_specificevent);
         initView();
         Intent intent = getIntent();

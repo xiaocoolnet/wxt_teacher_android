@@ -12,6 +12,14 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/welcome_white.png"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_tick.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_tick.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_blue_rect.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_blue_rect.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/y3.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/y3.png"
     },
@@ -60,6 +68,10 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/btn_shape_left_checked.xml"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_publish.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_publish.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/bg_edittext.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/bg_edittext.xml"
     },
@@ -102,6 +114,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_user.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_user.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
@@ -148,6 +164,10 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/ezopen_vertical_preview_sound_off_selector.xml"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_priority_0.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_priority_0.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/slt_as_ios7_cancel_bt.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.baoyz.actionsheet/library/1.1.4/res/drawable/slt_as_ios7_cancel_bt.xml"
     },
@@ -166,6 +186,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/slt_as_ios7_other_bt_top.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.baoyz.actionsheet/library/1.1.4/res/drawable/slt_as_ios7_other_bt_top.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_arrow_down.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_arrow_down.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btn_shape_right_unchecked.xml",
@@ -196,6 +220,10 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/button_boder_green.xml"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_text_white.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_text_white.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
@@ -216,8 +244,16 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/button_boder_green_login.xml"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_priority_2.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_priority_2.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_text_black.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_text_black.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/my_progress_drawable.xml",
@@ -226,6 +262,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/l1.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/l1.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_right.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_right.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/tc_review_yecolor.xml",
@@ -242,6 +282,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/chatfrom_voice_playing_f1.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/chatfrom_voice_playing_f1.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_cross.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_cross.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btn_shape_left_unchecked.xml",
@@ -278,6 +322,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/ic_huifu.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/ic_huifu.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_fab.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_fab.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/progressdialog4.png",
@@ -360,6 +408,10 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_priority_1.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_priority_1.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/function_shipinjietu.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/function_shipinjietu.png"
     },
@@ -394,6 +446,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/left_jiantou.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/left_jiantou.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_white_rect.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_white_rect.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/y2.png",
@@ -556,6 +612,10 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/welcome_point_normal.png"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_left.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_left.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/password.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/password.png"
     },
@@ -566,6 +626,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/line.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/line.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_report.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_report.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/function_hori_line.png",
@@ -588,6 +652,14 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_quick_signin.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_quick_signin.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_exchange.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_exchange.xml"
+    },
+    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
@@ -598,6 +670,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/log_edit_layout_bg.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/log_edit_layout_bg.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_btn_priority_3.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_btn_priority_3.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/progressdialog6.png",
@@ -746,6 +822,10 @@
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btn_selected_news.xml",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable/btn_selected_news.xml"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/btg_icon_tag_priority.xml",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.0/res/drawable/btg_icon_tag_priority.xml"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable/news_contacts_head.png",

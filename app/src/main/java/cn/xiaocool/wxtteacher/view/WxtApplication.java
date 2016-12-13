@@ -1,9 +1,11 @@
 package cn.xiaocool.wxtteacher.view;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.graphics.Bitmap;
 
+import com.bugtags.library.Bugtags;
 import com.lechange.opensdk.api.LCOpenSDK_Api;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
@@ -19,8 +21,11 @@ import com.videogo.openapi.EZOpenSDK;
 import com.videogo.openapi.EzvizAPI;
 
 import java.io.File;
+import java.util.LinkedList;
+import java.util.List;
 
 import cn.jpush.android.api.JPushInterface;
+import cn.xiaocool.wxtteacher.app.ExitApplication;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 
@@ -30,7 +35,8 @@ import cn.xiaocool.wxtteacher.utils.LogUtils;
 public class WxtApplication extends Application {
     private UserInfo user = new UserInfo();
     private static WxtApplication mInstance;
-
+    private List<Activity> activityList = new LinkedList<Activity>();
+    private static WxtApplication instance;
     public static int UID;
     public static final String APP_ID = "wx9aa88ce0b796d68f";
     public IWXAPI api; //第三方app与微信通信的openapi接口
@@ -52,7 +58,7 @@ public class WxtApplication extends Application {
     public void onCreate() {
         // TODO Auto-generated method stub
         super.onCreate();
-
+        Bugtags.start("16f8c13bc12a7f176d06b23547282a26", this, Bugtags.BTGInvocationEventBubble);
         mInstance = this;
 
         user.readData(getApplicationContext());
@@ -120,14 +126,43 @@ public class WxtApplication extends Application {
 
 
 
+
+
+
+
+
+    // 单例模式获取唯一的exitapplication
     public static WxtApplication getInstance() {
-        return mInstance;
+        if (instance == null) {
+            synchronized (WxtApplication.class) {
+                if (instance == null) {
+                    instance = new WxtApplication();
+                }
+            }
+        }
+        return instance;
     }
 
+    // 添加activity到容器中
+    public void addActivity(Activity activity) {
+        activityList.add(activity);
+    }
 
+    /**
+     * 当Activity退出销毁时卸掉添加当前的Activity 防止OOM
+     * @param activity
+     */
+    public void removeActivity(Activity activity){
+        activityList.remove(activity);
+    }
 
-
-
+    // 遍历所有的Activiy并finish
+    public void exit() {
+        for (Activity activity : activityList) {
+            activity.finish();
+        }
+        System.exit(0);
+    }
 
 
 

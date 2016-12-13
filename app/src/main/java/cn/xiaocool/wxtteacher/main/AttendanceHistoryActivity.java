@@ -39,6 +39,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.SelectClassAdapter;
 import cn.xiaocool.wxtteacher.adapter.StuAttendanceInfoAdapter;
@@ -49,7 +50,7 @@ import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.utils.TimeToolUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class AttendanceHistoryActivity extends Activity implements View.OnClickListener, NumberPicker.Formatter, NumberPicker.OnValueChangeListener, NumberPicker.OnScrollListener {
+public class AttendanceHistoryActivity extends BaseActivity implements View.OnClickListener, NumberPicker.Formatter, NumberPicker.OnValueChangeListener, NumberPicker.OnScrollListener {
     private Context context;
     private RelativeLayout rl_back;
     private ListView lv_attendance;
@@ -71,7 +72,6 @@ public class AttendanceHistoryActivity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_attendance_history);
         context = this;
         user.readData(context);

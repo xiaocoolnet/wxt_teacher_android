@@ -11,12 +11,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class TeacherSingleReviewActivity extends FragmentActivity implements View.OnClickListener {
+public class TeacherSingleReviewActivity extends BaseActivity implements View.OnClickListener {
 
 
     private UserInfo user = new UserInfo();
@@ -59,7 +60,6 @@ public class TeacherSingleReviewActivity extends FragmentActivity implements Vie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_teacher_single_review);
         mContext = this;
         user.readData(this);

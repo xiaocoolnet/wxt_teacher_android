@@ -12,11 +12,12 @@ import android.widget.RelativeLayout;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class SuggestBackActivity extends Activity {
+public class SuggestBackActivity extends BaseActivity {
 
     private EditText apply_content;
     private RelativeLayout send_btn,up_jiantou;
@@ -43,7 +44,6 @@ public class SuggestBackActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_suggest_back);
         initview();
     }

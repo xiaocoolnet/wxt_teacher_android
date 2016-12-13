@@ -19,13 +19,14 @@ import android.widget.TextView;
 
 import com.sevenheaven.segmentcontrol.SegmentControl;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.fragment.daiban.ClassAllFragment;
 import cn.xiaocool.wxtteacher.fragment.daiban.ClassLeaveFragment;
 import cn.xiaocool.wxtteacher.utils.IntentUtils;
 
 
-public class SpaceClassAttendanceActivity extends Activity implements View.OnClickListener{
+public class SpaceClassAttendanceActivity extends BaseActivity implements View.OnClickListener{
     private RelativeLayout up_jiantou;
     private RelativeLayout[] mTabs;
     private Fragment[] fragments;
@@ -42,7 +43,6 @@ public class SpaceClassAttendanceActivity extends Activity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_space_class_attendance);
         initView();
 

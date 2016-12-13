@@ -25,6 +25,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ClassEventsAdapter;
 import cn.xiaocool.wxtteacher.bean.Classevents;
@@ -42,7 +43,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by Administrator on 2016/3/20.
  */
-public class SpaceClickClassEventActivity extends Activity implements View.OnClickListener{
+public class SpaceClickClassEventActivity extends BaseActivity implements View.OnClickListener{
 
     private RelativeLayout btn_add,up_jiantou;
     private PullToRefreshListView class_events_listcontent;
@@ -238,7 +239,6 @@ public class SpaceClickClassEventActivity extends Activity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_class_event);
         ProgressViewUtil.show(this);
         initView();

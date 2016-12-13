@@ -16,6 +16,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.net.HttpTool;
 import cn.xiaocool.wxtteacher.utils.IntentUtils;
@@ -25,7 +26,7 @@ import cn.xiaocool.wxtteacher.view.WxtApplication;
 /**
  * Created by wzh on 2016/2/21.
  */
-public class RegisterActivity extends Activity implements View.OnClickListener {
+public class RegisterActivity extends BaseActivity implements View.OnClickListener {
     private int second = 30;
     private Button btn_next;
     private Button btn_sendVerifyCode;
@@ -93,7 +94,6 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_register);
         init();
     }

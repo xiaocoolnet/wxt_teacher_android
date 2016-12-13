@@ -27,6 +27,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.TextAdapter;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
@@ -38,7 +39,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/2/19.
  */
-public class SpaceClickTeacherRemarkONActivity extends Activity implements View.OnClickListener {
+public class SpaceClickTeacherRemarkONActivity extends BaseActivity implements View.OnClickListener {
 
 
     private UserInfo user = new UserInfo();
@@ -87,7 +88,6 @@ public class SpaceClickTeacherRemarkONActivity extends Activity implements View.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.web_teacher_comments);
         mContent = this;
         user.readData(this);

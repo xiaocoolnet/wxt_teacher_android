@@ -7,13 +7,14 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.ui.RoundImageView;
 
 /**
  * Created by Administrator on 2016/5/8.
  */
-public class AnnouncementActivity extends Activity{
+public class AnnouncementActivity extends BaseActivity{
     private RoundImageView ann_avatar;
     private TextView ann_name;
     private TextView ann_time;
@@ -27,7 +28,6 @@ public class AnnouncementActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_announcement);
         initView();
     }

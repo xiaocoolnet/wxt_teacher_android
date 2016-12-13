@@ -36,12 +36,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.app.ExitApplication;
 import cn.xiaocool.wxtteacher.net.request.constant.NetBaseConstant;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class RecipeImgDetailActivity extends Activity implements View.OnClickListener {
+public class RecipeImgDetailActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout back;
     private ViewPager viewPager;
@@ -59,7 +60,6 @@ public class RecipeImgDetailActivity extends Activity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_profession_circle_image);
         mContext = this;
         ExitApplication.getInstance().addActivity(this);

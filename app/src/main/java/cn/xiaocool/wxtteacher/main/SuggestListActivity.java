@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.SuggestListAdapter;
 import cn.xiaocool.wxtteacher.bean.SuggestModel;
@@ -20,7 +21,7 @@ import cn.xiaocool.wxtteacher.ui.list.PullToRefreshListView;
 import cn.xiaocool.wxtteacher.utils.JsonParser;
 import cn.xiaocool.wxtteacher.utils.VolleyUtil;
 
-public class SuggestListActivity extends Activity {
+public class SuggestListActivity extends BaseActivity {
 
     private ListView listView;
     private PullToRefreshListView pullToRefreshListView;
@@ -29,7 +30,6 @@ public class SuggestListActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_suggest_list);
         suggestModels = new ArrayList<>();
         //back

@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class ShareAppActivity extends AppCompatActivity {
+public class ShareAppActivity extends BaseActivity {
 
     private ImageView erweima_img;
     @Override

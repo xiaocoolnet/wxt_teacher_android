@@ -11,13 +11,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.fragment.shenhe.AnnocementFragment;
 import cn.xiaocool.wxtteacher.fragment.shenhe.NewsGroupFragment;
 import cn.xiaocool.wxtteacher.fragment.shenhe.TrendFragment;
 import cn.xiaocool.wxtteacher.utils.IntentUtils;
 
-public class SpaceClikInfomationActivity extends Activity implements View.OnClickListener{
+public class SpaceClikInfomationActivity extends BaseActivity implements View.OnClickListener{
 
 
 
@@ -35,7 +36,6 @@ public class SpaceClikInfomationActivity extends Activity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_space_clik_infomation);
         initView();
 

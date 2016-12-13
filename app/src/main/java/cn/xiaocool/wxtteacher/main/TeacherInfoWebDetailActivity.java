@@ -27,6 +27,7 @@ import com.tencent.mm.sdk.modelmsg.WXWebpageObject;
 
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
@@ -36,7 +37,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 import cn.xiaocool.wxtteacher.view.WxtApplication;
 
 
-public class TeacherInfoWebDetailActivity extends Activity {
+public class TeacherInfoWebDetailActivity extends BaseActivity {
 
     private String itemid, title,type,content;
     private TextView title_bar_name;
@@ -71,7 +72,6 @@ public class TeacherInfoWebDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_teacher_info_web_detail);
 
         initview();

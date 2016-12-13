@@ -25,6 +25,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.TeacherReviewDetailAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassList;
@@ -33,7 +34,7 @@ import cn.xiaocool.wxtteacher.ui.ProgressViewUtil;
 import cn.xiaocool.wxtteacher.utils.TimeToolUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class TeacherReviewDetailActivity extends Activity implements View.OnClickListener{
+public class TeacherReviewDetailActivity extends BaseActivity implements View.OnClickListener{
 
     private RelativeLayout up_jiantou;
     private RelativeLayout me_teacher;
@@ -51,7 +52,6 @@ public class TeacherReviewDetailActivity extends Activity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_teacher_review_detail);
         mContext = this;
         ProgressViewUtil.show(this);

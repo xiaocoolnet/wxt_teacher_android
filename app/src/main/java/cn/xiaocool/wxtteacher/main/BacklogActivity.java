@@ -9,13 +9,14 @@ import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.fragment.backlog.BaclogReciveFragment;
 import cn.xiaocool.wxtteacher.fragment.backlog.BaclogSendFragment;
 import cn.xiaocool.wxtteacher.utils.IntentUtils;
 import cn.xiaocool.wxtteacher.utils.SPUtils;
 
-public class BacklogActivity extends Activity implements View.OnClickListener{
+public class BacklogActivity extends BaseActivity implements View.OnClickListener{
 
 
 
@@ -54,7 +55,6 @@ public class BacklogActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_backlog);
         clearJpushNum();
         initView();

@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.NoticeReciveReadOrNotReadAdapter;
 import cn.xiaocool.wxtteacher.adapter.ReadOrNotReadAdapter;
@@ -18,7 +19,7 @@ import cn.xiaocool.wxtteacher.bean.NewsGroupRecive;
 import cn.xiaocool.wxtteacher.bean.NoticeRecive;
 import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 
-public class ReadAndNoreadActivity extends Activity {
+public class ReadAndNoreadActivity extends BaseActivity {
 
     private NoScrollListView already_list,notready_list;
     private ArrayList<LikeBean> notReads,alreadyReads;
@@ -29,7 +30,6 @@ public class ReadAndNoreadActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_read_and_noread);
 
         getListByIntent();

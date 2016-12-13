@@ -34,6 +34,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ClassScheduleExAdapter;
 import cn.xiaocool.wxtteacher.adapter.SelectClassAdapter;
@@ -46,7 +47,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/1/29.
  */
-public class SpaceClickClassActivity extends Activity implements View.OnClickListener {
+public class SpaceClickClassActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout up_jiantou;
     private ExpandableListView class_schedule_list;
@@ -163,7 +164,6 @@ public class SpaceClickClassActivity extends Activity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_class);
         mContext = this;
         mQueue = Volley.newRequestQueue(mContext);

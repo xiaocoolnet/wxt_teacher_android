@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.DateGridAdapter;
 import cn.xiaocool.wxtteacher.adapter.TeacherAttendanceAdapter;
@@ -54,7 +55,7 @@ import static java.lang.Thread.sleep;
 /**
  * Created by wzh on 2016/2/19.
  */
-public class SpaceClickAttendanceActivity extends Activity implements View.OnClickListener {
+public class SpaceClickAttendanceActivity extends BaseActivity implements View.OnClickListener {
     private RequestQueue mQueue;
     private RelativeLayout up_jiantou;
     private ImageView btn_exit, last_month, next_month;
@@ -220,7 +221,6 @@ public class SpaceClickAttendanceActivity extends Activity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.fragment_attendance);
         ProgressViewUtil.show(this);
         user.readData(this);

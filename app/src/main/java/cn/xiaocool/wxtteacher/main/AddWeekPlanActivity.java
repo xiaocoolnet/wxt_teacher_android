@@ -23,6 +23,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.bean.WeekendPlan;
@@ -30,7 +31,7 @@ import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class AddWeekPlanActivity extends Activity {
+public class AddWeekPlanActivity extends BaseActivity {
 
     private UserInfo user = new UserInfo();
     private EditText et_title, et_mon, et_tues, et_wed, et_thur, et_fri, et_sta, et_sun, et_workpoint;
@@ -75,7 +76,6 @@ public class AddWeekPlanActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_add_week_plan);
         begintime="0";
         finishtime="0";

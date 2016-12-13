@@ -65,9 +65,10 @@ public class ChatListAdapter extends BaseAdapter {
             public void onClick(View v) {
                 Intent intent = new Intent(mContext,TeacherCommunicationActivity.class);
                 intent.putExtra("reciver_id",communicateModel.getChat_uid());
-                intent.putExtra("chatid",communicateModel.getId());
+                intent.putExtra("chatid",communicateModel.getType().equals("0") ? communicateModel.getId() : communicateModel.getChat_uid());
                 intent.putExtra("chat_name",communicateModel.getOther_nickname());
-                intent.putExtra("usertype","1");
+                intent.putExtra("type",communicateModel.getType());
+                intent.putExtra("usertype",communicateModel.getReceive_type());
                 mContext.startActivity(intent);
             }
         });

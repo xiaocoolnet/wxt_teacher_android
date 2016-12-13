@@ -20,6 +20,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ChooseStudentExpandbleListViewAdapter;
 import cn.xiaocool.wxtteacher.adapter.EListAdapter;
@@ -30,7 +31,7 @@ import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class ManyClassActivity extends AppCompatActivity implements View.OnClickListener {
+public class ManyClassActivity extends BaseActivity implements View.OnClickListener {
 
     private ArrayList<Group> groups;
     private ExpandableListView listView;
@@ -82,7 +83,6 @@ public class ManyClassActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_many_class);
         initView();
     }

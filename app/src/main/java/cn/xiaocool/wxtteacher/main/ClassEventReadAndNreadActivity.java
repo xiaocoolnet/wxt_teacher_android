@@ -33,7 +33,6 @@ public class ClassEventReadAndNreadActivity extends BaseActivity implements View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_class_event_read_and_nread);
 
         initView();

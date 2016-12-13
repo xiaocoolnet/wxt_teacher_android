@@ -7,16 +7,16 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class ChildStarActivity extends Activity {
+public class ChildStarActivity extends BaseActivity {
 
     private EditText apply_content;
     private RelativeLayout send_btn,up_jiantou;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_child_star);
         initview();
     }

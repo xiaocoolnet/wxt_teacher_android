@@ -20,6 +20,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ChooseStudentExpandbleListViewAdapter;
 import cn.xiaocool.wxtteacher.adapter.EListAdapter;
@@ -33,7 +34,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by Administrator on 2016/5/11.
  */
-public class MyClassListActivity extends Activity implements View.OnClickListener {
+public class MyClassListActivity extends BaseActivity implements View.OnClickListener {
     private ArrayList<Group> groups;
     private ExpandableListView listView;
     private EListAdapter adapter;
@@ -112,7 +113,6 @@ public class MyClassListActivity extends Activity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_class_list);
         initView();
     }

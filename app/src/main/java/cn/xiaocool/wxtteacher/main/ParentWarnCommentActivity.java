@@ -19,6 +19,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.HomeworkRemarkAdapter;
 import cn.xiaocool.wxtteacher.bean.Comments;
@@ -26,7 +27,7 @@ import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 
-public class ParentWarnCommentActivity extends Activity {
+public class ParentWarnCommentActivity extends BaseActivity {
 
 
     private String data = null;
@@ -104,7 +105,6 @@ public class ParentWarnCommentActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_parent_warn_comment);
 
         initView();

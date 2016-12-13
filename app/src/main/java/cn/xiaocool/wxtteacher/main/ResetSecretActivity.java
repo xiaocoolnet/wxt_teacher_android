@@ -12,6 +12,7 @@ import com.kaopiz.kprogresshud.KProgressHUD;
 import java.util.HashMap;
 import java.util.Map;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.app.ExitApplication;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
@@ -23,7 +24,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 import cn.xiaocool.wxtteacher.utils.VolleyUtil;
 import cn.xiaocool.wxtteacher.view.WxtApplication;
 
-public class ResetSecretActivity extends AppCompatActivity {
+public class ResetSecretActivity extends BaseActivity {
 
 
     private EditText old_sec,new_sec,check_new_sec;

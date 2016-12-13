@@ -62,6 +62,7 @@
                     app:arrowHeight="6dp"
                     app:arrowPosition="10dp"
                     android:padding="10dp"
+                    android:layout_marginRight="50dp"
                     android:text="到安东萨克阿里山的卡拉是"
                     android:textColor="@color/white"
                     app:bubbleColor="#7EC0EE"/>
@@ -95,6 +96,7 @@
                 app:arrowHeight="6dp"
                 app:arrowPosition="10dp"
                 android:padding="10dp"
+                android:layout_marginLeft="50dp"
                 android:text="大师的看来是看到了三大萨的拉萨的看看的撒的"
                 android:textColor="@color/white"
                 app:bubbleColor="#9BE5B4"/>

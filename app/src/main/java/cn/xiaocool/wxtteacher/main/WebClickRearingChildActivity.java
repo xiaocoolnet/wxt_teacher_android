@@ -17,6 +17,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.RearingChildAdapter;
 import cn.xiaocool.wxtteacher.bean.RearingChild;
@@ -27,7 +28,7 @@ import cn.xiaocool.wxtteacher.ui.RearingChildListView;
 /**
  * Created by 潘 on 2016/4/5.
  */
-public class WebClickRearingChildActivity extends Activity implements View.OnClickListener {
+public class WebClickRearingChildActivity extends BaseActivity implements View.OnClickListener {
     private ImageView btn_exit;
     private RearingChildListView rearingChildLv;
     private List<RearingChild.RearingChildData> rearingChildDataList;
@@ -68,7 +69,6 @@ public class WebClickRearingChildActivity extends Activity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.web_click_child_rearing_list);
         initView();
 

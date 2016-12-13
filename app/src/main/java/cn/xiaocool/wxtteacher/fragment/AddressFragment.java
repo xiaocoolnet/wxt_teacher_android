@@ -3,6 +3,7 @@ package cn.xiaocool.wxtteacher.fragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +16,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cn.xiaocool.wxtteacher.R;
+import cn.xiaocool.wxtteacher.main.ChatpChooseActivity;
+import cn.xiaocool.wxtteacher.main.CreatePGroupActivity;
+import cn.xiaocool.wxtteacher.main.CreateTGroupActivity;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
 
@@ -25,7 +29,7 @@ public class AddressFragment extends Fragment implements View.OnClickListener {
     private AddressAddFragment addressAddFragment;
     private AddressTeacherFragment addressGardenerFragment;
     private AddressParentFragment addressParentFragment;
-    private AddressParentFragment addressGroupchatFragment;
+    private AdressGroupFragment addressGroupchatFragment;
     private FragmentManager fragmentManager;
     private RelativeLayout[] mTabs;
     private Fragment[] fragments;
@@ -51,7 +55,7 @@ public class AddressFragment extends Fragment implements View.OnClickListener {
     private void init() {
         addressAddFragment = new AddressAddFragment();
         addressGardenerFragment = new AddressTeacherFragment();
-        addressGroupchatFragment = new AddressParentFragment();
+        addressGroupchatFragment = new AdressGroupFragment();
         addressParentFragment = new AddressParentFragment();
         fragments = new Fragment[]{addressParentFragment,addressGardenerFragment,addressGroupchatFragment};
         fragmentManager = getChildFragmentManager();
@@ -143,7 +147,8 @@ public class AddressFragment extends Fragment implements View.OnClickListener {
 
         final TextView add_qun = (TextView)layout.findViewById(R.id.add_qun);
         TextView tong_bu = (TextView)layout.findViewById(R.id.tong_bu);
-
+        tong_bu.setText("创建家长群");
+        add_qun.setText("创建教师群");
         // 设置背景颜色变暗
         final WindowManager.LayoutParams lp = getActivity().getWindow().getAttributes();
         lp.alpha = 0.7f;
@@ -177,16 +182,18 @@ public class AddressFragment extends Fragment implements View.OnClickListener {
     }
 
     /**
-     * 同步通讯录
+     * 家长群
      * */
     private void tongbu() {
-        ToastUtils.ToastShort(this.getActivity(), "同步通讯录");
+        Intent intent = new Intent(getActivity(), CreatePGroupActivity.class);
+        startActivity(intent);
     }
 
     /**
-     * 添加群
+     * 教师群
      * */
     private void history() {
-
+        Intent intent = new Intent(getActivity(), CreateTGroupActivity.class);
+        startActivity(intent);
     }
 }

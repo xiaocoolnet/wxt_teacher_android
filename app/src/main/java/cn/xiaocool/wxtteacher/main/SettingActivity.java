@@ -35,6 +35,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cn.jpush.android.api.JPushInterface;
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.app.ExitApplication;
 import cn.xiaocool.wxtteacher.bean.CheckVersionModel;
@@ -49,7 +50,7 @@ import cn.xiaocool.wxtteacher.utils.SPUtils;
 import cn.xiaocool.wxtteacher.view.NiceDialog;
 import cn.xiaocool.wxtteacher.view.WxtApplication;
 
-public class SettingActivity extends Activity implements View.OnClickListener{
+public class SettingActivity extends BaseActivity implements View.OnClickListener{
 
 //    <include layout="@layout/my_help"></include>
 //
@@ -77,7 +78,6 @@ public class SettingActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_setting);
         mContext = this;
         sp = mContext.getSharedPreferences("list", mContext.MODE_PRIVATE);

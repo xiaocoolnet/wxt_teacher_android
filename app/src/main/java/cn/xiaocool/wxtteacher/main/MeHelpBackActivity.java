@@ -8,20 +8,20 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
 
 /**
  * Created by wzh on 2016/2/17.
  */
-public class MeHelpBackActivity extends Activity{
+public class MeHelpBackActivity extends BaseActivity{
     private ImageView btn_back;
     String url = "http://wxt.xiaocool.net/index.php?g=portal&m=help&a=index";
     private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.me_help_click);
         btn_back = (ImageView)findViewById(R.id.me_help_setting_back);
         btn_back.setOnClickListener(new View.OnClickListener() {

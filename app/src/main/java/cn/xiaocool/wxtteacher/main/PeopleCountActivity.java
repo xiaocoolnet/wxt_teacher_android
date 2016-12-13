@@ -9,11 +9,12 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ClassEventCountAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassEventCount;
 
-public class PeopleCountActivity extends AppCompatActivity {
+public class PeopleCountActivity extends BaseActivity {
 
     private TextView title_bar_name;
     private RelativeLayout up_jiantou;

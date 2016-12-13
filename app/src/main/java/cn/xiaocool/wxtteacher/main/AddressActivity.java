@@ -6,17 +6,17 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Window;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.fragment.AddressFragment;
 
-public class AddressActivity extends Activity {
+public class AddressActivity extends BaseActivity {
 
     private AddressFragment addressFragment;
     private FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_address);
         addressFragment = new AddressFragment();
         fragmentManager = getFragmentManager();

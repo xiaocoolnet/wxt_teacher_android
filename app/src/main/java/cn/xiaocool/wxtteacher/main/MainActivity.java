@@ -35,6 +35,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cn.jpush.android.api.JPushInterface;
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.Constant;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.app.ExitApplication;
@@ -57,7 +58,7 @@ import cn.xiaocool.wxtteacher.view.WxtApplication;
 /**
  * Created by wzh on 2016/2/21.
  */
-public class MainActivity extends FragmentActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener{
     private NewsFragment newsFragment;
     private ParadiseFragment addressFragment;
     private FunctionFragment functionFragment;
@@ -106,7 +107,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_home);
         LogUtils.e("mainActivity", "onCreate");
         mContext = this;
@@ -429,12 +429,14 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         if (message+trust+notice+backlogNum>0){
             news.setVisibility(View.VISIBLE);
             news.setText("...");
+            newsFragment.setRedPoint();
         }else {
             news.setVisibility(View.GONE);
         }
         if (daijieNum+leaveNum>0){
             function.setVisibility(View.VISIBLE);
             function.setText("...");
+            functionFragment.setRedPoint();
         }else {
             function.setVisibility(View.GONE);
         }

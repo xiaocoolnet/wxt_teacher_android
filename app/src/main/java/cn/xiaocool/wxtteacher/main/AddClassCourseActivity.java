@@ -3,9 +3,10 @@ package cn.xiaocool.wxtteacher.main;
 import android.app.Activity;
 import android.os.Bundle;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class AddClassCourseActivity extends Activity {
+public class AddClassCourseActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -35,6 +35,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.HomeworkRemarkAdapter;
 import cn.xiaocool.wxtteacher.adapter.MyGridAdapter;
@@ -51,7 +52,7 @@ import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 import cn.xiaocool.wxtteacher.ui.RoundImageView;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 
-public class TrendsDetailActivity extends Activity {
+public class TrendsDetailActivity extends BaseActivity {
 
     private static final int GET_VIEWPAPER_LIST_KEY = 1;
     private static final int GET_CIRCLE_LIST_KEY = 2;
@@ -137,7 +138,6 @@ public class TrendsDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_trends_detail);
         context = this;
         initData();

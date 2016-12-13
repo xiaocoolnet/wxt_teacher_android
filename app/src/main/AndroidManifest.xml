@@ -394,7 +394,10 @@
             android:value="65ebc0b00c2635f68ec2ec52" />
         <!-- </>值来自开发者平台取得的AppKey -->
         <activity android:name=".main.ChatInfoActivity" />
-        <activity android:name=".main.ChatpChooseActivity"></activity>
+        <activity android:name=".main.ChatpChooseActivity" />
+        <activity android:name=".main.ChangeChatNameActivity" />
+        <activity android:name=".main.CreatePGroupActivity" />
+        <activity android:name=".main.CreateTGroupActivity"></activity>
     </application>
 
 </manifest>

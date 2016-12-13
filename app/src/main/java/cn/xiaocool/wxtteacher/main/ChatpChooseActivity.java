@@ -29,6 +29,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ChooseTreeAdapter;
 import cn.xiaocool.wxtteacher.adapter.SimpleTreeAdapter;
@@ -43,7 +44,7 @@ import cn.xiaocool.wxtteacher.ui.ProgressViewUtil;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class ChatpChooseActivity extends AppCompatActivity {
+public class ChatpChooseActivity extends BaseActivity {
 
     private Context context;
     private ListView address_class;

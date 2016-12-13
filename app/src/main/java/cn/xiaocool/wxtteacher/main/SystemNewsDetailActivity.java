@@ -14,10 +14,11 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.bean.SystemNews;
 
-public class SystemNewsDetailActivity extends Activity {
+public class SystemNewsDetailActivity extends BaseActivity {
     private Context context;
     private ImageLoader imageLoader=ImageLoader.getInstance();
     private DisplayImageOptions displayImage;
@@ -28,7 +29,6 @@ public class SystemNewsDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_system_news_detail);
         context = this;
         displayImage = new DisplayImageOptions.Builder()

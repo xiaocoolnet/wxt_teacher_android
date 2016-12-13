@@ -14,13 +14,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.presenter.ImageBrowsePresenter;
 import cn.xiaocool.wxtteacher.ui.ImageBrowseView;
 
 
 
-public class CircleImagesActivity extends Activity implements ViewPager.OnPageChangeListener,View.OnClickListener,ImageBrowseView {
+public class CircleImagesActivity extends BaseActivity implements ViewPager.OnPageChangeListener,View.OnClickListener,ImageBrowseView {
 
     private ViewPager vp;
     private TextView hint;

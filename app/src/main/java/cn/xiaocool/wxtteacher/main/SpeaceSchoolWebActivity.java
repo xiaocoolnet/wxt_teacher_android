@@ -26,6 +26,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.TeacherInfosAdapter;
 import cn.xiaocool.wxtteacher.bean.TeacherInfo;
@@ -38,7 +39,7 @@ import cn.xiaocool.wxtteacher.utils.IntentUtils;
 /**
  * Created by 潘 on 2016/4/5.
  */
-public class SpeaceSchoolWebActivity extends Activity implements View.OnClickListener,BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
+public class SpeaceSchoolWebActivity extends BaseActivity implements View.OnClickListener,BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     private RelativeLayout building, people, nearby, web_teacher_style;
     private TextView tv_red;
     private RelativeLayout up_jiantou;
@@ -185,7 +186,6 @@ public class SpeaceSchoolWebActivity extends Activity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.fragment_web);
         mContext = this;
         initView();

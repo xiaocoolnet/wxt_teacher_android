@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.request.constant.SpaceRequest;
@@ -25,7 +26,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by Administrator on 2016/4/6.
  */
-public class MySendMessageToTeacherActivity extends Activity implements View.OnClickListener {
+public class MySendMessageToTeacherActivity extends BaseActivity implements View.OnClickListener {
     private EditText send_message;
     private Button send_btn;
     private Button clear_btn;
@@ -62,7 +63,6 @@ public class MySendMessageToTeacherActivity extends Activity implements View.OnC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.send_to_teacher);
         Intent intent = getIntent();
         teacherID = intent.getStringExtra("teacherID");

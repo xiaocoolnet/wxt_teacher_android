@@ -22,6 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ImgGridAdapter;
 import cn.xiaocool.wxtteacher.adapter.ReciverBaclogAdapter;
@@ -30,7 +31,7 @@ import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.net.request.constant.NetBaseConstant;
 import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 
-public class BacklogDetailActivity extends Activity implements View.OnClickListener{
+public class BacklogDetailActivity extends BaseActivity implements View.OnClickListener{
     private Backlog.BacklogData backlogData;
     private Context context;
     private TextView tv_username,tv_usertype,tv_time,tv_title,tv_content,tv_reciver,tv_btn_next;
@@ -43,7 +44,6 @@ public class BacklogDetailActivity extends Activity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_backlog_detail);
         context = this;
         displayImage = new DisplayImageOptions.Builder()

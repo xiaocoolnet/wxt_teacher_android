@@ -8,20 +8,20 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
 
 /**
  * Created by wzh on 2016/3/16.
  */
-public class AnnouContentActivity extends Activity implements View.OnClickListener {
+public class AnnouContentActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView tvTitle,tvContent;
     private ImageView ivExit;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.space_annou_itemclick);
         tvTitle = (TextView) findViewById(R.id.text_title);
         tvContent = (TextView) findViewById(R.id.text_content);

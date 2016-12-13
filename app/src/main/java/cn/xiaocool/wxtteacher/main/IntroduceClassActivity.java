@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ClassEventCountAdapter;
 import cn.xiaocool.wxtteacher.bean.ClassEventCount;
@@ -36,7 +37,7 @@ import cn.xiaocool.wxtteacher.ui.NoScrollListView;
 import cn.xiaocool.wxtteacher.utils.TimeToolUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class IntroduceClassActivity extends Activity implements View.OnClickListener{
+public class IntroduceClassActivity extends BaseActivity implements View.OnClickListener{
 
 
     private RelativeLayout up_jiantou;

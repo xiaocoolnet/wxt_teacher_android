@@ -6,9 +6,10 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class AboutUsActivity extends Activity {
+public class AboutUsActivity extends BaseActivity {
 
     String url = "http://wxt.xiaocool.net/index.php?g=portal&m=our&a=index";
     private WebView webView;

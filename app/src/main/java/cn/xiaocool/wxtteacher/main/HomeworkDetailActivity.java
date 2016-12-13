@@ -37,6 +37,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.CommentAdapter;
 import cn.xiaocool.wxtteacher.adapter.HomeworkRemarkAdapter;
@@ -51,7 +52,7 @@ import cn.xiaocool.wxtteacher.utils.IntentUtils;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 
-public class HomeworkDetailActivity extends Activity {
+public class HomeworkDetailActivity extends BaseActivity {
 
     private TextView homework_title,homework_content,teacher_name,homework_time,homework_item_praise_names,alread_text;
     private ImageView homework_praise,homework_img,homework_discuss;
@@ -185,7 +186,6 @@ public class HomeworkDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_homework_detail);
         context = this;
         initData();

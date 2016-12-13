@@ -6,15 +6,15 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 
+import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 
-public class ClikInfomationPrivilegeActivity extends Activity {
+public class ClikInfomationPrivilegeActivity extends BaseActivity {
 
     private ImageView btn_exit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_clik_infomation_privilege);
         initview();
     }
