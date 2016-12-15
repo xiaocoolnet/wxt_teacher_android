@@ -26,6 +26,7 @@ import cn.xiaocool.wxtteacher.bean.ChatInfoBean;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.ui.NoScrollGridView;
 import cn.xiaocool.wxtteacher.utils.JsonParser;
+import cn.xiaocool.wxtteacher.utils.StringUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 import cn.xiaocool.wxtteacher.utils.VolleyUtil;
 
@@ -36,7 +37,7 @@ public class ChatInfoActivity extends BaseActivity {
     private List<String> nowPlist;
     private ChatInfoGridAdapter pAdapter,tAdapter;
     private NoScrollGridView pGridView,tGridView;
-    private TextView group_name_text;
+    private TextView group_name_text,all_member_text;
     private String inviderid,chat_name,chatid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class ChatInfoActivity extends BaseActivity {
             public void onSuccess(String result) {
                 if (JsonParser.JSONparser(context,result)) {
                     List<ChatInfoBean> list = getBeanFromJsonReceive(result);
+                    all_member_text.setText("全部成员("+list.size()+")");
                     divideList(list);
                     setAdapter();
                 }else {
@@ -119,6 +121,7 @@ public class ChatInfoActivity extends BaseActivity {
             }
         });
         group_name_text = (TextView) findViewById(R.id.group_name_text);
+        all_member_text = (TextView) findViewById(R.id.all_member_text);
         pGridView = (NoScrollGridView) findViewById(R.id.gv_pList);
         tGridView = (NoScrollGridView) findViewById(R.id.gv_tList);
         pAdapter = new ChatInfoGridAdapter(pList,context);
@@ -154,44 +157,6 @@ public class ChatInfoActivity extends BaseActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != RESULT_CANCELED) {
             switch (requestCode) {
-                case 101:
-                    if (data != null) {
-                        ArrayList<String> ids = data.getStringArrayListExtra("ids");
-                        ArrayList<String> names = data.getStringArrayListExtra("names");
-                        String haschoose = "";
-                        for (int i = 0; i < names.size(); i++) {
-                            if (i < 3) {
-                                if (names.get(i) != null || names.get(i) != "null") {
-                                    haschoose = haschoose + names.get(i) + "、";
-                                }
-                            } else if (i == 4) {
-                                haschoose = haschoose.substring(0, haschoose.length() - 1);
-                                haschoose = haschoose + "等...";
-                            }
-
-                        }
-
-                        for (int i = 0; i < nowPlist.size(); i++) {
-                            for (int j = 0; j < ids.size(); j++) {
-                                if (nowPlist.get(i).equals(ids.get(j))){
-                                    ids.remove(ids.get(j));
-                                    break;
-                                }
-                            }
-                        }
-                        inviderid =null;
-                        String str = null;
-                        for (int i = 0; i < ids.size(); i++) {
-                            inviderid = inviderid + "," + ids.get(i);
-                            str = str + "," + "1";
-                        }
-
-                        inviderid = inviderid.substring(5, inviderid.length());
-                        str = str.substring(5, str.length());
-                        invidePersons(str);
-                    }
-
-                    break;
                 case 102:
                     if (data != null) {
                         ArrayList<String> ids = data.getStringArrayListExtra("ids");
@@ -208,6 +173,7 @@ public class ChatInfoActivity extends BaseActivity {
                             }
 
                         }
+
                         for (int i = 0; i < nowPlist.size(); i++) {
                             for (int j = 0; j < ids.size(); j++) {
                                 if (nowPlist.get(i).equals(ids.get(j))){
@@ -216,14 +182,48 @@ public class ChatInfoActivity extends BaseActivity {
                                 }
                             }
                         }
-                        inviderid =null;
-                        String str = null;
+                        inviderid = StringUtils.listToString(ids,",");
+                        List<String> stringList = new ArrayList<>();
                         for (int i = 0; i < ids.size(); i++) {
-                            inviderid = inviderid + "," + ids.get(i);
-                            str = str + "," + "0";
+                            stringList.add("1");
                         }
+                        String str = StringUtils.listToString(stringList,",");
                         inviderid = inviderid.substring(5, inviderid.length());
-                        str = str.substring(5, str.length());
+                        invidePersons(str);
+                    }
+
+                    break;
+                case 101:
+                    if (data != null) {
+                        ArrayList<String> ids = data.getStringArrayListExtra("ids");
+                        ArrayList<String> names = data.getStringArrayListExtra("names");
+                        String haschoose = "";
+                        for (int i = 0; i < names.size(); i++) {
+                            if (i < 3) {
+                                if (names.get(i) != null || names.get(i) != "null") {
+                                    haschoose = haschoose + names.get(i) + "、";
+                                }
+                            } else if (i == 4) {
+                                haschoose = haschoose.substring(0, haschoose.length() - 1);
+                                haschoose = haschoose + "等...";
+                            }
+
+                        }
+                        for (int i = 0; i < nowPlist.size(); i++) {
+                            for (int j = 0; j < ids.size(); j++) {
+                                if (nowPlist.get(i).equals(ids.get(j))){
+                                    ids.remove(ids.get(j));
+                                    break;
+                                }
+                            }
+                        }
+                        inviderid = StringUtils.listToString(ids,",");
+                        List<String> stringList = new ArrayList<>();
+                        for (int i = 0; i < ids.size(); i++) {
+                            stringList.add("0");
+                        }
+                        String str = StringUtils.listToString(stringList,",");
+                        inviderid = inviderid.substring(5, inviderid.length());
                         invidePersons(str);
                     }
 

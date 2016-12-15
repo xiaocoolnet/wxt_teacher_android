@@ -56,7 +56,10 @@ import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.net.UserRequest;
+import cn.xiaocool.wxtteacher.utils.StringUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
+import cn.xiaocool.wxtteacher.utils.pushimage.PushImage;
+import cn.xiaocool.wxtteacher.utils.pushimage.PushImageUtil;
 import cn.xiaocool.wxtteacher.view.PicassoImageLoader;
 import cn.xiaocool.wxtteacher.view.PicassoPauseOnScrollListener;
 
@@ -64,24 +67,14 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
     private TextView  tv_select_count;
     private Context mContext;
     private UserInfo user;
-    private String type, contents, title;
-    private String picname = "";
-    private String filepath = "/sdcard/myheader";
-    private String head = null;
+    private String contents, title;
     private RelativeLayout back;
     private TextView submit, tv_chooseclass;
     private EditText et_event_title, et_event_content;
     private static final int ADD_KEY = 4;
-    private static final int ADD_IMG_KEY = 5;
-    private static final int PHOTO_REQUEST_CAMERA = 1;// 拍照
-    private static final int PHOTO_REQUEST_CUT = 3;// 相册
-    private static final int PHOTO_REQUEST_ALBUM = 2;// 剪裁
     private GridView homework_pic_grid;
     private LocalImgGridAdapter localImgGridAdapter;
 
-    private ArrayList<Drawable> drawables;
-    private ArrayList<String> filepaths;
-    private ArrayList<String> picnames;
 
     private EditText contact_name, contact_phone;
     private RelativeLayout start_layout, finish_layout,start_attend_layout,finish_attend_layout;
@@ -92,169 +85,17 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
 
     private String studentids;
 
-    private static final int ADD_IMG_KEY1 = 101;
-    private static final int ADD_IMG_KEY2 = 102;
-    private static final int ADD_IMG_KEY3 = 103;
-    private static final int ADD_IMG_KEY4 = 104;
-    private static final int ADD_IMG_KEY5 = 105;
-    private static final int ADD_IMG_KEY6 = 106;
-    private static final int ADD_IMG_KEY7 = 107;
-    private static final int ADD_IMG_KEY8 = 108;
-    private static final int ADD_IMG_KEY9 = 109;
     private final int REQUEST_CODE_CAMERA = 1000;
     private final int REQUEST_CODE_GALLERY = 1001;
     private ArrayList<PhotoInfo> mPhotoList;
+    private ArrayList<String> mPhototNames;
     private String pushImgName;
     private KProgressHUD hud;
-    private int imgFlag = 0;
     private FunctionConfig functionConfig;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-
-                case ADD_IMG_KEY1:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-                            imgFlag = 1;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY2);
-                            } else {
-                                send();
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败1" + obj.optString("data"), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY2:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 2;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY3);
-                            } else {
-                                send();
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败2", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY3:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 3;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY4);
-                            } else {
-                                send();                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败3", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY4:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 4;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY5);
-                            } else {
-                                send();                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败4", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY5:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 5;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY6);
-                            } else {
-                                send();
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败5", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY6:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 6;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY7);
-                            } else {
-                                send();                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败6", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY7:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 7;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY8);
-                            } else {
-                                send();                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败7", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY8:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-                            imgFlag = 8;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY9);
-                            } else {
-                                send();                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败8", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY9:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                           send();
-
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败9", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
                 case ADD_KEY:
                     if (msg.obj != null) {
                         JSONObject obj = (JSONObject) msg.obj;
@@ -274,8 +115,6 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
                     mPhotoList.remove((int)msg.obj);
                     localImgGridAdapter = new LocalImgGridAdapter(mPhotoList, mContext,handler);
                     homework_pic_grid.setAdapter(localImgGridAdapter);
-                    filepaths.remove((int) msg.obj);
-                    picnames.remove((int)msg.obj);
                     break;
             }
         }
@@ -293,7 +132,6 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
 
     private void initView() {
         tv_select_count = (TextView) findViewById(R.id.tv_select_count);
-        type = "班级活动";
         back = (RelativeLayout) findViewById(R.id.up_jiantou);
         back.setOnClickListener(this);
         submit = (TextView) findViewById(R.id.class_event_send);
@@ -303,15 +141,11 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
         et_event_title = (EditText) findViewById(R.id.class_event_title);
         et_event_content = (EditText) findViewById(R.id.class_event_content);
         homework_pic_grid = (GridView) findViewById(R.id.homework_pic_grid);
-        String classid = getIntent().getStringExtra("classID");
         String classname = getIntent().getStringExtra("className");
-        String type = getIntent().getStringExtra("type");
         tv_chooseclass.setText(classname);
 
         mPhotoList = new ArrayList<>();
-        drawables = new ArrayList<>();
-        filepaths = new ArrayList<>();
-        picnames = new ArrayList<>();
+        mPhototNames = new ArrayList<>();
 
 
         //添加图片按钮
@@ -580,23 +414,11 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
         public void onHanlderSuccess(int reqeustCode, List<PhotoInfo> resultList) {
             if (resultList != null) {
 
-
-                filepaths.clear();
-                picnames.clear();
                 mPhotoList.clear();
-
                 mPhotoList.addAll(resultList);
-//                localImgGridAdapter.notifyDataSetChanged();
-                Bitmap bitmap;
-                for (PhotoInfo photoInfo : resultList) {
-                    bitmap = BitmapFactory.decodeFile(photoInfo.getPhotoPath(), getBitmapOption(2));
-                    getImageToView(bitmap);
-
-                }
 
                 localImgGridAdapter = new LocalImgGridAdapter(mPhotoList, mContext,handler);
                 homework_pic_grid.setAdapter(localImgGridAdapter);
-                Log.e("mPhotoList", mPhotoList.toString());
 
             }
         }
@@ -668,17 +490,26 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
                             ToastUtils.ToastShort(mContext, "请选择接收人！");
                         }else {
 
-                            if (filepaths.size()>0){
+                            if (mPhotoList.size()>0){
                                 hud = KProgressHUD.create(this)
                                         .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
                                         .setCancellable(true);
                                 hud.show();
 
-                                for (int i = 0; i < picnames.size(); i++) {
-                                    pushImgName = picnames.get(i) + "," + pushImgName;
-                                }
-                                pushImgName = pushImgName.substring(0, pushImgName.length() - 5);
-                                new UserRequest(this, handler).pushImg(filepaths.get(0), ADD_IMG_KEY1);
+                                new PushImageUtil().setPushIamge(mContext, mPhotoList, mPhototNames, new PushImage() {
+                                    @Override
+                                    public void success(boolean state) {
+                                        hud.dismiss();
+                                        pushImgName = StringUtils.listToString(mPhototNames,",");
+                                        send();
+                                    }
+
+                                    @Override
+                                    public void error() {
+                                        hud.dismiss();
+                                        ToastUtils.ToastShort(mContext,"图片上传失败！");
+                                    }
+                                });
                             }else {
                                 send();
                             }
@@ -807,38 +638,4 @@ public class AddClassEventActivity extends BaseActivity implements View.OnClickL
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /**
-     * 保存图片数据
-     */
-    private void getImageToView(Bitmap photo) {
-
-        if (photo != null) {
-            Random random=new Random();
-            String picname = "newsgroup" + random.nextInt(1000) + String.valueOf(new Date().getTime()) + ".jpg";
-            Log.e("picname", picname);
-            picnames.add(picname);
-            storeImageToSDCARD(photo, picname, filepath);
-        }
-    }
-
-    /**
-     * storeImageToSDCARD 将bitmap存放到sdcard中
-     */
-    public void storeImageToSDCARD(Bitmap colorImage, String ImageName, String path) {
-        File file = new File(path);
-        if (!file.exists()) {
-            file.mkdir();
-        }
-        File imagefile = new File(file, ImageName);
-        try {
-            imagefile.createNewFile();
-            FileOutputStream fos = new FileOutputStream(imagefile);
-            colorImage.compress(Bitmap.CompressFormat.JPEG, 80, fos);
-            filepaths.add(imagefile.getPath());
-            fos.flush();
-            fos.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }

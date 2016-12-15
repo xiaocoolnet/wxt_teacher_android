@@ -758,6 +758,7 @@ public class NewsRequest {
                 String data = "&schoolid=" + user.getSchoolId() +"&classid="+classid+"&user_id="+user.getUserId() +
                         "&courseware_title=" + title + "&courseware_content=" + content  + "&picture_url=" + picname + "&subjectid=" + subject;
                 String result_data = NetUtil.getResponse("http://wxt.xiaocool.net/index.php?g=apps&m=index&a=AddSchoolCourseware", data);
+                Log.e("send_course","http://wxt.xiaocool.net/index.php?g=apps&m=index&a=AddSchoolCourseware"+ data);
                 try {
                     JSONObject obj = new JSONObject(result_data);
                     msg.what = KEY;

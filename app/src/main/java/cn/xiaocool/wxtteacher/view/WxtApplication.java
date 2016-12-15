@@ -25,7 +25,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import cn.jpush.android.api.JPushInterface;
-import cn.xiaocool.wxtteacher.app.ExitApplication;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.utils.LogUtils;
 
@@ -58,10 +57,12 @@ public class WxtApplication extends Application {
     public void onCreate() {
         // TODO Auto-generated method stub
         super.onCreate();
+        initLeakcanary();
         Bugtags.start("16f8c13bc12a7f176d06b23547282a26", this, Bugtags.BTGInvocationEventBubble);
         mInstance = this;
-
         user.readData(getApplicationContext());
+
+
 
         //设置极光推送
         setJPush();
@@ -78,6 +79,10 @@ public class WxtApplication extends Application {
         //初始化乐橙
         setLeChange();
 
+    }
+
+    private void initLeakcanary() {
+//        LeakCanary.install(this);
     }
 
     private void setEzOpen() {
@@ -143,6 +148,10 @@ public class WxtApplication extends Application {
         return instance;
     }
 
+    public static WxtApplication getmInstance(){
+
+        return mInstance;
+    }
     // 添加activity到容器中
     public void addActivity(Activity activity) {
         activityList.add(activity);

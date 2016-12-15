@@ -49,206 +49,36 @@ import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.net.UserRequest;
 import cn.xiaocool.wxtteacher.net.request.constant.NetUtil;
+import cn.xiaocool.wxtteacher.utils.StringUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
+import cn.xiaocool.wxtteacher.utils.pushimage.PushImage;
+import cn.xiaocool.wxtteacher.utils.pushimage.PushImageUtil;
 import cn.xiaocool.wxtteacher.view.PicassoImageLoader;
 import cn.xiaocool.wxtteacher.view.PicassoPauseOnScrollListener;
 
 public class AddTrendActivity extends BaseActivity implements View.OnClickListener {
 
     private ImageView btn_exit;
-    private EditText homework_title;
     private EditText homework_content;
-    private Intent intent;
-    private TextView homework_send, tv_choose_class;
-    private ImageView homework_addpic;
+    private TextView homework_send;
     private GridView homework_pic_grid;
-    private String filepath = "/sdcard/homeworkimg";
-    private String picname;
-    private String imagePath;
-    private static final int PHOTO_REQUEST_CAMERA = 1;// 拍照
-    private static final int PHOTO_REQUEST_CUT = 3;// 相册
-    private static final int PHOTO_REQUEST_ALBUM = 2;// 剪裁
-    private String data1 = "";
-    private String data2 = "";
-    private static final int ADD_IMG_KEY = 5;
     private static final int ADD_KEY = 4;
-    private ArrayList<Drawable> drawables;
-    private ArrayList<String> filepaths;
-    private ArrayList<String> picnames;
-    private String type;
     private LocalImgGridAdapter localImgGridAdapter;
 
 
     private Context mContext;
-    private static final int ADD_IMG_KEY1 = 101;
-    private static final int ADD_IMG_KEY2 = 102;
-    private static final int ADD_IMG_KEY3 = 103;
-    private static final int ADD_IMG_KEY4 = 104;
-    private static final int ADD_IMG_KEY5 = 105;
-    private static final int ADD_IMG_KEY6 = 106;
-    private static final int ADD_IMG_KEY7 = 107;
-    private static final int ADD_IMG_KEY8 = 108;
-    private static final int ADD_IMG_KEY9 = 109;
     private final int REQUEST_CODE_CAMERA = 1000;
     private final int REQUEST_CODE_GALLERY = 1001;
     private ArrayList<PhotoInfo> mPhotoList;
+    private  ArrayList<String> mPhototNames;
     private String pushImgName;
     private KProgressHUD hud;
-    private int imgFlag = 0;
     private FunctionConfig functionConfig;
 
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-
-                case ADD_IMG_KEY1:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-                            imgFlag = 1;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY2);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败1" + obj.optString("data"), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY2:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 2;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY3);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败2", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY3:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 3;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY4);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败3", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY4:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 4;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY5);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败4", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY5:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 5;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY6);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败5", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY6:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 6;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY7);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败6", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY7:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            imgFlag = 7;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY8);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败7", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY8:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-                            imgFlag = 8;
-                            if (imgFlag < filepaths.size()) {
-                                new UserRequest(mContext, handler).pushImg(filepaths.get(imgFlag), ADD_IMG_KEY9);
-                            } else {
-                                new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-                            }
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败8", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
-                case ADD_IMG_KEY9:
-                    if (msg.obj != null) {
-                        JSONObject obj = (JSONObject) msg.obj;
-                        if (obj.optString("status").equals(CommunalInterfaces._STATE)) {
-
-                            new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1", ADD_KEY);
-
-                        } else {
-                            hud.dismiss();
-                            Toast.makeText(mContext, "发送失败9", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    break;
                 case ADD_KEY:
                     if (msg.obj != null) {
                         JSONObject obj = (JSONObject) msg.obj;
@@ -268,8 +98,6 @@ public class AddTrendActivity extends BaseActivity implements View.OnClickListen
                     mPhotoList.remove((int)msg.obj);
                     localImgGridAdapter = new LocalImgGridAdapter(mPhotoList, mContext,handler);
                     homework_pic_grid.setAdapter(localImgGridAdapter);
-                    filepaths.remove((int) msg.obj);
-                    picnames.remove((int)msg.obj);
                     break;
             }
         }
@@ -284,7 +112,6 @@ public class AddTrendActivity extends BaseActivity implements View.OnClickListen
     }
 
     private void initView() {
-        type = "动态发布";
         btn_exit = (ImageView) findViewById(R.id.btn_exit);
         btn_exit.setOnClickListener(this);
 
@@ -295,10 +122,7 @@ public class AddTrendActivity extends BaseActivity implements View.OnClickListen
         homework_send.setOnClickListener(this);
 
         mPhotoList = new ArrayList<>();
-        drawables = new ArrayList<>();
-        filepaths = new ArrayList<>();
-        picnames = new ArrayList<>();
-
+        mPhototNames = new ArrayList<>();
 
         //添加图片按钮
         localImgGridAdapter = new LocalImgGridAdapter(mPhotoList, mContext,handler);
@@ -332,22 +156,26 @@ public class AddTrendActivity extends BaseActivity implements View.OnClickListen
                                 .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
                                 .setCancellable(true);
                         hud.show();
-                        if (picnames.size() < 1) {
+                        if (mPhotoList.size() < 1) {
                             pushImgName = "null";
                             new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1",ADD_KEY);
                         } else {
 
-                                new UserRequest(this, handler).pushImg(filepaths.get(0), ADD_IMG_KEY1);
+                            new PushImageUtil().setPushIamge(mContext, mPhotoList, mPhototNames, new PushImage() {
+                                @Override
+                                public void success(boolean state) {
+                                    hud.dismiss();
+                                    pushImgName = StringUtils.listToString(mPhototNames,",");
+                                    new NewsRequest(mContext, handler).send_trend(homework_content.getText().toString(), pushImgName, "1",ADD_KEY);
+                                }
 
-                            for (int i = 0; i < picnames.size(); i++) {
-
-                                pushImgName = picnames.get(i) + "," + pushImgName;
-                            }
-
-                            pushImgName = pushImgName.substring(0, pushImgName.length() - 5);
+                                @Override
+                                public void error() {
+                                    hud.dismiss();
+                                    ToastUtils.ToastShort(mContext,"图片上传失败！");
+                                }
+                            });
                         }
-
-                        Log.d("pushimg", pushImgName);
 
 
                     } else {
@@ -484,18 +312,9 @@ public class AddTrendActivity extends BaseActivity implements View.OnClickListen
         @Override
         public void onHanlderSuccess(int reqeustCode, List<PhotoInfo> resultList) {
             if (resultList != null) {
-
-                filepaths.clear();
-                picnames.clear();
                 mPhotoList.clear();
 
                 mPhotoList.addAll(resultList);
-                Bitmap bitmap;
-                for (PhotoInfo photoInfo : resultList) {
-                    bitmap = BitmapFactory.decodeFile(photoInfo.getPhotoPath(), getBitmapOption(2));
-                    getImageToView(bitmap);
-
-                }
 
                 //添加图片按钮
                 localImgGridAdapter = new LocalImgGridAdapter(mPhotoList, mContext,handler);
@@ -509,51 +328,9 @@ public class AddTrendActivity extends BaseActivity implements View.OnClickListen
         }
     };
 
-    private BitmapFactory.Options getBitmapOption(int inSampleSize) {
-        System.gc();
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inPurgeable = true;
-        options.inSampleSize = inSampleSize;
-        return options;
-    }
 
 
 
-    /**
-     * 保存图片数据
-     */
-    private void getImageToView(Bitmap photo) {
-
-        if (photo != null) {
-            Random random=new Random();
-            String picname = "newsgroup" + random.nextInt(1000) + String.valueOf(new Date().getTime()) + ".jpg";
-            Log.e("picname", picname);
-            picnames.add(picname);
-            storeImageToSDCARD(photo, picname, filepath);
-        }
-    }
-
-    /**
-     * storeImageToSDCARD 将bitmap存放到sdcard中
-     */
-    public void storeImageToSDCARD(Bitmap colorImage, String ImageName, String path) {
-        File file = new File(path);
-        if (!file.exists()) {
-            file.mkdir();
-        }
-        File imagefile = new File(file, ImageName);
-        try {
-            imagefile.createNewFile();
-            FileOutputStream fos = new FileOutputStream(imagefile);
-            colorImage.compress(Bitmap.CompressFormat.JPEG, 80, fos);
-            imagePath = imagefile.getPath();
-            filepaths.add(imagefile.getPath());
-            fos.flush();
-            fos.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
 
     private boolean canMakeSmores(){

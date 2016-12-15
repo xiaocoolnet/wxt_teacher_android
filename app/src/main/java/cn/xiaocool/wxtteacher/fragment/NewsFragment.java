@@ -26,6 +26,8 @@ import cn.xiaocool.wxtteacher.bean.CommunicateListModel;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
 import cn.xiaocool.wxtteacher.main.AddressActivity;
 import cn.xiaocool.wxtteacher.main.BacklogActivity;
+import cn.xiaocool.wxtteacher.main.CreatePGroupActivity;
+import cn.xiaocool.wxtteacher.main.CreateTGroupActivity;
 import cn.xiaocool.wxtteacher.main.NewsGroupActivity;
 import cn.xiaocool.wxtteacher.main.ReceiveParentWarnActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickAnnouActivity;
@@ -36,6 +38,7 @@ import cn.xiaocool.wxtteacher.utils.JsonParser;
 import cn.xiaocool.wxtteacher.utils.SPUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
 import cn.xiaocool.wxtteacher.utils.VolleyUtil;
+import cn.xiaocool.wxtteacher.view.WxtApplication;
 
 /**
  * Created by wzh on 2016/2/21.
@@ -136,7 +139,8 @@ public class NewsFragment extends Fragment implements View.OnClickListener{
 
         final TextView add_qun = (TextView) layout.findViewById(R.id.add_qun);
         TextView tong_bu = (TextView) layout.findViewById(R.id.tong_bu);
-
+        tong_bu.setText("创建家长群");
+        add_qun.setText("创建教师群");
         // 设置背景颜色变暗
         final WindowManager.LayoutParams lp = getActivity().getWindow().getAttributes();
         lp.alpha = 0.7f;
@@ -172,14 +176,16 @@ public class NewsFragment extends Fragment implements View.OnClickListener{
      * 同步通讯录
      */
     private void tongbu() {
-        ToastUtils.ToastShort(this.getActivity(), "同步通讯录成功");
+        Intent intent = new Intent(getActivity(), CreatePGroupActivity.class);
+        startActivity(intent);
     }
 
     /**
      * 添加群
      */
     private void history() {
-        ToastUtils.ToastShort(this.getActivity(), "添加群");
+        Intent intent = new Intent(getActivity(), CreateTGroupActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -277,10 +283,10 @@ public class NewsFragment extends Fragment implements View.OnClickListener{
      */
     public  void setRedPoint(){
         //从本地取出各个小红点的个数
-        int message = (int) SPUtils.get(getActivity(),JPUSHMESSAGE,0);
-        int trust = (int) SPUtils.get(getActivity(),JPUSHTRUST,0);
-        int notice = (int) SPUtils.get(getActivity(),JPUSHNOTICE,0);
-        int backlogNum = (int) SPUtils.get(getActivity(),JPUSHBACKLOG,0);
+        int message = (int) SPUtils.get(WxtApplication.getmInstance(),JPUSHMESSAGE,0);
+        int trust = (int) SPUtils.get(WxtApplication.getmInstance(),JPUSHTRUST,0);
+        int notice = (int) SPUtils.get(WxtApplication.getmInstance(),JPUSHNOTICE,0);
+        int backlogNum = (int) SPUtils.get(WxtApplication.getmInstance(),JPUSHBACKLOG,0);
 
         setBadgeView(message,this.message);
         setBadgeView(trust,this.trust);

@@ -290,6 +290,7 @@
                       android:layout_marginBottom="5dp"
                       android:hint=" 请输入联系人姓名"
                       android:textSize="14sp"
+                      android:paddingLeft="10dp"
                       android:background="@drawable/bg_edittext"/>
 
 
@@ -328,6 +329,7 @@
                       android:layout_marginTop="@dimen/activity_size_5"
                       android:layout_marginBottom="5dp"
                       android:hint=" 请输入联系人电话"
+                      android:paddingLeft="10dp"
                       android:textSize="14sp"
                       android:background="@drawable/bg_edittext"/>
 

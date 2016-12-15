@@ -104,7 +104,7 @@ public class HttpTool {
     public static String Login(String phone, String password,String jpushid) {
 
         String url = NetBaseConstant.NET_API_HOST + "a=applogin&";
-        String data = "phone="+phone+"&password="+password+"&jgtoken=" + jpushid;
+        String data = "phone="+phone+"&password="+password+"&jgtoken=" + jpushid + "&usertype=1";
         String result = "";
         result = getResponse(url,data);
         return  result;

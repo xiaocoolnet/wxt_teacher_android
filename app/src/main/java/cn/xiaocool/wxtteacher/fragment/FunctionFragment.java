@@ -63,6 +63,7 @@ import cn.xiaocool.wxtteacher.ui.RoundImageView;
 import cn.xiaocool.wxtteacher.utils.IntentUtils;
 import cn.xiaocool.wxtteacher.utils.SPUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
+import cn.xiaocool.wxtteacher.view.WxtApplication;
 
 /**
  * Created by wzh on 2016/2/21.
@@ -172,8 +173,8 @@ public class FunctionFragment extends Fragment implements View.OnClickListener {
     public  void setRedPoint(){
         //从本地取出各个小红点的个数
 
-        int daijieNum = (int) SPUtils.get(getActivity(),JPUSHDAIJIE,0);
-        int leaveNum = (int) SPUtils.get(getActivity(),JPUSHLEAVE,0);
+        int daijieNum = (int) SPUtils.get(WxtApplication.getmInstance(),JPUSHDAIJIE,0);
+        int leaveNum = (int) SPUtils.get(WxtApplication.getmInstance(),JPUSHLEAVE,0);
 
         setBadgeView(daijieNum,this.btn_daijie);
         setBadgeView(leaveNum,this.btn_leave);
