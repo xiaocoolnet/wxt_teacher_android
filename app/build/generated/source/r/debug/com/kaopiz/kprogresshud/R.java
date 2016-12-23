@@ -15,10 +15,10 @@ public final class R {
 		public static final int kprogresshud_spinner = 0x7f02024b;
 	}
 	public static final class id {
-		public static final int background = 0x7f0e0363;
+		public static final int background = 0x7f0e0364;
 		public static final int container = 0x7f0e0138;
-		public static final int details_label = 0x7f0e0365;
-		public static final int label = 0x7f0e0364;
+		public static final int details_label = 0x7f0e0366;
+		public static final int label = 0x7f0e0365;
 	}
 	public static final class layout {
 		public static final int kprogresshud_hud = 0x7f040138;

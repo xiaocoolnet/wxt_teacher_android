@@ -5,10 +5,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -40,7 +38,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by Administrator on 2016/5/9.
  */
-public class SpaceBabyAlbumActivity extends BaseActivity implements View.OnClickListener {
+public class SpaceBabyAlbumActivity extends BaseActivity implements View.OnClickListener, View.OnLayoutChangeListener {
     private PullToRefreshListView lv_homework;
     private String data = null;
     private LinearLayout commentView;
@@ -195,7 +193,12 @@ public class SpaceBabyAlbumActivity extends BaseActivity implements View.OnClick
         }
     };
     private Button add_announcement;
-
+    //Activity最外层的Layout视图
+    private View activityRootView;
+    //屏幕高度
+    private int screenHeight = 0;
+    //软件盘弹起后所占高度阀值
+    private int keyHeight = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -257,6 +260,12 @@ public class SpaceBabyAlbumActivity extends BaseActivity implements View.OnClick
                 }, 1000);
             }
         });
+
+        activityRootView = findViewById(R.id.root_layout);
+        //获取屏幕高度
+        screenHeight = getWindowManager().getDefaultDisplay().getHeight();
+        //阀值设置为屏幕高度的1/3
+        keyHeight = screenHeight/3;
     }
 
     @Override
@@ -276,7 +285,7 @@ public class SpaceBabyAlbumActivity extends BaseActivity implements View.OnClick
         super.onResume();
 
         getAllInformation(""+beginid);
-
+        activityRootView.addOnLayoutChangeListener(this);
     }
 
     /**
@@ -287,6 +296,22 @@ public class SpaceBabyAlbumActivity extends BaseActivity implements View.OnClick
 
         new ClassCircleRequest(this, handler).getCircleList(beginid, "1", "1", "2", GET_CIRCLE_LIST_KEY);
 
+    }
+
+    @Override
+    public void onLayoutChange(View v, int left, int top, int right,
+                               int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+
+        //old是改变前的左上右下坐标点值，没有old的是改变后的左上右下坐标点值
+        //现在认为只要控件将Activity向上推的高度超过了1/3屏幕高，就认为软键盘弹起
+        if (oldBottom != 0 && bottom != 0 && (oldBottom - bottom > keyHeight)) {
+//            Toast.makeText(getActivity(), "监听到软键盘弹起...", Toast.LENGTH_SHORT).show();
+
+        } else if (oldBottom != 0 && bottom != 0 && (bottom - oldBottom > keyHeight)) {
+              mAdapter.commentPopupWindow.dismiss();
+//            Toast.makeText(getActivity(), "监听到软件盘关闭...", Toast.LENGTH_SHORT).show();
+
+        }
     }
 }
 

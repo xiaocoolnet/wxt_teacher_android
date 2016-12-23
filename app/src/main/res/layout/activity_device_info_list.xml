@@ -14,7 +14,7 @@
             android:layout_height="match_parent"
             android:background="@color/title_bg_color"
             android:gravity="center"
-            android:text="关于我们"
+            android:text="宝宝视频"
             android:textColor="@color/whilte"
             android:textSize="20sp" />
 

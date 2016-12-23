@@ -1,4 +1,4 @@
-#Tue Dec 13 17:57:33 CST 2016
+#Fri Dec 23 10:54:41 CST 2016
 base.0=/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
 renamed.0=classes.dex

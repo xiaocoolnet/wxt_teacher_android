@@ -80,7 +80,7 @@ import cn.xiaocool.wxtteacher.utils.ToastUtils;
 /**
  * Created by wzh on 2016/2/23.
  */
-public class TrendsFragment extends Fragment implements View.OnClickListener, BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
+public class TrendsFragment extends Fragment implements View.OnClickListener, BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener, View.OnLayoutChangeListener {
     private static final String TAG = "FindFragment";
     private PullToRefreshListView list;
     /* 整个资讯 */
@@ -92,7 +92,7 @@ public class TrendsFragment extends Fragment implements View.OnClickListener, Ba
     private static final int WORK_PRAISE_KEY = 4;
     private static final int DEL_WORK_PRAISE_KEY = 5;
     private static long lastClickTime;
-
+    private CommentPopupWindow commentPopupWindow;
     /**
      * 朋友圈信息
      */
@@ -193,6 +193,12 @@ public class TrendsFragment extends Fragment implements View.OnClickListener, Ba
         }
     };
 
+    //Activity最外层的Layout视图
+    private View activityRootView;
+    //屏幕高度
+    private int screenHeight = 0;
+    //软件盘弹起后所占高度阀值
+    private int keyHeight = 0;
     //1:页面的创建
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -267,6 +273,12 @@ public class TrendsFragment extends Fragment implements View.OnClickListener, Ba
         file_maps.put("Game of Thrones", R.drawable.ll4);
         showViewPager(file_maps);
         lv.addHeaderView(viewH);
+
+        activityRootView = view.findViewById(R.id.root_layout);
+        //获取屏幕高度
+        screenHeight = getActivity().getWindowManager().getDefaultDisplay().getHeight();
+        //阀值设置为屏幕高度的1/3
+        keyHeight = screenHeight/3;
         return view;
     }
 
@@ -300,8 +312,10 @@ public class TrendsFragment extends Fragment implements View.OnClickListener, Ba
         LogUtils.d("weixiaotong--", "onResume");
         super.onResume();
         getAllInformation(""+start_id);
-
+        //添加layout大小发生改变监听器
+        activityRootView.addOnLayoutChangeListener(this);
     }
+
 
 
     @Override
@@ -309,6 +323,7 @@ public class TrendsFragment extends Fragment implements View.OnClickListener, Ba
         super.onStart();
         LogUtils.d("weixiaotong--", "onStart");
     }
+
 
     @Override
     public void onClick(View view) {
@@ -453,12 +468,28 @@ public class TrendsFragment extends Fragment implements View.OnClickListener, Ba
 
     }
 
+    @Override
+    public void onLayoutChange(View v, int left, int top, int right,
+                               int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+
+        //old是改变前的左上右下坐标点值，没有old的是改变后的左上右下坐标点值
+        //现在认为只要控件将Activity向上推的高度超过了1/3屏幕高，就认为软键盘弹起
+        if (oldBottom != 0 && bottom != 0 && (oldBottom - bottom > keyHeight)) {
+//            Toast.makeText(getActivity(), "监听到软键盘弹起...", Toast.LENGTH_SHORT).show();
+
+        } else if (oldBottom != 0 && bottom != 0 && (bottom - oldBottom > keyHeight)) {
+            commentPopupWindow.dismiss();
+//            Toast.makeText(getActivity(), "监听到软件盘关闭...", Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
     class ProfessionCircleAdapter extends BaseAdapter {
         private Context context;
         private ArrayList<ClassCricleInfo> workRingList;
         private ImageLoader imageLoader = ImageLoader.getInstance();
 
-        private CommentPopupWindow commentPopupWindow;
+
 
         public ProfessionCircleAdapter(Context mContext, ArrayList<ClassCricleInfo> workRings) {
             this.context = mContext;

@@ -65,7 +65,7 @@ public class AlbumListAdapter extends BaseAdapter {
     private ArrayList<Comments> comment;
     private static long lastClickTime;
     private UserInfo user;
-    private CommentPopupWindow commentPopupWindow;
+    public CommentPopupWindow commentPopupWindow;
     //    private int a;
     public AlbumListAdapter(List<ClassCricleInfo> homeworkDataList, Context mContext,Handler handler,LinearLayout commentView) {
         this.context = mContext;

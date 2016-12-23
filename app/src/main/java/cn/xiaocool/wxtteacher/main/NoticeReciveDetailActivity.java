@@ -14,24 +14,38 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.adapter.ImgGridAdapter;
 import cn.xiaocool.wxtteacher.bean.NoticeRecive;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
+import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
+import cn.xiaocool.wxtteacher.fragment.announce.NoticeReciveFragment;
 import cn.xiaocool.wxtteacher.net.request.constant.NetBaseConstant;
 import cn.xiaocool.wxtteacher.ui.NoScrollGridView;
 import cn.xiaocool.wxtteacher.ui.NoScrollListView;
+import cn.xiaocool.wxtteacher.ui.ProgressViewUtil;
 import cn.xiaocool.wxtteacher.ui.RoundImageView;
 import cn.xiaocool.wxtteacher.utils.JsonParser;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
@@ -74,13 +88,28 @@ public class NoticeReciveDetailActivity extends BaseActivity {
     }
 
     private void readMessage() {
+        boolean readFlag = false;
+        for (int i = 0; i < homeworkData.getReceiv_list().size(); i++) {
+            if (homeworkData.getReceiv_list().get(i).getReceiverid().equals(user.getUserId())){
+                if (homeworkData.getReceiv_list().get(i).getCreate_time()!=null&&!homeworkData.getReceiv_list().get(i).getCreate_time().equals("0")){
+                    readFlag = true;
+                }
+                break;
+            }
+        }
+        if (readFlag){
+            ToastUtils.ToastShort(context,"您已经读取过！");
+            return;
+        }
         String url = "http://wxt.xiaocool.net/index.php?g=apps&m=school&a=read_notice";
-        url = url +"&noticeid="+homeworkData.getId()+"&receiverid="+user.getUserId();
+        url = url +"&noticeid="+homeworkData.getNoticeid()+"&receiverid="+user.getUserId();
+        Log.e("readMessage",url);
         VolleyUtil.VolleyGetRequest(context, url, new VolleyUtil.VolleyJsonCallback() {
             @Override
             public void onSuccess(String result) {
                 if (JsonParser.JSONparser(context, result)) {
                     ToastUtils.ToastShort(context, "读取信息成功");
+                    getAllInformation();
                 } else {
                     Log.e("readMessage", result);
                 }
@@ -93,6 +122,112 @@ public class NoticeReciveDetailActivity extends BaseActivity {
         });
     }
 
+    private void getAllInformation() {
+
+        RequestQueue mQueue = Volley.newRequestQueue(context);
+        String URL = "http://wxt.xiaocool.net/index.php?g=apps&m=school&a=get_receive_notice&receiverid=" + user.getUserId();
+        Log.e("uuuurrrrll", URL);
+
+        StringRequest request = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
+
+
+            @Override
+            public void onResponse(String arg0) {
+                Log.d("onResponse", arg0);
+
+                try {
+                    JSONObject jsonObject = new JSONObject(arg0);
+                    String state = jsonObject.optString("status");
+                    ProgressViewUtil.dismiss();
+                    if (state.equals(CommunalInterfaces._STATE)) {
+                        JSONArray dataArray = jsonObject.optJSONArray("data");
+
+                        for (int i = 0; i < dataArray.length(); i++) {
+                            JSONObject dataObject = dataArray.optJSONObject(i);
+                            if (dataObject.optString("noticeid").equals(homeworkData.getNoticeid())){
+                                NoticeRecive.DataBean dataBean = new NoticeRecive.DataBean();
+                                dataBean.setId(dataObject.optString("id"));
+                                dataBean.setNoticeid(dataObject.optString("noticeid"));
+                                dataBean.setReceiverid(dataObject.optString("receiverid"));
+                                dataBean.setReceivertype(dataObject.optString("receivertype"));
+                                dataBean.setCreate_time(dataObject.optString("create_time"));
+                                JSONArray send_message = dataObject.optJSONArray("notice_info");
+                                ArrayList<NoticeRecive.DataBean.NoticeInfoBean> noticeInfoBeanArrayList = new ArrayList<>();
+
+                                for (int j = 0; j < send_message.length(); j++) {
+                                    JSONObject noticeinfoobject = send_message.optJSONObject(j);
+                                    NoticeRecive.DataBean.NoticeInfoBean sendMessageBean = new NoticeRecive.DataBean.NoticeInfoBean();
+
+                                    sendMessageBean.setName(noticeinfoobject.optString("name"));
+                                    sendMessageBean.setPhoto(noticeinfoobject.optString("photo"));
+                                    sendMessageBean.setId(noticeinfoobject.optString("id"));
+                                    sendMessageBean.setUserid(noticeinfoobject.optString("userid"));
+                                    sendMessageBean.setTitle(noticeinfoobject.optString("title"));
+                                    sendMessageBean.setType(noticeinfoobject.optString("type"));
+                                    sendMessageBean.setContent(noticeinfoobject.optString("content"));
+                                    sendMessageBean.setCreate_time(noticeinfoobject.optString("create_time"));
+                                    noticeInfoBeanArrayList.add(sendMessageBean);
+                                }
+
+
+                                dataBean.setNotice_info(noticeInfoBeanArrayList);
+
+
+                                JSONArray picArray = dataObject.optJSONArray("pic");
+                                List<NoticeRecive.DataBean.PicBean> pictureBeanList = new ArrayList<>();
+                                for (int j = 0; j < picArray.length(); j++) {
+                                    JSONObject picObject = picArray.optJSONObject(j);
+                                    NoticeRecive.DataBean.PicBean pictureBean = new NoticeRecive.DataBean.PicBean();
+                                    pictureBean.setPhoto(picObject.optString("photo"));
+                                    pictureBeanList.add(pictureBean);
+                                }
+                                dataBean.setPic(pictureBeanList);
+
+                                JSONArray receiverArray = dataObject.optJSONArray("receiv_list");
+                                List<NoticeRecive.DataBean.ReceivListBean> receiverBeanList = new ArrayList<>();
+                                for (int j = 0; j < receiverArray.length(); j++) {
+                                    JSONObject reciverObject = receiverArray.optJSONObject(j);
+                                    NoticeRecive.DataBean.ReceivListBean receiverBean = new NoticeRecive.DataBean.ReceivListBean();
+                                    receiverBean.setId(reciverObject.optString("id"));
+                                    receiverBean.setNoticeid(reciverObject.optString("noticeid"));
+                                    receiverBean.setReceiverid(reciverObject.optString("receiverid"));
+                                    receiverBean.setReceivertype(reciverObject.optString("receivertype"));
+                                    receiverBean.setPhone(reciverObject.optString("phone"));
+                                    receiverBean.setPhoto(reciverObject.optString("photo"));
+                                    receiverBean.setName(reciverObject.optString("name"));
+                                    receiverBean.setCreate_time(reciverObject.optString("create_time"));
+                                    receiverBeanList.add(receiverBean);
+
+                                }
+                                dataBean.setReceiv_list(receiverBeanList);
+                                homeworkData = dataBean;
+                                break;
+                            }
+
+                        }
+
+                     fillData();
+
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError arg0) {
+                Log.d("onErrorResponse", arg0.toString());
+            }
+        });
+
+
+        mQueue.add(request);
+
+    }
     private void initview() {
 
         //初始化组件
@@ -122,10 +257,15 @@ public class NoticeReciveDetailActivity extends BaseActivity {
                 .bitmapConfig(Bitmap.Config.RGB_565).imageScaleType(ImageScaleType.IN_SAMPLE_INT)
                 .showImageOnLoading(R.drawable.katong).showImageOnFail(R.drawable.katong)
                 .cacheInMemory(true).cacheOnDisc(true).build();
+
+        fillData();
+    }
+
+    private void fillData() {
         //填充数据
 
         imageLoader.displayImage(NetBaseConstant.NET_CIRCLEPIC_HOST+homeworkData.getNotice_info().get(0).getPhoto(),item_head,displayImage);
-       homework_content.setText(homeworkData.getNotice_info().get(0).getContent());
+        homework_content.setText(homeworkData.getNotice_info().get(0).getContent());
         teacher_name.setText(homeworkData.getNotice_info().get(0).getName());
 
 
@@ -164,7 +304,7 @@ public class NoticeReciveDetailActivity extends BaseActivity {
 
         if (homeworkData.getPic().size()>1){
             homework_img.setVisibility(View.GONE);
-           parent_warn_img_gridview.setVisibility(View.VISIBLE);
+            parent_warn_img_gridview.setVisibility(View.VISIBLE);
 
             final ArrayList<String> pics = new ArrayList<>();
             for (int k=0;k<homeworkData.getPic().size();k++){
@@ -186,7 +326,7 @@ public class NoticeReciveDetailActivity extends BaseActivity {
             });
 
         }else if (homeworkData.getPic().size()==1 && !homeworkData.getPic().get(0).getPhoto().equals("null") && !homeworkData.getPic().get(0).getPhoto().equals("")){
-          parent_warn_img_gridview.setVisibility(View.GONE);
+            parent_warn_img_gridview.setVisibility(View.GONE);
             homework_img.setVisibility(View.VISIBLE);
             imageLoader.init(ImageLoaderConfiguration.createDefault(context));
             final ArrayList<String> pics = new ArrayList<>();

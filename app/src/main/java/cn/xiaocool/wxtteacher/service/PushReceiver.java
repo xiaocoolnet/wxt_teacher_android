@@ -42,6 +42,7 @@ public class PushReceiver extends BroadcastReceiver {
         String recid = "";
         String usertype = "";
         String chattype = "";
+        String loginOther = "";
         try {
             JSONObject jsonObject = new JSONObject(type);
             str = jsonObject.getString("type");
@@ -54,6 +55,14 @@ public class PushReceiver extends BroadcastReceiver {
             Log.i(TAG, "JSONException" + type);
             e.printStackTrace();
         }
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = new JSONObject(type);
+            loginOther = jsonObject.getString("key");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
         Log.i(TAG, "[PushReceiver] onReceive - " + intent.getAction() + ", extras: " + printBundle(bundle));
 
 
@@ -109,6 +118,7 @@ public class PushReceiver extends BroadcastReceiver {
             Log.i(TAG,"dingzhu"+trustNums);
             Intent pointIntent = new Intent();
             pointIntent.setAction("com.USER_ACTION");
+            pointIntent.putExtra("loginOther",loginOther);
             context.sendBroadcast(pointIntent);
 
         } else if (JPushInterface.ACTION_NOTIFICATION_OPENED.equals(intent.getAction())) {

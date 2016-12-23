@@ -245,7 +245,7 @@ public class NoticeReciveFragment extends Fragment {
 
             @Override
             public void onErrorResponse(VolleyError arg0) {
-                ToastUtils.ToastShort(mContext, arg0.toString());
+
                 Log.d("onErrorResponse", arg0.toString());
             }
         });
@@ -342,7 +342,7 @@ public class NoticeReciveFragment extends Fragment {
             final ArrayList<NoticeRecive.DataBean.ReceivListBean> alreadyReads = new ArrayList<>();
             if (homeworkDataList.get(position).getReceiv_list().size() > 0) {
                 for (int i = 0; i < homeworkDataList.get(position).getReceiv_list().size(); i++) {
-                    if (homeworkDataList.get(position).getReceiv_list().get(i).getCreate_time() == null ||homeworkDataList.get(position).getReceiv_list().get(i).getCreate_time().equals("null")) {
+                    if (homeworkDataList.get(position).getReceiv_list().get(i).getCreate_time() == null ||homeworkDataList.get(position).getReceiv_list().get(i).getCreate_time().equals("null")||homeworkDataList.get(position).getReceiv_list().get(i).getCreate_time().equals("0")) {
                         notReads.add(homeworkDataList.get(position).getReceiv_list().get(i));
                     } else {
                         alreadyReads.add(homeworkDataList.get(position).getReceiv_list().get(i));

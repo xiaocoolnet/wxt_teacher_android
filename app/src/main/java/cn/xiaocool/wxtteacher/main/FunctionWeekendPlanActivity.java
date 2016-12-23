@@ -24,6 +24,8 @@ import org.json.JSONObject;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import cn.xiaocool.wxtteacher.BaseActivity;
@@ -117,6 +119,12 @@ public class FunctionWeekendPlanActivity extends BaseActivity implements View.On
                                     weekendPlanDatasList.add(weekendPlanData);
                                     LogUtils.e("info",weekendPlanDatasList.toString());
                                 }
+                                Collections.sort(weekendPlanDatasList,new Comparator<WeekendPlan>(){
+                                    public int compare(WeekendPlan arg0, WeekendPlan arg1) {
+                                        return arg0.getCreate_time().compareTo(arg1.getCreate_time());
+                                    }
+                                });
+
                                 if (weekendPlanAdapter!=null){
                                     weekendPlanAdapter.notifyDataSetChanged();
                                 }else {

@@ -175,14 +175,17 @@
         <activity android:name="cn.xiaocool.wxtteacher.main.ResetPasswordActivity" />
         <activity
             android:name="cn.xiaocool.wxtteacher.main.MainActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity android:name="cn.xiaocool.wxtteacher.main.AnnouContentActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.SpaceClickAnnouActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.CircleImagesActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.GenerateQrCodeActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.MeHelpBackActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.SpaceClickClassActivity" />
-        <activity android:name="cn.xiaocool.wxtteacher.main.SpaceBabyAlbumActivity" />
+        <activity
+            android:name="cn.xiaocool.wxtteacher.main.SpaceBabyAlbumActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity android:name="cn.xiaocool.wxtteacher.main.SpaceClickConfimActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.SpaceClickLeaveActivity" />
         <activity android:name="cn.xiaocool.wxtteacher.main.SpaceClickRecipesActivity" />

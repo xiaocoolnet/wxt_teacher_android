@@ -168,6 +168,7 @@
         <activity android:name=".main.ResetPasswordActivity" />
         <activity
             android:name=".main.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:launchMode="singleTask" />
         <activity android:name=".main.AnnouContentActivity" />
         <activity android:name=".main.SpaceClickAnnouActivity" />
@@ -175,7 +176,8 @@
         <activity android:name=".main.GenerateQrCodeActivity" />
         <activity android:name=".main.MeHelpBackActivity" />
         <activity android:name=".main.SpaceClickClassActivity" />
-        <activity android:name=".main.SpaceBabyAlbumActivity" />
+        <activity android:name=".main.SpaceBabyAlbumActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
         <activity android:name=".main.SpaceClickConfimActivity" />
         <activity android:name=".main.SpaceClickLeaveActivity" />
         <activity android:name=".main.SpaceClickRecipesActivity" />

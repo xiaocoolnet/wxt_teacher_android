@@ -34,6 +34,7 @@ import cn.xiaocool.wxtteacher.main.SpaceClickAnnouActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickHomeworkActivity;
 import cn.xiaocool.wxtteacher.main.TeacherCommunicationActivity;
 import cn.xiaocool.wxtteacher.ui.NoScrollListView;
+import cn.xiaocool.wxtteacher.ui.ReboundScrollView;
 import cn.xiaocool.wxtteacher.utils.JsonParser;
 import cn.xiaocool.wxtteacher.utils.SPUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
@@ -53,6 +54,7 @@ public class NewsFragment extends Fragment implements View.OnClickListener{
     private TextView newsMySent,parentWarnContent,announceContent,backlogContent,teacherCommunication,homeworkContent;
     private List<CommunicateListModel> communicateListModelList;
     private ChatListAdapter chatListAdapter;
+    private ReboundScrollView rd_scroll;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -69,6 +71,7 @@ public class NewsFragment extends Fragment implements View.OnClickListener{
     }
 
     private void initView() {
+        rd_scroll = (ReboundScrollView) getView().findViewById(R.id.rd_scroll);
         tian_jia = (RelativeLayout) getView().findViewById(R.id.tian_jia);
         tian_jia.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +119,7 @@ public class NewsFragment extends Fragment implements View.OnClickListener{
         homeworkContent = (TextView) news_class_homework.findViewById(R.id.homework_content);
         news_list = (NoScrollListView) getView().findViewById(R.id.news_list);
 
+        news_list.setFocusable(false);
     }
 
     /**
