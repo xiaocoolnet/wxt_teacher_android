@@ -46,11 +46,13 @@ public class PushReceiver extends BroadcastReceiver {
         try {
             JSONObject jsonObject = new JSONObject(type);
             str = jsonObject.getString("type");
-            if (str.equals("newMessage")){
-                recid = jsonObject.getString("txt");
-                chattype = jsonObject.getString("key").equals("qchat") ? "1":"0";
-                usertype = jsonObject.getString("usertype");
+            recid = jsonObject.getString("txt");
+            if (jsonObject.getString("type").equals("qchat")){
+                chattype = "1";
+            }else if (jsonObject.getString("type").equals("chat")){
+                chattype = "0";
             }
+            usertype = jsonObject.getString("usertype");
         } catch (JSONException e) {
             Log.i(TAG, "JSONException" + type);
             e.printStackTrace();
@@ -58,7 +60,7 @@ public class PushReceiver extends BroadcastReceiver {
         JSONObject jsonObject = null;
         try {
             jsonObject = new JSONObject(type);
-            loginOther = jsonObject.getString("key");
+            loginOther = jsonObject.getString("type");
         } catch (JSONException e) {
             e.printStackTrace();
         }

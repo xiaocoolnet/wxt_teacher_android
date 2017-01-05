@@ -71,7 +71,7 @@ import cn.xiaocool.wxtteacher.view.WxtApplication;
 public class FunctionFragment extends Fragment implements View.OnClickListener {
     private FragmentActivity mContext;
     private RelativeLayout baby_courseware, baby_album, baby_confirm, baby_leave, baby_recipes, baby_activity, funciion_schoolweb, rlIntroduce, teacherReview, attendance, class_courseware, function_weekendplan, space_class_attrndance, space_info_shenhe, funciton_header;
-    private ImageView space_grown;
+    private ImageView space_grown,func_shipin_bg;
     private RoundImageView iv_me_fragment_avatar;
     private TextView teacher_name,teacher_introduce,school_name,baby_video;
     private DisplayImageOptions options;
@@ -143,6 +143,8 @@ public class FunctionFragment extends Fragment implements View.OnClickListener {
         space_grown = (ImageView) getView().findViewById(R.id.btn_files);
         space_grown.setOnClickListener(this);
 
+        func_shipin_bg = (ImageView) getView().findViewById(R.id.func_shipin_bg);
+        func_shipin_bg.setOnClickListener(this);
         teacher_name = (TextView) getView().findViewById(R.id.teacher_name);
         iv_me_fragment_avatar = (RoundImageView) getView().findViewById(R.id.iv_me_fragment_avatar);
         iv_me_fragment_avatar.setOnClickListener(this);
@@ -273,6 +275,10 @@ public class FunctionFragment extends Fragment implements View.OnClickListener {
             case R.id.main_baobaoshipin:
                 Intent intent = new Intent(mContext, DeviceInfoListActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.func_shipin_bg:
+                Intent copyintent = new Intent(mContext, DeviceInfoListActivity.class);
+                startActivity(copyintent);
                 break;
         }
     }

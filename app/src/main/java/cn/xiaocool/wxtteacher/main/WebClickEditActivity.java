@@ -57,10 +57,14 @@ import cn.finalteam.galleryfinal.model.PhotoInfo;
 import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
 import cn.xiaocool.wxtteacher.bean.UserInfo;
+import cn.xiaocool.wxtteacher.net.NewsRequest;
 import cn.xiaocool.wxtteacher.net.UserRequest;
 import cn.xiaocool.wxtteacher.net.request.constant.NetBaseConstant;
 import cn.xiaocool.wxtteacher.ui.RoundImageView;
+import cn.xiaocool.wxtteacher.utils.StringUtils;
 import cn.xiaocool.wxtteacher.utils.ToastUtils;
+import cn.xiaocool.wxtteacher.utils.pushimage.PushImage;
+import cn.xiaocool.wxtteacher.utils.pushimage.PushImageUtil;
 import cn.xiaocool.wxtteacher.view.PicassoImageLoader;
 import cn.xiaocool.wxtteacher.view.PicassoPauseOnScrollListener;
 
@@ -396,18 +400,28 @@ public class WebClickEditActivity extends BaseActivity implements View.OnClickLi
             if (resultList != null) {
                 mPhotoList.clear();
                 mPhotoList.addAll(resultList);
-//                localImgGridAdapter.notifyDataSetChanged();
-                Bitmap bitmap;
-                for (PhotoInfo photoInfo : resultList) {
-                    bitmap = BitmapFactory.decodeFile(photoInfo.getPhotoPath(), getBitmapOption(2));
-                    getImageToView(bitmap);
 
-                }
 
                 set_head_img.setVisibility(View.VISIBLE);
                 ImageLoader.getInstance().displayImage("file:/" + mPhotoList.get(0).getPhotoPath(), set_head_img, options);
                 Log.e("mPhotoList", mPhotoList.toString());
-                redsetHead();
+
+                final List<String> mPhototNames = new ArrayList<>();
+                new PushImageUtil().setPushIamge(mContext, mPhotoList, mPhototNames, new PushImage() {
+                    @Override
+                    public void success(boolean state) {
+
+                        picname = StringUtils.listToString(mPhototNames,",");
+                        new UserRequest(mContext,handler).updateHeadImg(picname, 123);
+                    }
+
+                    @Override
+                    public void error() {
+
+                        ToastUtils.ToastShort(mContext,"图片上传失败！");
+                    }
+                });
+
 
             }
         }

@@ -70,7 +70,7 @@ public class TeacherCommunicationActivity extends BaseActivity {
         context = this;
         user = new UserInfo(context);
         communicateModelList = new ArrayList<>();
-        type = getIntent().getStringExtra("type");
+        type = getIntent().getStringExtra("type") == null ? "" : getIntent().getStringExtra("type");
         initView();
         receiver = new Receiver();
         IntentFilter filter = new IntentFilter("com.USER_ACTION");

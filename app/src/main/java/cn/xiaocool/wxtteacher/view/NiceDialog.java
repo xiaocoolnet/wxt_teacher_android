@@ -36,6 +36,8 @@ public class NiceDialog extends Dialog {
 		layoutParams.width = width-100;
 		layoutParams.height = LinearLayout.LayoutParams.WRAP_CONTENT;
 		this.getWindow().setAttributes(layoutParams);
+
+		setCancelable(false);
 	}
 
 	// 初始化view
