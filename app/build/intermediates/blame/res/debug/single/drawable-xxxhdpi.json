@@ -156,12 +156,12 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/my_announcement.png"
     },
     {
-        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/titlebar_lightgray.png",
-        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/titlebar_lightgray.png"
-    },
-    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/phone_number.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/phone_number.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/titlebar_lightgray.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/titlebar_lightgray.png"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/chatfrom_voice_playing_f1.png",
@@ -376,12 +376,12 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/address_sendmessage.png"
     },
     {
-        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/btn_home_function_off.png",
-        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/btn_home_function_off.png"
-    },
-    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/my_score_exchange.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/my_score_exchange.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/btn_home_function_off.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-xxxhdpi/btn_home_function_off.png"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/news_announcement.png",

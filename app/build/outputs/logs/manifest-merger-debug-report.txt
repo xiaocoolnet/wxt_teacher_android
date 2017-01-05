@@ -32,7 +32,7 @@ MERGED from [com.baoyz.actionsheet:library:1.1.4] /Users/xiaocool/Desktop/androi
 MERGED from [com.kaopiz:kprogresshud:1.0.5] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.kaopiz/kprogresshud/1.0.5/AndroidManifest.xml:7:5-9:41
 MERGED from [com.zhy:okhttputils:2.6.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.zhy/okhttputils/2.6.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.lguipeng.bubbleview/library/1.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -46,7 +46,7 @@ MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/andr
 uses-permission#android.permission.INTERNET
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:9:5-67
 MERGED from [com.daimajia.slider:library:1.1.5] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/AndroidManifest.xml:11:5-67
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:20:5-67
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:20:5-67
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:9:22-64
 uses-permission#android.permission.CAMERA
@@ -63,7 +63,7 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:16:5-80
 MERGED from [cn.finalteam:galleryfinal:1.4.6] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/AndroidManifest.xml:16:5-80
 MERGED from [cn.finalteam:toolsfinal:1.1.1] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/toolsfinal/1.1.1/AndroidManifest.xml:16:5-80
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:24:5-80
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:24:5-80
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:16:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -71,7 +71,7 @@ ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/Andr
 MERGED from [com.daimajia.slider:library:1.1.5] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/AndroidManifest.xml:12:5-81
 MERGED from [cn.finalteam:galleryfinal:1.4.6] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/AndroidManifest.xml:14:5-81
 MERGED from [cn.finalteam:toolsfinal:1.1.1] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/toolsfinal/1.1.1/AndroidManifest.xml:14:5-81
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:23:5-81
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:23:5-81
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:17:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
@@ -86,24 +86,24 @@ ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/Andr
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:20:22-74
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:23:5-81
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:19:5-81
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:19:5-81
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:23:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:24:5-79
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:18:5-79
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:18:5-79
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:24:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:30:5-76
 MERGED from [cn.finalteam:toolsfinal:1.1.1] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/toolsfinal/1.1.1/AndroidManifest.xml:20:5-76
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:21:5-76
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:21:5-76
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:30:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:32:5-79
 MERGED from [cn.finalteam:toolsfinal:1.1.1] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/toolsfinal/1.1.1/AndroidManifest.xml:24:5-79
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:22:5-79
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:32:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
@@ -117,7 +117,7 @@ MERGED from [cn.finalteam:toolsfinal:1.1.1] /Users/xiaocool/Desktop/android/wxt_
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:36:22-72
 uses-permission#android.permission.READ_LOGS
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:44:5-68
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:25:5-68
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:25:5-68
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:44:22-65
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
@@ -212,7 +212,7 @@ ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/Andr
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:144:22-72
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:145:5-78
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:26:5-78
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:26:5-78
 	android:name
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:145:22-75
 uses-permission#android.permission.CHANGE_CONFIGURATION
@@ -232,7 +232,7 @@ MERGED from [cn.finalteam:galleryfinal:1.4.6] /Users/xiaocool/Desktop/android/wx
 MERGED from [pub.devrel:easypermissions:0.1.0] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/pub.devrel/easypermissions/0.1.0/AndroidManifest.xml:11:5-14:19
 MERGED from [com.kaopiz:kprogresshud:1.0.5] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.kaopiz/kprogresshud/1.0.5/AndroidManifest.xml:11:5-13:38
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.lguipeng.bubbleview/library/1.0.0/AndroidManifest.xml:11:5-14:19
-MERGED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:28:5-41:19
+MERGED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:28:5-41:19
 	android:label
 		ADDED from /Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/AndroidManifest.xml:153:9-41
 	android:supportsRtl
@@ -923,32 +923,32 @@ ADDED from [cn.finalteam:galleryfinal:1.4.6] /Users/xiaocool/Desktop/android/wxt
 	android:name
 		ADDED from [cn.finalteam:galleryfinal:1.4.6] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/AndroidManifest.xml:28:13-74
 uses-feature#android.hardware.location.gps
-ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:11:5-13:36
+ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:11:5-13:36
 	android:required
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:13:9-33
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:13:9-33
 	android:name
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:12:9-53
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:12:9-53
 uses-feature#android.hardware.location.network
-ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:14:5-16:36
+ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:14:5-16:36
 	android:required
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:16:9-33
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:16:9-33
 	android:name
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:15:9-57
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:15:9-57
 activity#com.bugtags.library.BugtagsActivity
-ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:29:9-32:86
+ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:29:9-32:86
 	android:configChanges
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:31:13-74
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:31:13-74
 	android:theme
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:32:13-83
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:32:13-83
 	android:name
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:30:13-63
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:30:13-63
 service#com.bugtags.library.BugtagsService
-ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:34:9-70
+ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:34:9-70
 	android:name
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:34:18-67
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:34:18-67
 receiver#com.bugtags.library.BugtagsReceiver
-ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:36:9-40:20
+ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:36:9-40:20
 	android:name
-		ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:36:19-69
+		ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:36:19-69
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [com.bugtags.library:bugtags-lib:2.1.2] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.2/AndroidManifest.xml:37:13-39:29
+ADDED from [com.bugtags.library:bugtags-lib:2.1.3] /Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/com.bugtags.library/bugtags-lib/2.1.3/AndroidManifest.xml:37:13-39:29

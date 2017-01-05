@@ -324,12 +324,12 @@
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/new_friends_icon.png"
     },
     {
-        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_nm.png",
-        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_nm.png"
-    },
-    {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_gf_clear.png",
         "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.6/res/drawable-mdpi/ic_gf_clear.png"
+    },
+    {
+        "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/information_nm.png",
+        "source": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/src/main/res/drawable-mdpi/information_nm.png"
     },
     {
         "merged": "/Users/xiaocool/Desktop/android/wxt_teacher_android/app/build/intermediates/res/merged/debug/drawable-mdpi/type_select_btn_pressed.png",

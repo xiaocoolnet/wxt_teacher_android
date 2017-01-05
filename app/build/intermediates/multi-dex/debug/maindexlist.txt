@@ -45,8 +45,8 @@ android/support/v4/app/ActionBarDrawerToggle.class
 cn/xiaocool/wxtteacher/main/AlbumDetailActivity$6.class
 com/tencent/mm/sdk/modelmsg/WXMediaMessage$IMediaObject.class
 cn/xiaocool/wxtteacher/main/SpaceClickHomeworkActivity$2.class
-com/videogo/openapi/EzvizAPI$51.class
 com/videogo/openapi/bean/resp/ConfigCity.class
+com/videogo/openapi/EzvizAPI$51.class
 cn/xiaocool/wxtteacher/main/SpeaceSchoolWebActivity$1$1.class
 android/support/v4/app/FragmentActivity.class
 android/support/multidex/MultiDex.class
@@ -800,6 +800,7 @@ cn/xiaocool/wxtteacher/adapter/ReciverBaclogAdapter.class
 com/android/volley/toolbox/StringRequest.class
 com/baoyz/actionsheet/ActionSheet.class
 org/apache/http/impl/auth/DigestScheme.class
+com/videogo/openapi/EZConstants$EZWifiConfigStatus.class
 cn/xiaocool/wxtteacher/camera/MyCameraInfo$MyEzDeviceInfo$1.class
 android/support/multidex/MultiDex$V4.class
 android/support/v4/util/LogWriter.class
@@ -936,6 +937,7 @@ cn/jpush/android/helpers/ConnectingHelper.class
 org/apache/http/cookie/params/CookieSpecPNames.class
 cn/xiaocool/wxtteacher/dao/CommunalInterfaces.class
 com/nostra13/universalimageloader/core/ProcessAndDisplayImageTask.class
+cn/xiaocool/wxtteacher/main/WebClickEditActivity$5$1.class
 org/apache/http/protocol/HttpRequestHandlerResolver.class
 cn/xiaocool/wxtteacher/adapter/HomeworkListAdapter.class
 org/apache/http/client/params/AllClientPNames.class
@@ -1577,6 +1579,7 @@ org/apache/http/impl/client/AbstractHttpClient.class
 cn/xiaocool/wxtteacher/main/AttendanceHistoryActivity$4.class
 android/support/v4/util/Pools$SimplePool.class
 cn/xiaocool/wxtteacher/R$id.class
+com/videogo/openapi/EzvizAPI$113.class
 android/support/annotation/ArrayRes.class
 com/baoyz/actionsheet/ActionSheet$Builder.class
 cn/xiaocool/wxtteacher/main/NewsGroupDetailActivity.class
