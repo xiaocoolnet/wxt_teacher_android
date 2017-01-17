@@ -333,9 +333,11 @@ public class NoticeReciveFragment extends Fragment {
             });
 
 
-            holder.homework_title.setText(homeworkDataList.get(position).getNotice_info().get(0).getTitle());
-            holder.homework_content.setText(homeworkDataList.get(position).getNotice_info().get(0).getContent());
-            holder.teacher_name.setText(homeworkDataList.get(position).getNotice_info().get(0).getName());
+            if (homeworkDataList.get(position).getNotice_info().size()>0){
+                holder.homework_title.setText(homeworkDataList.get(position).getNotice_info().get(0).getTitle());
+                holder.homework_content.setText(homeworkDataList.get(position).getNotice_info().get(0).getContent());
+                holder.teacher_name.setText(homeworkDataList.get(position).getNotice_info().get(0).getName());
+            }
 
             //判断已读和未读
             final ArrayList<NoticeRecive.DataBean.ReceivListBean> notReads = new ArrayList<>();

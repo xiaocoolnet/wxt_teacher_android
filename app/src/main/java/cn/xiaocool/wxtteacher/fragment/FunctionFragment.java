@@ -52,6 +52,7 @@ import cn.xiaocool.wxtteacher.main.SpaceClickClassActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickClassEventActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickConfimActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickCoursewareActivity;
+import cn.xiaocool.wxtteacher.main.SpaceClickGrowActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickLeaveActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickRecipesActivity;
 import cn.xiaocool.wxtteacher.main.SpaceClickTeacherReviewActivity;
@@ -210,8 +211,8 @@ public class FunctionFragment extends Fragment implements View.OnClickListener {
                 break;
             //成长档案
             case R.id.btn_files:
-//                IntentUtils.getIntent(mContext, SpaceClickGrowActivity.class);
-                ToastUtils.ToastShort(mContext,"该功能暂未上线，敬请期待!");
+                IntentUtils.getIntent(mContext, SpaceClickGrowActivity.class);
+//                ToastUtils.ToastShort(mContext,"该功能暂未上线，敬请期待!");
                 break;
             //待接确认
             case R.id.space_confirm:

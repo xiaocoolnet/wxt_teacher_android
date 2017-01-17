@@ -15,18 +15,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="选择班级"
+            android:text="成长档案"
             android:textSize="20sp"
             android:textColor="@color/white"
             />
 
         <RelativeLayout
             android:id="@+id/up_jiantou"
-            android:layout_width="50dip"
+            android:layout_width="100dip"
             android:layout_height="fill_parent"
-            android:gravity="center">
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
 
             <ImageView
+                android:layout_marginLeft="10dp"
                 android:id="@+id/btn_exit"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
@@ -36,35 +38,11 @@
         </RelativeLayout>
     </RelativeLayout>
 
+    <ListView
+        android:id="@+id/address_class"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/gray"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
-
-        <cn.xiaocool.wxtteacher.ui.NoScrollListView
-            android:id="@+id/class_left_list"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:dividerHeight="1dp"
-            android:cacheColorHint="@color/white">
-        </cn.xiaocool.wxtteacher.ui.NoScrollListView>
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/red"
-            />
-
-        <ListView
-            android:id="@+id/class_right_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:dividerHeight="1dp"
-            android:cacheColorHint="@color/white">
-        </ListView>
-
-    </LinearLayout>
 
 </LinearLayout>

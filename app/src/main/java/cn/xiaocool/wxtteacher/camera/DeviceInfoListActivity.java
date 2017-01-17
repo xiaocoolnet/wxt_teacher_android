@@ -53,6 +53,12 @@ public class DeviceInfoListActivity extends BaseActivity {
         deviceLv = (ListView) findViewById(R.id.lv_device);
         deviceLv.setAdapter(myCameraAdapter);
 
+        findViewById(R.id.up_jiantou).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         deviceLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -83,7 +89,7 @@ public class DeviceInfoListActivity extends BaseActivity {
      * 以后从服务器获取
      */
     private void initAccessToken() {
-        WxtApplication.getInstance().EZ_ACCESS_TOKEN = "at.d8hh0sdh176wzye24l538yfh3efmvwc1-39i1gsbe8j-0th7aqd-ibhvxq3gw";
+        WxtApplication.getInstance().EZ_ACCESS_TOKEN = "at.0iqaw23p7zuqyrbu1cq9lpvx7aitvskx-9kd1vmqxg5-10aq3uw-d66ywjdoq";
         WxtApplication.getInstance().LECHANGE_ACCESS_TOKEN = "At_c8f4390050c84528b2b2df9ddefa6bea";
 
         EzvizAPI.getInstance().setAccessToken(WxtApplication.getInstance().EZ_ACCESS_TOKEN);
