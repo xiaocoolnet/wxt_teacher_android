@@ -277,6 +277,7 @@ public class SpeaceSchoolWebActivity extends BaseActivity implements View.OnClic
 
     @Override
     public void onClick(View v) {
+        Intent intent = new Intent();
         switch (v.getId()) {
             //退出
             case R.id.up_jiantou:
@@ -312,7 +313,11 @@ public class SpeaceSchoolWebActivity extends BaseActivity implements View.OnClic
                 break;
             //院长信箱
             case R.id.web_email:
-                IntentUtils.getIntents(mContext,ChildStarActivity.class);
+                intent.setClass(mContext,TeacherInfoWebDetailActivity.class);
+                intent.putExtra("type","10");
+                intent.putExtra("title","园长信箱");
+                intent.putExtra("url","http://wxt.xiaocool.net/index.php?g=portal&m=web&a=xinxiang");
+//                IntentUtils.getIntents(mContext,ChildStarActivity.class);
                 break;
             //兴趣班
             case R.id.web_class:
@@ -324,7 +329,12 @@ public class SpeaceSchoolWebActivity extends BaseActivity implements View.OnClic
             //入学报名
             case R.id.web_enroll:
 
-                IntentUtils.getIntents(mContext,ApplySchoolActivity.class);
+                intent.setClass(mContext,TeacherInfoWebDetailActivity.class);
+                intent.putExtra("type","10");
+                intent.putExtra("title","入学报名");
+                intent.putExtra("url","http://wxt.xiaocool.net/index.php?g=portal&m=web&a=ruxue");
+                startActivity(intent);
+//                IntentUtils.getIntents(mContext,ApplySchoolActivity.class);
                 break;
             //今日食谱
             case R.id.web_recipes:

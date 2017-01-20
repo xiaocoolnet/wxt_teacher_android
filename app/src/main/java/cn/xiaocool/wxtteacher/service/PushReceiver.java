@@ -156,7 +156,7 @@ public class PushReceiver extends BroadcastReceiver {
 
                 }else if (str.equals("comment")){//教师点评
 
-                }else if (str.equals("newMessage")){
+                }else if (str.equals("chat")||str.equals("qchat")){
                     Intent i = new Intent(context, TeacherCommunicationActivity.class);
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP );
                     i.putExtra("reciver_id",recid);

@@ -16,10 +16,22 @@ android {
             abiFilters 'armeabi', 'armeabi-v7a'// 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
         }
     }
+    signingConfigs {
+        config {
+            keyAlias 'wxt_teacher'
+            keyPassword '123456'
+            storeFile file('/Users/xiaocool/Desktop/android/wxt_teacher_android/app/weixiaotong_teacher')
+            storePassword '123456'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.config
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
     sourceSets {

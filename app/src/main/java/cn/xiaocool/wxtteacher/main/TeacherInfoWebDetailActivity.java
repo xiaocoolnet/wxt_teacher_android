@@ -39,7 +39,7 @@ import cn.xiaocool.wxtteacher.view.WxtApplication;
 
 public class TeacherInfoWebDetailActivity extends BaseActivity {
 
-    private String itemid, title,type,content;
+    private String itemid, title,type,content,URL;
     private TextView title_bar_name;
     private WebView webView;
     private ImageView btn_exit;
@@ -150,9 +150,11 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
 
 
             if (type.equals("9")){
-                webView.loadUrl("http://wxt.xiaocool.net/index.php?g=portal&m=article&a=system&id="+itemid);
+                URL = "http://wxt.xiaocool.net/index.php?g=portal&m=article&a=system&id="+itemid;
+                webView.loadUrl(URL);
             }else {
-                webView.loadUrl(NetBaseConstant.NET_H5_HOST + "&a="+a+"&id="+itemid);
+                URL = NetBaseConstant.NET_H5_HOST + "&a="+a+"&id="+itemid;
+                webView.loadUrl(URL);
             }
         }
 
@@ -161,8 +163,12 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
             new NewsRequest(TeacherInfoWebDetailActivity.this,handler).getUrl(name, 666);
         }
 
+        if (type.equals("10")){
+            URL = getIntent().getStringExtra("url");
+            webView.loadUrl(URL);
+        }
 
-
+        Log.e("webview",URL);
         Log.e("webView",NetBaseConstant.NET_H5_HOST + "&a="+a+"&id="+itemid);
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -171,6 +177,7 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
                 return true;
             }
         });
+
 
 
        /* right_share = (RelativeLayout) findViewById(R.id.right_share);
@@ -192,7 +199,7 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
     private void shareWX() {
         //创建一个WXWebPageObject对象，用于封装要发送的Url
         WXWebpageObject webpage =new WXWebpageObject();
-        webpage.webpageUrl=NetBaseConstant.NET_H5_HOST + "&a="+a+"&id="+itemid;
+        webpage.webpageUrl=URL;
         WXMediaMessage msg =new WXMediaMessage(webpage);
         msg.title=title;
         msg.description=content;
