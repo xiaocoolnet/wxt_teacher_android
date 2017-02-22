@@ -29,12 +29,14 @@ public class ClassEventReadAndNreadActivity extends BaseActivity implements View
     private List<Classevents.ClassEventData.IsApplyList> isapplylist;
     public ArrayList<Classevents.ClassEventData.ReciverlistInfo> notReads,alreadyReads;
     private RelativeLayout up_jiantou;
+    private boolean isRead;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_class_event_read_and_nread);
 
+        isRead = getIntent().getStringExtra("read")!=null ? true : false;
         initView();
 
         isapplylist = (List<Classevents.ClassEventData.IsApplyList>) getIntent().getSerializableExtra("applylist");
@@ -51,9 +53,12 @@ public class ClassEventReadAndNreadActivity extends BaseActivity implements View
         fragments = new Fragment[]{collectPendingFragment,collectFinishedFragment};
         fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(R.id.fragment_content, collectPendingFragment);
+        if (isRead){
+            transaction.add(R.id.fragment_content, collectFinishedFragment);
+        }else {
+            transaction.add(R.id.fragment_content, collectPendingFragment);
+        }
         transaction.commit();
-        fragmentManager = getFragmentManager();
     }
 
 
@@ -67,7 +72,14 @@ public class ClassEventReadAndNreadActivity extends BaseActivity implements View
         mTabs[1].setOnClickListener(this);
 
         //设置第一个按钮为选中状态
-        mTabs[0].setSelected(true);
+
+        if (isRead){
+            mTabs[1].setSelected(true);
+            currentIndex = 1;
+        }else {
+            mTabs[0].setSelected(true);
+            currentIndex = 0;
+        }
     }
 
     @Override

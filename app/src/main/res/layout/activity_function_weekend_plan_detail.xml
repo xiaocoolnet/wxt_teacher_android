@@ -59,6 +59,7 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/week_plan_detail_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,6 +69,14 @@
             android:lineSpacingMultiplier="1.5"
             />
 
+        <ListView
+            android:id="@+id/list_week"
+            android:dividerHeight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:layout_margin="10dp"
+            android:scrollbars="none"></ListView>
 
     </RelativeLayout>
 </LinearLayout>

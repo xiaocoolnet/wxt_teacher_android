@@ -21,9 +21,11 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
-import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
-import com.tencent.mm.sdk.modelmsg.WXWebpageObject;
+import com.tencent.mm.opensdk.modelmsg.SendMessageToWX;
+import com.tencent.mm.opensdk.modelmsg.WXMediaMessage;
+import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
+import com.tencent.mm.opensdk.openapi.IWXAPI;
+import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 
 import org.json.JSONObject;
 
@@ -48,6 +50,7 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
     private   String a = "";
     private   int flag=0;
     private String name;
+
     SharePopupWindow takePhotoPopWin;
     private Handler handler = new Handler() {
         @Override
@@ -73,7 +76,6 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_info_web_detail);
-
         initview();
     }
 
@@ -152,6 +154,9 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
             if (type.equals("9")){
                 URL = "http://wxt.xiaocool.net/index.php?g=portal&m=article&a=system&id="+itemid;
                 webView.loadUrl(URL);
+            }else if (type.equals("10")){
+                URL = getIntent().getStringExtra("url");
+                webView.loadUrl(URL);
             }else {
                 URL = NetBaseConstant.NET_H5_HOST + "&a="+a+"&id="+itemid;
                 webView.loadUrl(URL);
@@ -163,10 +168,7 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
             new NewsRequest(TeacherInfoWebDetailActivity.this,handler).getUrl(name, 666);
         }
 
-        if (type.equals("10")){
-            URL = getIntent().getStringExtra("url");
-            webView.loadUrl(URL);
-        }
+
 
         Log.e("webview",URL);
         Log.e("webView",NetBaseConstant.NET_H5_HOST + "&a="+a+"&id="+itemid);
@@ -209,7 +211,7 @@ public class TeacherInfoWebDetailActivity extends BaseActivity {
         req.transaction = "weiyi";
         req.message = msg;
         req.scene = flag==0? SendMessageToWX.Req.WXSceneSession: SendMessageToWX.Req.WXSceneTimeline;
-        WxtApplication wxtApplication = WxtApplication.getInstance();
+        WxtApplication wxtApplication = WxtApplication.getmInstance();
         wxtApplication.api.sendReq(req);
     }
 

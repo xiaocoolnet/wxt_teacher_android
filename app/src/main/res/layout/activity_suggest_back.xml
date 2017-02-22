@@ -61,15 +61,24 @@
                 android:layout_height="1dp"
                 android:background="@color/gray2" />
 
-            <cn.xiaocool.wxtteacher.ui.NoScrollGridView
-                android:id="@+id/homework_pic_grid"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:horizontalSpacing="@dimen/activity_size_3"
-                android:verticalSpacing="@dimen/activity_size_3"
-                android:numColumns="4">
+                android:padding="10dp"
+                android:background="@color/whilte">
 
-            </cn.xiaocool.wxtteacher.ui.NoScrollGridView>
+                <cn.xiaocool.wxtteacher.ui.NoScrollGridView
+                    android:id="@+id/homework_pic_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="@dimen/activity_size_3"
+                    android:verticalSpacing="@dimen/activity_size_3"
+                    android:numColumns="4">
+
+                </cn.xiaocool.wxtteacher.ui.NoScrollGridView>
+
+            </RelativeLayout>
+
 
             <RelativeLayout
                 android:id="@+id/send_btn"

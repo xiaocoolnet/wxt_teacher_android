@@ -15,8 +15,8 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.nostra13.universalimageloader.utils.StorageUtils;
-import com.tencent.mm.sdk.openapi.IWXAPI;
-import com.tencent.mm.sdk.openapi.WXAPIFactory;
+import com.tencent.mm.opensdk.openapi.IWXAPI;
+import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.videogo.openapi.EZOpenSDK;
 import com.videogo.openapi.EzvizAPI;
 
@@ -37,7 +37,7 @@ public class WxtApplication extends Application {
     private List<Activity> activityList = new LinkedList<Activity>();
     private static WxtApplication instance;
     public static int UID;
-    public static final String APP_ID = "wx9aa88ce0b796d68f";
+    public static final String APP_ID = "wx6ae2cd4548ef0699";
     public IWXAPI api; //第三方app与微信通信的openapi接口
     //萤石云
     public static String EZ_APP_KEY = "e6a9eb61e34d4b64a6a1d92867914d9c";

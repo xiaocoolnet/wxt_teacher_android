@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/week_detail_bg">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/week_detail_toptwo_radius"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/list_content_color"/>
+
+</LinearLayout>

@@ -3,6 +3,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/main_ground_color">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dip"
@@ -27,10 +28,10 @@
                 android:textColor="@color/whilte"
                 android:textSize="20sp" />
             <ImageView
-                android:layout_width="20dp"
+                android:layout_width="10dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
-                android:src="@drawable/ic_xuanzebanji"/>
+                android:src="@drawable/xiala"/>
         </LinearLayout>
 
         <RelativeLayout

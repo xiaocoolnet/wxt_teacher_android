@@ -88,7 +88,7 @@ public class MeRequest {
             public void run() {
                 try {
 //                    String data = "&userid=" + id;
-                    String data = "schoolid=" + user.getSchoolId();
+                    String data = "&schoolid=" + user.getSchoolId();
                     String result_data = NetUtil.getResponse("http://wxt.xiaocool.net/index.php?g=apps&m=index&a=service_phone", data);
                     JSONObject jsonObject = new JSONObject(result_data);
                     msg.what = CommunalInterfaces.ONLINE_SERVICE;

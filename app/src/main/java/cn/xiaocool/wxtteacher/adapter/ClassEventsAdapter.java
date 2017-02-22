@@ -92,7 +92,7 @@ public class ClassEventsAdapter extends BaseAdapter {
 
 
         if (convertView == null){
-            convertView = inflater.inflate(R.layout.message_myhomework,null);
+            convertView = inflater.inflate(R.layout.class_activity_item,null);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         }else {
@@ -197,8 +197,9 @@ public class ClassEventsAdapter extends BaseAdapter {
             }
         }
 
-        holder.alread_text.setText("已报名" + homeworkDataList.get(position).getIsApplyLists().size() +" 已读"+alreadyReads.size() +" 未读"+ notReads.size());
-        holder.read_layout.setOnClickListener(new View.OnClickListener() {
+        holder.alread_baoming_text.setText("已报名" +"("+ homeworkDataList.get(position).getIsApplyLists().size() + ")");
+        holder.read_text.setText("已读"+"("+alreadyReads.size() + ")"+"未读"+ "("+notReads.size()+")");
+        holder.alread_baoming_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent();
@@ -213,11 +214,27 @@ public class ClassEventsAdapter extends BaseAdapter {
             }
         });
 
+        holder.read_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(context, ClassEventReadAndNreadActivity.class);
+                intent.putExtra("read","read");
+                Bundle bundle=new Bundle();
+                bundle.putSerializable("notReads",(Serializable)notReads);//序列化
+                bundle.putSerializable("alreadyReads", (Serializable)alreadyReads);
+                bundle.putSerializable("applylist",homeworkDataList.get(position).getIsApplyLists());
+                intent.putExtras(bundle);//发送数据
+//                intent.putExtras("notReads",(Serializable)notReads);
+                context.startActivity(intent);//启动intent
+            }
+        });
+
         return convertView;
     }
 
     class ViewHolder{
-        TextView homework_title,homework_content,teacher_name,homework_time,homework_item_praise_names,alread_text;
+        TextView homework_title,homework_content,teacher_name,homework_time,homework_item_praise_names,alread_baoming_text,read_text;
         ImageView homework_praise,homework_img,homework_discuss;
         LinearLayout linearLayout_homework_item_praise,comment_view;
         NoScrollGridView parent_warn_img_gridview;
@@ -235,7 +252,8 @@ public class ClassEventsAdapter extends BaseAdapter {
             homework_content = (TextView) convertView.findViewById(R.id.myhomework_content);
             teacher_name = (TextView) convertView.findViewById(R.id.myhomework_teacher_name);
             homework_time = (TextView) convertView.findViewById(R.id.myhomework_time);
-            alread_text = (TextView) convertView.findViewById(R.id.alread_text);
+            alread_baoming_text = (TextView) convertView.findViewById(R.id.alread_baoming_text);
+            read_text = (TextView) convertView.findViewById(R.id.read_text);
             homework_praise = (ImageView) convertView.findViewById(R.id.homework_praise);
             homework_discuss = (ImageView) convertView.findViewById(R.id.homework_discuss);
             homework_img = (ImageView) convertView.findViewById(R.id.homework_img);

@@ -29,10 +29,22 @@
                 android:id="@+id/tv_comment_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="2016.12.22"
                 android:textSize="14sp"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
+
+        <cn.xiaocool.wxtteacher.ui.NoScrollGridView
+            android:id="@+id/parent_warn_img_gridview"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_size_10"
+            android:listSelector="@color/white"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="@dimen/activity_size_10"
+            android:verticalSpacing="10dp"/>
 
     </LinearLayout>
 

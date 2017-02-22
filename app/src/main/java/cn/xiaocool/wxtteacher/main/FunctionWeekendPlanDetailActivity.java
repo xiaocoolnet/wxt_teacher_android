@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.view.Window;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -15,8 +16,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cn.xiaocool.wxtteacher.BaseActivity;
 import cn.xiaocool.wxtteacher.R;
+import cn.xiaocool.wxtteacher.adapter.WeekPlanDetailAdapter;
 import cn.xiaocool.wxtteacher.bean.WeekendPlan;
 import cn.xiaocool.wxtteacher.dao.CommunalInterfaces;
 import cn.xiaocool.wxtteacher.net.NewsRequest;
@@ -30,6 +35,7 @@ public class FunctionWeekendPlanDetailActivity extends BaseActivity {
     private WeekendPlan weekendPlanData;
     private String id;
     private Context mContext;
+    private ListView list_week;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg){
@@ -112,6 +118,7 @@ public class FunctionWeekendPlanDetailActivity extends BaseActivity {
         week_plan_detail_text = (TextView) findViewById(R.id.week_plan_detail_text);
         title_bar_name = (TextView) findViewById(R.id.title_bar_name);
 
+        list_week = (ListView) findViewById(R.id.list_week);
         add_jiantou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -138,6 +145,18 @@ public class FunctionWeekendPlanDetailActivity extends BaseActivity {
                 +"星期日："+weekendPlanData.getSunday();
         week_plan_detail_text.setText(newntext);
         title_bar_name.setText(weekendPlanData.getTitle());
+
+        String[] titles = {"要点：","星期一：","星期二：","星期三：","星期四：","星期五：","星期六：","星期日："};
+        List<String> contents = new ArrayList<>();
+        contents.add(weekendPlanData.getWorkpoint());
+        contents.add(weekendPlanData.getMonday());
+        contents.add(weekendPlanData.getTuesday());
+        contents.add(weekendPlanData.getWednesday());
+        contents.add(weekendPlanData.getThursday());
+        contents.add(weekendPlanData.getFriday());
+        contents.add(weekendPlanData.getSaturday());
+        contents.add(weekendPlanData.getSunday());
+        list_week.setAdapter(new WeekPlanDetailAdapter(this,titles,contents));
     }
 
 
